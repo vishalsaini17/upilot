@@ -1,13 +1,14 @@
 /* 
 The button component can be rendered in various ways based on the props that are being passed to it.
 
-The 5 mandatory props are:
+The 3 mandatory props are:
+1. size: the size of the button, accepted values: (xlarge, large, medium, small, xsmall)
+2. shape: the shape of the button, accepted values: (square, round)
+3. color: the color of the button, currently accepted values: (primary, secondary)
 
+The optional ones are: 
 1. text: the text that is displayed on the button
-2. size: the size of the button, accepted values: (xlarge, large, medium, small, xsmall)
-3. shape: the shape of the button, accepted values: (square, round)
-4. color: the color of the button, currently accepted values: (primary, secondary)
-5. onClick: the function that is called when the button is clicked
+2. onClick: the function that is called when the button is clicked
 */
 
 
