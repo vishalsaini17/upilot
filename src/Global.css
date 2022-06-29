@@ -1,0 +1,27 @@
+:root{
+    --primary: linear-gradient(90deg, #00cbed 0%, #009cd7 100%);
+    --primary-hover: linear-gradient(90deg, #00aae1 0%, #0071bf 100%);
+    --secondary: #FFFFFF;
+    --secondary-text: #767299;
+    --secondary-text-hover: #0071BF;
+}
+
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url("Font/Poppins-Black.ttf") format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-light';
+    src: url("Font/Poppins-Light.ttf") format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("Font/Poppins-Medium.ttf") format('truetype');
+    font-style: normal;
+}
+
+

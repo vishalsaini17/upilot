@@ -1,0 +1,79 @@
+.square-button {
+  border: 0px;
+  background: var(--primary);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: "Poppins";
+}
+
+.square-button:hover {
+  cursor: pointer;
+  background: var(--primary-hover);
+  box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
+    0 1px 4px 0 rgba(0, 9, 80, 0.15);
+}
+
+.square-button-secondary {
+  border: 0px;
+  background: var(--secondary);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: var(--secondary-text);
+  font-family: "Poppins";
+}
+
+.square-button-secondary:hover {
+  cursor: pointer;
+  background: var(--secondary);
+  box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
+    0 1px 4px 0 rgba(0, 9, 80, 0.15);
+  color: var(--secondary-text-hover);
+}
+
+
+.rounded-button {
+  border: 0px;
+  background: var(--primary);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: "Poppins";
+}
+
+.rounded-button:hover {
+  cursor: pointer;
+  background: var(--primary-hover);
+  box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
+    0 1px 4px 0 rgba(0, 9, 80, 0.15);
+}
+
+.rounded-button-secondary {
+  border: 0px;
+  background: var(--secondary);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+  text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  color: var(--secondary-text);
+  font-family: "Poppins";
+}
+
+.rounded-button-secondary:hover {
+  cursor: pointer;
+  background: var(--secondary);
+  box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
+    0 1px 4px 0 rgba(0, 9, 80, 0.15);
+  color: var(--secondary-text-hover);
+}
+
