@@ -4,6 +4,8 @@
     --secondary: #FFFFFF;
     --secondary-text: #767299;
     --secondary-text-hover: #0071BF;
+    /* input field */
+    --input-bg: #FFFFFF;
 }
 
 @font-face {
@@ -22,6 +24,10 @@
     font-family: 'Poppins';
     src: url("Font/Poppins-Medium.ttf") format('truetype');
     font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
 }
 
 
