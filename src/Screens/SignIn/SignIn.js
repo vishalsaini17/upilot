@@ -1,6 +1,6 @@
 import React, {useState} from "react";
+import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
-import Input from "../../Components/Button/Input/Input";
 
 
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
