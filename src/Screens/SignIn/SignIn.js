@@ -4,6 +4,7 @@ import Button from "../../Components/Button/Button";
 
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
 
+// test comment to demo git pull and conflict management
 export default function SignIn() {
   const test_function = () => {
     console.log("You clicked this!");
