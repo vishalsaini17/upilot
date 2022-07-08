@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
-import Input from "../../Components/Input/Input";
 import FormError from "../../Components/FormError/FormError";
 
 
