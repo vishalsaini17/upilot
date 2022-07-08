@@ -40,6 +40,7 @@ export default function Button(props) {
         className="square-button"
         style={{
           height: "50px",
+          //width: '100%' - to fit the form
           width: "186px",
           fontSize: "18px",
           borderRadius: "8px",
@@ -60,6 +61,7 @@ export default function Button(props) {
           width: "168px",
           fontSize: "15px",
           borderRadius: "5px",
+          
         }}
         onClick = {props.onClick}
       >
