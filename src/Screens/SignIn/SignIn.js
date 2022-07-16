@@ -2,7 +2,10 @@ import React, {useState} from "react";
 import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
+import Checkbox from "../../Components/Checkbox/Checkbox";
+import Popup from "../../Components/Popup/Popup";
 
+import "./SignIn.css"
 
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
 
@@ -12,6 +15,7 @@ export default function SignIn() {
                                         password: ''});
   const [errorMessage, setErrorMessage] = useState({})
   const [isInvalid, setIsInvalid] = useState({})
+  const [isChecked, setIsChecked] = useState(false)
 
 
   const test_function = () => {
@@ -41,44 +45,64 @@ export default function SignIn() {
     setIsInvalid(inValid)
   } 
 
+  const handleCheckBox = () => {
+    setIsChecked(!isChecked)
+  }
+
   
 
   return (
-    <form className = 'form' style ={{margin: '0 auto',
-                                      marginBottom: '4rem',
-                                      padding: '1rem 2rem',
-                                      display: 'flex',
-                                      flexDirection: 'column',
-                                      textAlign: 'center',
-                                      maxWidth: 'fit-content'}}>
-      <div style={{maxWidth: 'fit-content'}}>
-        <Input 
-        type = "text"
-        value= {person.email}
-        placeholder = "Email"
-        name = "email"
-        onChange= {handleChange}
-        size = "large"
-        isInvalid = {isInvalid.email}
-       />
-       <FormError errormessage = {errorMessage.email}/>
-      </div>
-  
-      <div style={{maxWidth: 'fit-content'}}>
-        <Input 
-        type = "password"
-        value= {person.password}
-        placeholder = "Password"
-        name = "password"
-        onChange= {handleChange}
-        size = "large"
-        icon_right = 'yes'
-        isInvalid  = {isInvalid.password}
-       />
-       <FormError errormessage = {errorMessage.password}/>
-      </div>
-      <Button type = "submit" text = "Log In" shape = "square" color = "primary" size = "large" onClick = {handleSubmit}
-      />
-    </form>
+    <div className = 'wrapper'>
+      <form className = 'form' style ={{margin: '0 auto',
+                                        padding: '1rem 2rem',
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        textAlign: 'center',
+                                        maxWidth: 'fit-content'}}>
+        <p className = 'form-title'> Sign In </p>
+        <div className = 'form-control'>
+          <Input 
+          type = "text"
+          value= {person.email}
+          placeholder = "Your email"
+          name = "email"
+          onChange= {handleChange}
+          size = "large"
+          isInvalid = {isInvalid.email}
+        />
+        <FormError errormessage = {errorMessage.email}/>
+        </div>
+    
+        <div className = 'form-control'>
+          <Input 
+          type = "password"
+          value= {person.password}
+          placeholder = "Password"
+          name = "password"
+          onChange= {handleChange}
+          size = "large"
+          isInvalid  = {isInvalid.password}
+        />
+        <FormError errormessage = {errorMessage.password}/>
+        </div>
+
+        <Checkbox 
+          id = "checkbox"
+          label = "Remember me"
+          value = {isChecked}
+          onChange = {handleCheckBox}/>
+
+        <Button 
+          type = "submit" 
+          text = "Sign In" 
+          shape = "round" 
+          color = "primary" 
+          size = "large" 
+          onClick = {handleSubmit}/>
+        
+        <p className ='forget-pwd'> Forgot your password? </p>
+      </form>
+    </div>
+    // <><Popup type = 'success'/></>
   );
 }
