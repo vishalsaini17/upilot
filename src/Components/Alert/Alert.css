@@ -1,0 +1,66 @@
+.alert-object {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1
+}
+
+.alert {
+    box-sizing: border-box;
+    position: relative;
+    padding: 35px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    width: 500px;
+}
+
+.alert-icon{
+    margin-right: 30px
+}
+
+.alert-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+}
+
+.alert-title{
+    display: inline-block;
+    height: 27px;
+    width: fit-content;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+}
+
+.alert-message{
+    height: 23px;
+    width: 371px;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.47px;
+    line-height: 23px;
+}
+
+.alert-message::first-letter{
+    text-transform: capitalize;
+}
+
+.title-p {
+    margin: 0 0 8px 0
+}
+
+.msg-p{
+    margin: 0
+}

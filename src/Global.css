@@ -6,6 +6,7 @@
     --secondary-text-hover: #0071BF;
     /* input field */
     --input-bg: #FFFFFF;
+    --dark-neutral-bg: linear-gradient(270deg, #7A7882 0%, #4C4A5C 100%)
 }
 
 @font-face {

@@ -23,7 +23,8 @@ export default function Button(props) {
         className="square-button"
         style={{
           height: "60px",
-          width: "239px",
+          // width: "239px",
+          width: '100%',
           fontSize: "20px",
           borderRadius: "12px",
         }}
@@ -58,7 +59,8 @@ export default function Button(props) {
         className="square-button"
         style={{
           height: "40px",
-          width: "168px",
+          // width: "168px",
+          width: '100%',
           fontSize: "15px",
           borderRadius: "5px",
           
@@ -76,7 +78,8 @@ export default function Button(props) {
         className="square-button"
         style={{
           height: "34px",
-          width: "118px",
+          // width: "118px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "5px",
         }}
@@ -93,7 +96,8 @@ export default function Button(props) {
         className="square-button"
         style={{
           height: "30px",
-          width: "118px",
+          // width: "118px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "5px",
         }}
@@ -110,7 +114,8 @@ export default function Button(props) {
         className="square-button-secondary"
         style={{
           height: "60px",
-          width: "239px",
+          // width: "239px",
+          width: '100%',
           fontSize: "20px",
           borderRadius: "12px",
         }}
@@ -127,7 +132,8 @@ export default function Button(props) {
         className="square-button-secondary"
         style={{
           height: "50px",
-          width: "186px",
+          // width: "186px",
+          width: '100%',
           fontSize: "18px",
           borderRadius: "8px",
         }}
@@ -144,7 +150,8 @@ export default function Button(props) {
         className="square-button-secondary"
         style={{
           height: "40px",
-          width: "168px",
+          // width: "168px",
+          width: '100%',
           fontSize: "15px",
           borderRadius: "5px",
         }}
@@ -161,7 +168,8 @@ export default function Button(props) {
         className="square-button-secondary"
         style={{
           height: "34px",
-          width: "118px",
+          // width: "118px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "5px",
         }}
@@ -178,7 +186,8 @@ export default function Button(props) {
         className="square-button-secondary"
         style={{
           height: "30px",
-          width: "118px",
+          // width: "118px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "5px",
         }}
@@ -195,7 +204,8 @@ export default function Button(props) {
         className="rounded-button"
         style={{
           height: "60px",
-          width: "212px",
+          // width: "212px",
+          width: '100%',
           fontSize: "20px",
           borderRadius: "30px",
         }}
@@ -212,7 +222,8 @@ export default function Button(props) {
         className="rounded-button"
         style={{
           height: "50px",
-          width: "163px",
+          // width: "163px",
+          width: '100%',
           fontSize: "18px",
           borderRadius: "25px",
         }}
@@ -229,7 +240,8 @@ export default function Button(props) {
         className="rounded-button"
         style={{
           height: "40px",
-          width: "133px",
+          // width: "133px",
+          width: '100%',
           fontSize: "15px",
           borderRadius: "20px",
         }}
@@ -246,7 +258,8 @@ export default function Button(props) {
         className="rounded-button"
         style={{
           height: "34px",
-          width: "103px",
+          // width: "103px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "17px",
         }}
@@ -263,7 +276,8 @@ export default function Button(props) {
         className="rounded-button"
         style={{
           height: "30px",
-          width: "103px",
+          // width: "103px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "15px",
         }}
@@ -280,7 +294,8 @@ export default function Button(props) {
         className="rounded-button-secondary"
         style={{
           height: "60px",
-          width: "212px",
+          // width: "212px",
+          width: '100%',
           fontSize: "20px",
           borderRadius: "30px",
         }}
@@ -297,7 +312,8 @@ export default function Button(props) {
         className="rounded-button-secondary"
         style={{
           height: "50px",
-          width: "163px",
+          // width: "163px",
+          width: '100%',
           fontSize: "18px",
           borderRadius: "25px",
         }}
@@ -314,7 +330,8 @@ export default function Button(props) {
         className="rounded-button-secondary"
         style={{
           height: "40px",
-          width: "133px",
+          // width: "133px",
+          width: '100%',
           fontSize: "15px",
           borderRadius: "20px",
         }}
@@ -331,7 +348,8 @@ export default function Button(props) {
         className="rounded-button-secondary"
         style={{
           height: "34px",
-          width: "103px",
+          // width: "103px",
+          width: '100%',
           fontSize: "13px",
           borderRadius: "17px",
         }}

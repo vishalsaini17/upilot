@@ -4,6 +4,7 @@ import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
 import Popup from "../../Components/Popup/Popup";
+import Alert from "../../Components/Alert/Alert";
 
 import "./SignIn.css"
 
@@ -52,57 +53,65 @@ export default function SignIn() {
   
 
   return (
-    <div className = 'wrapper'>
-      <form className = 'form' style ={{margin: '0 auto',
-                                        padding: '1rem 2rem',
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        textAlign: 'center',
-                                        maxWidth: 'fit-content'}}>
-        <p className = 'form-title'> Sign In </p>
-        <div className = 'form-control'>
-          <Input 
-          type = "text"
-          value= {person.email}
-          placeholder = "Your email"
-          name = "email"
-          onChange= {handleChange}
-          size = "large"
-          isInvalid = {isInvalid.email}
-        />
-        <FormError errormessage = {errorMessage.email}/>
-        </div>
-    
-        <div className = 'form-control'>
-          <Input 
-          type = "password"
-          value= {person.password}
-          placeholder = "Password"
-          name = "password"
-          onChange= {handleChange}
-          size = "large"
-          isInvalid  = {isInvalid.password}
-        />
-        <FormError errormessage = {errorMessage.password}/>
-        </div>
+    <div className = 'signin'>
+      <div className = 'wrapper'>
+        <form className = 'form' style ={{margin: '0 auto',
+                                          padding: '1rem 2rem',
+                                          display: 'flex',
+                                          flexDirection: 'column',
+                                          textAlign: 'center',
+                                          maxWidth: 'fit-content'}}>
+          <p className = 'form-title'> Sign In </p>
+          <div className = 'form-control'>
+            <Input 
+            type = "text"
+            value= {person.email}
+            placeholder = "Your email"
+            name = "email"
+            onChange= {handleChange}
+            size = "large"
+            isInvalid = {isInvalid.email}
+            icon_left = 'yes'
+          />
+          <FormError errormessage = {errorMessage.email}/>
+          </div>
+      
+          <div className = 'form-control'>
+            <Input 
+            type = "password"
+            value= {person.password}
+            placeholder = "Password"
+            name = "password"
+            onChange= {handleChange}
+            size = "large"
+            icon_left = 'yes'
+            isInvalid  = {isInvalid.password}
+          />
+          <FormError errormessage = {errorMessage.password}/>
+          </div>
 
-        <Checkbox 
-          id = "checkbox"
-          label = "Remember me"
-          value = {isChecked}
-          onChange = {handleCheckBox}/>
+          <Checkbox 
+            id = "checkbox"
+            label = "Remember me"
+            value = {isChecked}
+            onChange = {handleCheckBox}
+           />
 
-        <Button 
-          type = "submit" 
-          text = "Sign In" 
-          shape = "round" 
-          color = "primary" 
-          size = "large" 
-          onClick = {handleSubmit}/>
-        
-        <p className ='forget-pwd'> Forgot your password? </p>
-      </form>
+          <Button 
+            type = "submit" 
+            text = "Sign In" 
+            shape = "square" 
+            color = "primary" 
+            size = "large" 
+            onClick = {handleSubmit}
+            />
+          
+          <p className ='forget-pwd'> Forgot your password? </p>
+        </form>
+      </div>
     </div>
     // <><Popup type = 'success'/></>
+    // <><Alert type = 'neutral'
+    //         message = 'this is a test for alert'/></>
   );
 }

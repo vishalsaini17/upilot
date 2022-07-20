@@ -4,11 +4,15 @@
 }
 
 .input-field{
-    background: var(--input-bg);
-    border: 1px solid #E4E4E7;
+    /* background: var(--input-bg); */
     box-shadow: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
     font-family: "Poppins";
-    
+    outline: none;
+   
+}
+
+.input-field::placeholder{
+    color: #C9C8CE;
 }
 
 .input-control {
@@ -21,6 +25,7 @@
    align-items: center;
    cursor: pointer
 }
+
 
 
 

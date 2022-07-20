@@ -27,6 +27,15 @@ export default function Input(props){
     const {size, type, value, placeholder, name, onChange,
             isEmpty, isInvalid} = props
 
+    const themes ={
+        dark_neutral: {
+            backgroundColor: 'rgba(225,223,246,0.22)',
+            boxShadow: '0 1px 4px 0 rgba(42,41,55,0.3)'
+        }
+    }
+
+    const themeContext = React.createContext(themes.dark_neutral)
+
     const normal_input = () =>{
         return(
             <div className = 'input-control'>
@@ -115,7 +124,10 @@ export default function Input(props){
                 width: "350px", 
                 fontSize: "15px",
                 padding: "20px",
-                border: (isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7')
+                color: '#C9C8CE',
+                border: (isInvalid ? '1px solid #E7B8B8' : 'none'),
+                backgroundColor: themes.dark_neutral.backgroundColor,
+                boxShadow: themes.dark_neutral.boxShadow
             }}
             onChange = {props.onChange}
             value= {props.value}>
@@ -142,8 +154,10 @@ export default function Input(props){
                         width: "350px",
                         fontSize: "16px",
                         padding: "15px 35px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                        }}
+                        border: isInvalid ? '1px solid #E7B8B8' : 'none',
+                        backgroundColor: themes.dark_neutral.backgroundColor,
+                        boxShadow: themes.dark_neutral.boxShadow    
+                    }}
                     onChange = {onChange}
                     > 
                 </input>
