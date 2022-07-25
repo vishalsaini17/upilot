@@ -1,10 +1,12 @@
 import React, {useState} from "react";
+import {Link} from 'react-router-dom';
 import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
 import Popup from "../../Components/Popup/Popup";
 import Alert from "../../Components/Alert/Alert";
+import Logo from "../../Logo/UPilot logo - white vertical.svg"
 
 import "./SignIn.css"
 
@@ -56,6 +58,9 @@ export default function SignIn() {
                                           flexDirection: 'column',
                                           textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
+          <div className = 'logo-wrapper'>
+            <img src = {Logo} style = {{width: '109px', height: '120px'}}></img>
+          </div>
           <p className = 'form-title'> Sign In </p>
           <div className = 'form-control'>
             <Input 
@@ -103,7 +108,9 @@ export default function SignIn() {
             onClick = {handleSubmit}
             />
           
-          <p className ='forget-pwd'> Forgot your password? </p>
+          <Link to = '/forgotpassword'>
+            <p className ='forget-pwd'> Forgot your password? </p>
+          </Link>
         </form>
       </div>
     </div>

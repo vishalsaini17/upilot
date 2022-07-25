@@ -5,12 +5,14 @@ import Checkbox from '../../Components/Checkbox/Checkbox'
 import Button from '../../Components/Button/Button'
 import Popup from '../../Components/Popup/Popup'
 
+
 // css
 import "./Activate.css"
 
 //icons
 import TeamLine from "remixicon-react/TeamLineIcon"
 import Link from "remixicon-react/LinkIcon"
+import Logo from "../../Logo/UPilot logo - white vertical.svg"
 
 const Activate = () => {
     const [account, setAccount] = useState({password: '',
@@ -60,6 +62,9 @@ const Activate = () => {
     <div className = 'activate-screen'>
         <div className = 'wrapper'>
             <div className = 'activate-form'>
+                <div className = 'logo-wrapper'>
+                    <img src = {Logo} style = {{width: '109px', height: '120px'}}></img>
+                </div>
                 <p className = 'form-title'> Activate Your Account </p>
                 <p className = 'invite-msg'> You have received an invitation to join 
                     <span className = 'bolded'> SPJain. </span>

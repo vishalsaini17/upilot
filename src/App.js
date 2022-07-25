@@ -1,12 +1,22 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+//css
 import "./Global.css";
+
+// screens
 import SignIn from "./Screens/SignIn/SignIn";
 import Activate from "./Screens/ActivateAccount/Activate";
+import ForgotPassword from "./Screens/ForgotPassword/ForgotPassword";
 
 export default function App() {
   return (
-    <div>
-      <Activate />
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
+        <Route path = '/activate' caseSensitive = {false} element = {<Activate/>} />
+        <Route path = '/forgotpassword' caseSensitive = {false} element = {<ForgotPassword/>} />
+      </Routes>
+    </Router>
+  )
 }

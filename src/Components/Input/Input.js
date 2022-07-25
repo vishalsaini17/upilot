@@ -167,7 +167,7 @@ export default function Input(props){
                         height: "50px",
                         width: "350px",
                         fontSize: "16px",
-                        padding: "15px 40px",
+                        padding: "15px 0px 15px 40px",
                         border: isInvalid ? '1px solid #E7B8B8' : 'none',
                         backgroundColor: themes.dark_neutral.backgroundColor,
                         boxShadow: themes.dark_neutral.boxShadow    
@@ -193,7 +193,9 @@ export default function Input(props){
                         width: "350px",
                         fontSize: "16px",
                         padding: "15px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+                        border: isInvalid ? '1px solid #E7B8B8' : 'none',
+                        backgroundColor: themes.dark_neutral.backgroundColor,
+                        boxShadow: themes.dark_neutral.boxShadow  
                         }}
                     onChange = {onChange}
                     > 
