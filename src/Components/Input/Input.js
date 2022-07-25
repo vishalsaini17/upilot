@@ -18,14 +18,25 @@ The optional props are:
 
 
 import React, {useState} from 'react';
-import {BsFillPersonFill} from "react-icons/bs"
-import {AiOutlineEye} from "react-icons/ai"
+import {BsFillPersonFill} from 'react-icons/bs'
+import {AiOutlineEye} from 'react-icons/ai'
+import DoorLockBoxLineIcon from "remixicon-react/DoorLockBoxLineIcon"
+import MailLine from  "remixicon-react/MailLineIcon"
 import "./Input.css"
 
 
 export default function Input(props){
     const {size, type, value, placeholder, name, onChange,
-            isEmpty, isInvalid} = props
+        icon, isEmpty, isInvalid} = props
+
+    console.log(props.icon)
+    console.log(typeof(props.icon))
+    console.log(DoorLockBoxLineIcon)
+    const iconList = {
+        'password' : <DoorLockBoxLineIcon size = {20}/>,
+        'mail' : <MailLine size = {20}/> 
+    }
+    
 
     const themes ={
         dark_neutral: {
@@ -59,13 +70,14 @@ export default function Input(props){
     }
 
     const normal_input_icon_left = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <i className='icon'
                     style= {{
                         padding: '11px',
                     }}> 
-                    <BsFillPersonFill/> 
+                    {iconList[ic]}
                 </i>
                 <input className="input-field"
                     type = {type}
@@ -86,6 +98,7 @@ export default function Input(props){
     }
 
     const normal_input_icon_right = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -107,7 +120,7 @@ export default function Input(props){
                         padding: '12px',
                         marginLeft: '-40px'
                     }}> 
-                    <AiOutlineEye/> 
+                    {iconList[ic]}
                 </i>
             </div>
         )
@@ -136,13 +149,14 @@ export default function Input(props){
     }
 
     const large_input_icon_left = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <i className='icon' 
                     style={{
-                        padding: '16px 12px'
+                        padding: '15px 12px'
                     }}> 
-                    <BsFillPersonFill size = {16}/> 
+                    {iconList[ic]}
                 </i>
                 <input className="input-field"
                     type = {type}
@@ -153,7 +167,7 @@ export default function Input(props){
                         height: "50px",
                         width: "350px",
                         fontSize: "16px",
-                        padding: "15px 35px",
+                        padding: "15px 40px",
                         border: isInvalid ? '1px solid #E7B8B8' : 'none',
                         backgroundColor: themes.dark_neutral.backgroundColor,
                         boxShadow: themes.dark_neutral.boxShadow    
@@ -166,6 +180,7 @@ export default function Input(props){
     }
 
     const large_input_icon_right = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -188,7 +203,7 @@ export default function Input(props){
                         padding: '16px',
                         marginLeft: '-50px'
                     }}> 
-                    <AiOutlineEye size = {18}/> 
+                    {iconList[ic]}
                 </i>
             </div>
         )
@@ -215,13 +230,14 @@ export default function Input(props){
     }
 
     const xlarge_input_icon_left = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <i className='icon' 
                     style={{
                         padding: '20px 12px'
                     }}> 
-                    <BsFillPersonFill size = {20}/> 
+                    {iconList[ic]}
                 </i>
                 <input className="input-field"
                     type = {type}
@@ -244,6 +260,7 @@ export default function Input(props){
     
 
     const xlarge_input_icon_right = () =>{
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -266,7 +283,7 @@ export default function Input(props){
                         padding: '20px',
                         marginLeft: '-60px'
                     }}> 
-                    <AiOutlineEye size ={20}/> 
+                    {iconList[ic]}
                 </i>
             </div>
         )

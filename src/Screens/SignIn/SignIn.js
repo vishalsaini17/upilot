@@ -19,11 +19,6 @@ export default function SignIn() {
   const [isChecked, setIsChecked] = useState(false)
 
 
-  const test_function = () => {
-    console.log("You clicked this!");
-  };
-
-
   const handleChange = (e) => {
     const name = e.target.name; //geting name of variable you change
     const value = e.target.value;
@@ -53,7 +48,7 @@ export default function SignIn() {
   
 
   return (
-    <div className = 'signin'>
+    <div className = 'signin-screen'>
       <div className = 'wrapper'>
         <form className = 'form' style ={{margin: '0 auto',
                                           padding: '1rem 2rem',
@@ -72,6 +67,7 @@ export default function SignIn() {
             size = "large"
             isInvalid = {isInvalid.email}
             icon_left = 'yes'
+            icon = 'mail'
           />
           <FormError errormessage = {errorMessage.email}/>
           </div>
@@ -86,6 +82,7 @@ export default function SignIn() {
             size = "large"
             icon_left = 'yes'
             isInvalid  = {isInvalid.password}
+            icon = 'password'
           />
           <FormError errormessage = {errorMessage.password}/>
           </div>

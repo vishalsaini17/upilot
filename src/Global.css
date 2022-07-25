@@ -27,6 +27,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url("Font/Roboto-Medium.ttf") format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Roboto-light';
+    src: url("Font/Roboto-Light.ttf") format("truetype");
+    font-style: normal
+}
+
 *{
     box-sizing: border-box;
 }

@@ -22,7 +22,8 @@ export default function Checkbox(props){
                         accentColor: 'rgba(42,41,55,0.1)',
                         boxShadow: 'inset 0 1px 3px 0 rgba(0,0,0,0.08)',
                         border: '1px solid rgba(255,255,255,0.2)',
-                        borderRadius: '2px'}}
+                        borderRadius: '2px',
+                        }}
                         >
                 </input>
 

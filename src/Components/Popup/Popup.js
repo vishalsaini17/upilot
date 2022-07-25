@@ -2,10 +2,15 @@ import React, {useState} from 'react';
 import "./Popup.css"
 
 export default function Popup(props){
-    const {type, message, onClick} = props;
+    const {type, message, onClick,
+        trigger, setTrigger} = props;
+
+    const cancelButton = () => {
+        setTrigger(false)
+    }
 
     const neutral = () =>{
-        return(
+        return(props.trigger) ? (
             <div className = 'popup-object'>
                 <div className = 'popup-type'
                     style ={{
@@ -26,18 +31,19 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'> Cancel </button>
+                        <button className = 'cancel-btn'
+                        onClick = {cancelButton}> Cancel </button>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
                 </div>
             </div>
-        )
+        ) :'';
     }
 
 
     const success = () =>{
-        return(
+        return(props.trigger) ? (
             <div className = 'popup-object'>
                 <div className = 'popup-type'
                     style= {{
@@ -58,17 +64,18 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'> Cancel </button>
+                        <button className = 'cancel-btn'
+                        onClick = {cancelButton}> Cancel </button>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
                 </div>
             </div>
-        )
+        ) : '';
     }
 
     const warning = () =>{
-        return(
+        return(props.trigger) ? (
             <div className = 'popup-object'>
                 <div className = 'popup-type'
                     style= {{
@@ -89,17 +96,18 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'> Cancel </button>
+                        <button className = 'cancel-btn'
+                        onClick = {cancelButton}> Cancel </button>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
                 </div>
             </div>
-        )
+        ): "";
     }
 
     const danger = () =>{
-        return(
+        return(props.trigger) ? (
             <div className = 'popup-object'>
                 <div className = 'popup-type'
                     style= {{
@@ -120,13 +128,14 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'> Cancel </button>
+                        <button className = 'cancel-btn'
+                        onClick = {cancelButton}> Cancel </button>
                         <button className = 'delete-btn'> Delete </button>
 
                     </div>
                 </div>
             </div>
-        )
+        ) :'';
     }
 
     if (
