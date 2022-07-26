@@ -18,8 +18,6 @@ The optional props are:
 
 
 import React, {useState} from 'react';
-import {BsFillPersonFill} from 'react-icons/bs'
-import {AiOutlineEye} from 'react-icons/ai'
 import DoorLockBoxLineIcon from "remixicon-react/DoorLockBoxLineIcon"
 import MailLine from  "remixicon-react/MailLineIcon"
 import "./Input.css"
@@ -139,8 +137,6 @@ export default function Input(props){
                 padding: "20px",
                 color: '#C9C8CE',
                 border: (isInvalid ? '1px solid #E7B8B8' : 'none'),
-                backgroundColor: themes.dark_neutral.backgroundColor,
-                boxShadow: themes.dark_neutral.boxShadow
             }}
             onChange = {props.onChange}
             value= {props.value}>
@@ -168,9 +164,7 @@ export default function Input(props){
                         width: "350px",
                         fontSize: "16px",
                         padding: "15px 0px 15px 40px",
-                        border: isInvalid ? '1px solid #E7B8B8' : 'none',
-                        backgroundColor: themes.dark_neutral.backgroundColor,
-                        boxShadow: themes.dark_neutral.boxShadow    
+                        border: isInvalid ? '1px solid #E7B8B8' : 'none',  
                     }}
                     onChange = {onChange}
                     > 
@@ -193,9 +187,7 @@ export default function Input(props){
                         width: "350px",
                         fontSize: "16px",
                         padding: "15px",
-                        border: isInvalid ? '1px solid #E7B8B8' : 'none',
-                        backgroundColor: themes.dark_neutral.backgroundColor,
-                        boxShadow: themes.dark_neutral.boxShadow  
+                        border: isInvalid ? '1px solid #E7B8B8' : 'none', 
                         }}
                     onChange = {onChange}
                     > 

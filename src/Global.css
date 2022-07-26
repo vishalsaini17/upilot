@@ -5,8 +5,72 @@
     --secondary-text: #767299;
     --secondary-text-hover: #0071BF;
     /* input field */
-    --input-bg: #FFFFFF;
-    --dark-neutral-bg: linear-gradient(270deg, #7A7882 0%, #4C4A5C 100%)
+
+    --bg-primary-light: linear-gradient(270deg, #E4E4E7 0%, #D2D2D6 100%);
+    --bg-primary-dark: linear-gradient(270deg, #7A7882 0%, #4C4A5C 100%);
+
+    --input-bg-light: #FFFFFF;
+    --input-bg-dark: rgba(225, 223, 246, 0.22);
+
+    --input-shadow-light: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
+    --input-shadow-dark: 0 1px 4px 0 rgba(42, 41, 55, 0.3);
+
+    --input-placeholder-light: #242244;
+    --input-placeholder-dark: #C9C8CE;
+
+    --form-title-light: #000000;
+    --form-title-dark: #FFFFFF;
+
+    --info-text-light: #000000;
+    --info-text-dark: #D2D2D6;
+
+    --link-text-light: #000000;
+    --link-text-dark: #E5E3F3;
+
+    --checkbox-label-light: #000000;
+    --checkbox-label-dark: #C9C8CE;
+}
+
+.light-theme{
+    --bg-color: var(--bg-primary-light);
+    --btn-primary: var(--primary);
+    --btn-primary-hover: var(--primary-hover);
+    --btn-secondary: var(--secondary);
+    --btn-secondary-text: var(--secondary-text);
+    --btn-secondary-text-hover: var(--secondary-text-hover);
+    
+    /* input field */
+    --input-bg: var(--input-bg-light);
+    --input-shadow: var(--input-shadow-light);
+    --input-placeholder: var(--input-placeholder-light);
+
+    --form-title: var(--form-title-light);
+
+    --info-text: var(--info-text-light);
+    --link-text: var(--link-text-light);
+
+    --checkbox-label: var(--checkbox-label-light);
+}
+
+.dark-theme{
+    --bg-color: var(--bg-primary-dark);
+    --btn-primary: var(--primary);
+    --btn-primary-hover: var(--primary-hover);
+    --btn-secondary: var(--secondary);
+    --btn-secondary-text: var(--secondary-text);
+    --btn-secondary-text-hover: var(--secondary-text-hover);
+
+    /* input field */
+    --input-bg: var(--input-bg-dark);
+    --input-shadow: var(--input-shadow-dark);
+    --input-placeholder: var(--input-placeholder-dark);
+
+    --form-title: var(--form-title-dark);
+
+    --info-text: var(--info-text-dark);
+    --link-text: var(--link-text-dark);
+
+    --checkbox-label: var(--checkbox-label-dark)
 }
 
 @font-face {

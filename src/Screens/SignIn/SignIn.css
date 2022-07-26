@@ -1,12 +1,12 @@
-.signin-screen{
-    background: var(--dark-neutral-bg);
+.signin-screen {
+    background: var(--bg-color);
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     overflow: auto;
-  
+
 }
 
 .wrapper{
@@ -47,7 +47,7 @@
     letter-spacing: 0.6px;
     line-height: 35px;
     text-align: center;
-    color: #FFFFFF;
+  
 }
 
 .forget-pwd{
@@ -60,6 +60,6 @@
     letter-spacing: 0.3px;
     line-height: 20px;
     cursor: pointer;
-    color: #E5E3F3;
+    color: var(--link-text)
 }
 

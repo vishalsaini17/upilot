@@ -1,5 +1,5 @@
 .activate-screen {
-    background: var(--dark-neutral-bg);
+    background: var(--bg-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -39,12 +39,12 @@
     letter-spacing: 0.6px;
     line-height: 35px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--form-title)
 }
 
 .invite-msg{
     height: 21px;
-    color: #D2D2D6;
+    color: var(--info-text);
     font-family: Roboto;
     font-size: 13px;
     letter-spacing: 0.3px;
@@ -76,7 +76,7 @@
 }
 
 .info-control p{
-    color: #D2D2D6;
+    color: var(--info-text);
     font-family: Roboto-light;
     font-size: 14px;
     /* font-weight: bold; */
@@ -88,7 +88,6 @@
 
 .bolded{
     font-weight: bold;
-    color: #FFFFFF;
 }
 
 .info-control i{

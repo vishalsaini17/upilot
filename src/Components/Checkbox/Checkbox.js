@@ -27,8 +27,7 @@ export default function Checkbox(props){
                         >
                 </input>
 
-                <label className = 'checkbox-label' htmlFor = {id}
-                style = {{color: '#C9C8CE'}}>{label}</label>
+                <label className = 'checkbox-label' htmlFor = {id}>{label}</label>
                  
             </div>
         )

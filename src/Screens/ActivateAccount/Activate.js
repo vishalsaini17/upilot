@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
 import Input from '../../Components/Input/Input'
 import FormError from '../../Components/FormError/FormError'
 import Checkbox from '../../Components/Checkbox/Checkbox'
 import Button from '../../Components/Button/Button'
 import Popup from '../../Components/Popup/Popup'
 
+import { ThemeContext } from "../../Themes";
 
 // css
 import "./Activate.css"
@@ -12,9 +13,13 @@ import "./Activate.css"
 //icons
 import TeamLine from "remixicon-react/TeamLineIcon"
 import Link from "remixicon-react/LinkIcon"
-import Logo from "../../Logo/UPilot logo - white vertical.svg"
+
+import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
+import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
 
 const Activate = () => {
+    const {theme, toggleTheme} = useContext(ThemeContext);
+
     const [account, setAccount] = useState({password: '',
                                             confirmPassword: ''});
     const [errorMessage, setErrorMessage] = useState("");
@@ -22,6 +27,7 @@ const Activate = () => {
     const [isChecked, setIsChecked] = useState(false);
     const [popupState, setPopupState] = useState(false)
 
+    
     const handleChange= (e) => {
         const name = e.target.name;
         const value = e.target.value;
@@ -58,12 +64,20 @@ const Activate = () => {
         setPopupState(false)
     }
 
+    const logoHandle = () => {
+    if (theme == 'dark-theme'){
+      return LightLogo
+    } else{
+      return DarkLogo
+    }
+    }
+
     return (
     <div className = 'activate-screen'>
         <div className = 'wrapper'>
             <div className = 'activate-form'>
                 <div className = 'logo-wrapper'>
-                    <img src = {Logo} style = {{width: '109px', height: '120px'}}></img>
+                    <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
                 </div>
                 <p className = 'form-title'> Activate Your Account </p>
                 <p className = 'invite-msg'> You have received an invitation to join 

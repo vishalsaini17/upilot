@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 
 import "./ForgotPassword.css"
@@ -9,6 +9,17 @@ import Button from '../../Components/Button/Button';
 import Logo from "../../Logo/UPilot logo - white vertical.svg"
 
 export default function ForgotPassword(){
+    const [email, setEmail] = useState('');
+    const [errorMessage, setErrorMessage] = useState('')
+
+    const handleChange = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
   return (
     <div className = 'forgotpwd-screen'>
         <div className = 'wrapper'>
@@ -26,15 +37,15 @@ export default function ForgotPassword(){
                 <div className = 'form-control'>
                 <Input    
                     type = 'email'
-                    value= ''
+                    value= {email}
                     placeholder = "Type your email"
                     name = "email"
-                    onChange= ''
+                    onChange= {handleChange}
                     size = "large"
                     icon_left = 'yes'
                     icon = 'mail'
                 />
-                <FormError errormessage = ''/>
+                <FormError errormessage = {errorMessage}/>
                 </div>
 
                 <Button 
@@ -43,7 +54,7 @@ export default function ForgotPassword(){
                     shape = "square" 
                     color = "primary" 
                     size = "large" 
-                    onClick = ''
+                    onClick = {handleSubmit}
                 />
                 <Link to ='/'>
                     <p className ='cancel'> Cancel </p>
