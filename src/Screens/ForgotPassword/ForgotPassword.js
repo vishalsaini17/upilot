@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {Link} from 'react-router-dom'
 
 import "./ForgotPassword.css"
@@ -6,9 +6,14 @@ import Input from '../../Components/Input/Input';
 import FormError from '../../Components/FormError/FormError';
 import Button from '../../Components/Button/Button';
 
-import Logo from "../../Logo/UPilot logo - white vertical.svg"
+import { ThemeContext } from "../../Themes";
+
+import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
+import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
 
 export default function ForgotPassword(){
+    const {theme, toggleTheme} = useContext(ThemeContext);
+    
     const [email, setEmail] = useState('');
     const [errorMessage, setErrorMessage] = useState('')
 
@@ -18,6 +23,17 @@ export default function ForgotPassword(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (email === ''){
+            setErrorMessage('Info missing')
+        }
+    }
+
+    const logoHandle = () => {
+        if (theme === 'dark-theme'){
+            return LightLogo
+        } else {
+            return DarkLogo
+        }
     }
 
   return (
@@ -25,7 +41,7 @@ export default function ForgotPassword(){
         <div className = 'wrapper'>
             <div className = 'forgotpwd-form'>
                 <div className = 'logo-wrapper'>
-                    <img src = {Logo} style = {{width: '109px', height: '120px'}}></img>
+                    <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
                 </div>
                 <p className = 'form-title'> Forgot Password </p>
                 <p className = 'forgotpwd-msg'> 
