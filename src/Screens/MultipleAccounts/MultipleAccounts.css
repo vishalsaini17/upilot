@@ -1,0 +1,67 @@
+.multipleacc-screen {
+    background: var(--bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.logo-wrapper {
+    margin: -80px 0 80px 0
+}
+
+.multipleacc-form {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.form-title {
+    color: var(--form-title);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.form-control {
+    max-width: 'fit-content'
+}
+
+.form-wrapper {
+    max-width: 'fit-content';
+    max-height: 'fit-content';
+    padding: 20px 20px 0px 25px;
+    background-color: rgba(225,223,246,0.15);
+    box-shadow: 0 15px 15px -15px rgba(36,34,68,0.3), 0 1px 4px 0 rgba(42,41,55,0.3);
+}
+
+.accounts-text {
+    color: #C9C8CE;
+    font-family: Poppins;
+    font-size: 15px;
+    letter-spacing: 0.38px;
+    line-height: 23px;
+}

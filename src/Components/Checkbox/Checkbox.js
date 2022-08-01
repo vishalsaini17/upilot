@@ -12,7 +12,6 @@ export default function Checkbox(props){
                     width: '350px',
                 }}>
 
-
                 <input className = 'checkbox'
                     id = {id}
                     type = "checkbox"
@@ -33,9 +32,66 @@ export default function Checkbox(props){
         )
     }
     
-    return(
-        <> {square_checked()}
-        </>
-    )
-}
+    const square_unchecked = () =>{
+        return(
+            <div className='checkbox-wrapper'
+            style= {{
+                height: '50px',
+                    width: '350px',
+                }}>
+
+
+                <input className = 'checkbox'
+                    id = {id}
+                    type = "checkbox"
+                    checked = {value}
+                    onChange = {onChange}
+                    style ={{
+                        accentColor: 'rgba(42,41,55,0.1)',
+                        boxShadow: 'inset 0 1px 3px 0 rgba(0,0,0,0.08)',
+                        border: '1px solid rgba(255,255,255,0.2)',
+                        borderRadius: '2px',
+                        }}
+                        >
+                </input>
+
+                <label className = 'checkbox-label' htmlFor = {id}
+                style = {{color: '#C9C8CE'}}>{label}</label>
+                 
+            </div>
+        )
+    }
+
+    const square_intermediate = () => {
+
+    }
+
+    const oval_checked = () => {
+
+    }
+
+    const oval_unchecked = () => {
+
+    }
+
+    const switch_on = () => {
+
+    }
+
+    const switch_off = () => {
+        
+    }
+
+    if (
+        props.size === "xsmall" &&
+        props.shape === "square" &&
+        props.value === "checked"
+      ) {
+        return <div>{square_checked()}</div>;
+      }
+
+    else {
+        return <div>{square_checked()}</div>;
+    }
+};
 

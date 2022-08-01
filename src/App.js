@@ -8,6 +8,7 @@ import "./Global.css";
 import SignIn from "./Screens/SignIn/SignIn";
 import Activate from "./Screens/ActivateAccount/Activate";
 import ForgotPassword from "./Screens/ForgotPassword/ForgotPassword";
+import MultipleAccounts from "./Screens/MultipleAccounts/MultipleAccounts";
 import { ThemeContext } from "./Themes";
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
           <Route path = '/activate' caseSensitive = {false} element = {<Activate/>} />
           <Route path = '/forgotpassword' caseSensitive = {false} element = {<ForgotPassword/>} />
+          <Route path = '/multipleaccounts' caseSensitive = {false} element = {<MultipleAccounts/>} />
         </Routes>
       </Router>
     </div>
