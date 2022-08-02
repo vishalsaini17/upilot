@@ -29,6 +29,12 @@
 
     --checkbox-label-light: #000000;
     --checkbox-label-dark: #C9C8CE;
+
+    --tooltip-bg-light: #4C4A5C;
+    --tooltip-bg-dark: #FFFFFF;
+
+    --tooltip-text-light: #FFFFFF;
+    --tooltip-text-dark: #4C4A5C;
 }
 
 .light-theme{
@@ -50,6 +56,9 @@
     --link-text: var(--link-text-light);
 
     --checkbox-label: var(--checkbox-label-light);
+    
+    --tooltip-bg: var(--tooltip-bg-light);
+    --tooltip-text: var(--tooltip-text-light)
 }
 
 .dark-theme{
@@ -70,7 +79,10 @@
     --info-text: var(--info-text-dark);
     --link-text: var(--link-text-dark);
 
-    --checkbox-label: var(--checkbox-label-dark)
+    --checkbox-label: var(--checkbox-label-dark);
+
+    --tooltip-bg: var(--tooltip-bg-dark);
+    --tooltip-text: var(--tooltip-text-dark)
 }
 
 @font-face {

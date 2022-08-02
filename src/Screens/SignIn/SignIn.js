@@ -4,6 +4,7 @@ import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
+import Tooltip from "../../Components/Tooltip/Tooltip";
 
 import { ThemeContext } from "../../Themes";
 
@@ -18,9 +19,10 @@ import "./SignIn.css"
 export default function SignIn() {
   const [person, setPerson] = useState({email:'',
                                         password: ''});
-  const [errorMessage, setErrorMessage] = useState({})
-  const [isInvalid, setIsInvalid] = useState({})
-  const [isChecked, setIsChecked] = useState(false)
+  const [errorMessage, setErrorMessage] = useState({});
+  const [isInvalid, setIsInvalid] = useState({});
+  const [isChecked, setIsChecked] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
   const {theme, toggleTheme} = useContext(ThemeContext)
 
@@ -58,6 +60,14 @@ export default function SignIn() {
       return DarkLogo
     }
   }
+
+  const handleMouseOver = () => {
+        setIsHovering(true);
+    }
+
+  const handleMouseOut = () =>{
+        setIsHovering(false);
+    }
 
   return (
     <div className = 'signin-screen'>
@@ -116,16 +126,26 @@ export default function SignIn() {
             color = "primary" 
             size = "large" 
             onClick = {handleSubmit}
+            
+            
             />
+            
           
-          <Link to = '/forgotpassword'>
+          <Link to = '/forgotpassword' 
+              onMouseOver = {handleMouseOver}
+              onMouseOut = {handleMouseOut}>
             <p className ='forget-pwd'> Forgot your password? </p>
+            
           </Link>
+
+          {isHovering && <Tooltip type = "leftarrow"
+                          message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}
         </form>
       </div>
     </div>
     // <><Popup type = 'success'/></>
     // <><Alert type = 'neutral'
     //         message = 'this is a test for alert'/></>
-  );
+    // <div className = 'signin-screen'><Tooltip/></div>
+    );
 }

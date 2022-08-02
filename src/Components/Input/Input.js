@@ -38,15 +38,6 @@ export default function Input(props){
     }
     
 
-    const themes ={
-        dark_neutral: {
-            backgroundColor: 'rgba(225,223,246,0.22)',
-            boxShadow: '0 1px 4px 0 rgba(42,41,55,0.3)'
-        }
-    }
-
-    const themeContext = React.createContext(themes.dark_neutral)
-
     const normal_input = () =>{
         return(
             <div className = 'input-control'>
