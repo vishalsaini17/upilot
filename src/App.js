@@ -20,10 +20,11 @@ export default function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
+          { <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
           <Route path = '/activate' caseSensitive = {false} element = {<Activate/>} />
           <Route path = '/forgotpassword' caseSensitive = {false} element = {<ForgotPassword/>} />
           <Route path = '/multipleaccounts' caseSensitive = {false} element = {<MultipleAccounts/>} />
+  }
         </Routes>
       </Router>
     </div>

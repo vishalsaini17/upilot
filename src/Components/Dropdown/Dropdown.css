@@ -32,8 +32,6 @@
 }
 
 .dropdown-search-large{
-box-sizing: border-box;
-  height: 412px;
   width: 260px;
   border: 1px solid rgba(0,156,215,0.3);
   max-Width: "fit-content";
@@ -42,8 +40,8 @@ box-sizing: border-box;
 }
 
 .icon{
-  height: 30.6px;
-  width: 30.6px;
+  height: 30px;
+  width: 250px;
   color: #4C4A5C;
   font-family: Poppins;
   font-size: 13px;
