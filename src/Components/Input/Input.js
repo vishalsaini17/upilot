@@ -4,16 +4,18 @@ The input field component can be rendered based on props.
 The mandatory props are:
 1. type: type of text, possible value: text, email, password etc
 2. value: value of that input field
-3. placeholder: the placeholder for the input field
+3. placeholder: the placeholder name for the input field
 4. name: unique name of that input field
 5. onChange: onChange function to type in the input
 6. size: choose the size for the input field. Possible values: normal, large, xlarge
-7. inValid: to indicate if submit an empty field or fail the info validation step
+7. isInvalid: boolean value after submiting the form, in order to render the border color of the input field
 
 The optional props are:
-1. Icons: 
+1. Icon's position
     - icon_left: the icon that is displayed at the beginning of the input
     - icon_right: the 'reveal' icon on the right hand-side
+2. Type of the icon
+    - Dynamic icon based on the type that is passed. E.g: password, mail
 */
 
 

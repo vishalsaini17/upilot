@@ -28,5 +28,37 @@
     font-size: 16px;
     letter-spacing: 0.38px;
     line-height: 23px;
-    color: var(--checkbox-label)
+    color: var(--form-title);
+}
+
+.square-checked{
+
+}
+
+.square-intermediate{
+
+}
+
+.square-unchecked{
+
+}
+
+.oval-checked{
+
+}
+
+.oval-intermediate{
+
+}
+
+.oval-unchecked{
+
+}
+
+.switch-on{
+
+}
+
+.switch-off{
+    
 }
