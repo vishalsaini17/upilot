@@ -4,6 +4,7 @@ import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
+import DropDown from "../../Components/DropDown/DropDown";
 
 import { ThemeContext } from "../../Themes";
 
@@ -60,70 +61,71 @@ export default function SignIn() {
   }
 
   return (
+    
+    
     <div className = 'signin-screen'>
       <div className = 'wrapper'>
         <form className = 'form' style ={{margin: '0 auto',
                                           padding: '1rem 2rem',
-                                          display: 'flex',
-                                          flexDirection: 'column',
-                                          textAlign: 'center',
+                                         display: 'flex',
+                                         flexDirection: 'column',
+                                         textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
-          <div className = 'logo-wrapper'>
-            <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
-          </div>
-          <p className = 'form-title'> Sign In </p>
-          <div className = 'form-control'>
-            <Input 
-            type = "text"
-            value= {person.email}
-            placeholder = "Your email"
-            name = "email"
-            onChange= {handleChange}
-            size = "large"
-            isInvalid = {isInvalid.email}
-            icon_left = 'yes'
-            icon = 'mail'
-          />
-          <FormError errormessage = {errorMessage.email}/>
-          </div>
-      
-          <div className = 'form-control'>
-            <Input 
-            type = "password"
-            value= {person.password}
-            placeholder = "Password"
-            name = "password"
-            onChange= {handleChange}
-            size = "large"
-            icon_left = 'yes'
-            isInvalid  = {isInvalid.password}
-            icon = 'password'
-          />
-          <FormError errormessage = {errorMessage.password}/>
-          </div>
-
-          <Checkbox 
-            id = "checkbox"
-            label = "Remember me"
-            value = {isChecked}
-            onChange = {handleCheckBox}
+           <div className = 'logo-wrapper'>
+             <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
+           </div>
+           <p className = 'form-title'> Sign In </p>
+           <div className = 'form-control'>
+             <Input 
+             type = "text"
+             value= {person.email}
+             placeholder = "Your email"
+             name = "email"
+             onChange= {handleChange}
+             size = "large"
+             isInvalid = {isInvalid.email}
+             icon_left = 'yes'
+             icon = 'mail'
            />
-
-          <Button 
-            type = "submit" 
-            text = "Sign In" 
-            shape = "square" 
-            color = "primary" 
-            size = "large" 
-            onClick = {handleSubmit}
+           <FormError errormessage = {errorMessage.email}/>
+           </div>
+    
+           <div className = 'form-control'>
+             <Input 
+             type = "password"
+             value= {person.password}
+             placeholder = "Password"
+             name = "password"
+             onChange= {handleChange}
+             size = "large"
+             icon_left = 'yes'
+             isInvalid  = {isInvalid.password}
+             icon = 'password'
+           />
+           <FormError errormessage = {errorMessage.password}/>
+           </div>
+       <Checkbox 
+         id = "checkbox"
+             label = "Remember me"
+             value = {isChecked}
+             onChange = {handleCheckBox}
             />
+
+         <Button 
+            type = "submit" 
+            text = " Sign In" 
+            shape = "square" 
+            size="large"
+            color= "primary"
+            onClick = {handleSubmit}
+            /> 
           
-          <Link to = '/forgotpassword'>
-            <p className ='forget-pwd'> Forgot your password? </p>
-          </Link>
-        </form>
-      </div>
-    </div>
+           <Link to = '/forgotpassword'>
+             <p className ='forget-pwd'> Forgot your password? </p>
+           </Link>
+         </form>
+       </div>
+     </div>
     // <><Popup type = 'success'/></>
     // <><Alert type = 'neutral'
     //         message = 'this is a test for alert'/></>

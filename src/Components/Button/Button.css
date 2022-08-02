@@ -1,6 +1,6 @@
 .square-button {
   border: 0px;
-  background: var(--btn-primary);
+  background: var(--primary);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -12,35 +12,35 @@
 
 .square-button:hover {
   cursor: pointer;
-  background: var(--btn-primary-hover);
+  background: var(--primary-hover);
   box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
     0 1px 4px 0 rgba(0, 9, 80, 0.15);
 }
 
 .square-button-secondary {
   border: 0px;
-  background: var(--btn-secondary);
+  background: var(--secondary);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 600;
   letter-spacing: 1.2px;
   line-height: 30px;
   text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-  color: var(--btn-secondary-text);
+  color: var(--secondary-text);
   font-family: "Poppins";
 }
 
 .square-button-secondary:hover {
   cursor: pointer;
-  background: var(--btn-secondary);
+  background: var(--secondary);
   box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
     0 1px 4px 0 rgba(0, 9, 80, 0.15);
-  color: var(--btn-secondary-text-hover);
+  color: var(--secondary-text-hover);
 }
 
 
 .rounded-button {
   border: 0px;
-  background: var(--btn-primary);
+  background: var(--primary);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -52,28 +52,198 @@
 
 .rounded-button:hover {
   cursor: pointer;
-  background: var(--btn-primary-hover);
+  background: var(--primary-hover);
   box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
     0 1px 4px 0 rgba(0, 9, 80, 0.15);
 }
 
 .rounded-button-secondary {
   border: 0px;
-  background: var(--btn-secondary);
+  background: var(--secondary);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 600;
   letter-spacing: 1.2px;
   line-height: 30px;
   text-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-  color: var(--btn-secondary-text);
+  color: var(--secondary-text);
   font-family: "Poppins";
 }
 
 .rounded-button-secondary:hover {
   cursor: pointer;
-  background: var(--btn-secondary);
+  background: var(--secondary);
   box-shadow: 0 8px 8px -8px rgba(42, 41, 55, 0.2),
     0 1px 4px 0 rgba(0, 9, 80, 0.15);
-  color: var(--btn-secondary-text-hover);
+  color: var(--secondary-text-hover);
 }
 
+.square-plus-primary{
+  border-radius: 5px;
+  background: linear-gradient(135deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  border:0px;
+  color: #ffffff;
+  font-family: "Poppins";
+
+}
+
+.square-plus-secondary{
+  box-sizing: border-box;
+  border: 1px solid rgba(81,77,119,0.3);
+  opacity: 0.8;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(42,41,55,0.15);
+  font-family: "Poppins";
+}
+
+.rounded-plus-primary{
+  background: linear-gradient(135deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  border-radius: 1px;
+  color: #FFFFFF;
+  border:0px;
+  font-family: "Poppins";
+}
+
+.rounded-plus-secondary{
+  box-sizing: border-box;
+  border: 1px solid rgba(81,77,119,0.3);
+  opacity: 0.8;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(42,41,55,0.15);
+
+}
+
+.square-completed{
+  background: linear-gradient(90deg, #8ACEC1 0%, #52A08D 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  font-family: "Poppins";
+  border:0px;
+  border:0px;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  line-height: 20px;
+  text-align: center;
+  text-shadow: 0 1px 3px 0 rgba(9,57,39,0.15)
+}
+
+.square-completed:hover{
+  cursor:pointer;
+  border:0px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #389D84 0%, #1A644D 100%);
+  box-shadow: 0 8px 8px -8px rgba(42,41,55,0.2), 0 1px 4px 0 rgba(0,9,80,0.15);
+}
+
+.square-deleted{
+  background: linear-gradient(90deg, #EDBEBE 0%, #D78989 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  color: #FFFFFF;
+  border:0px;
+  font-family: "Poppins";
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 23px;
+  text-shadow: 0 1px 3px 0 rgba(97,17,17,0.15);
+}
+
+.square-deleted:hover{
+  border:0px;
+  cursor:pointer;
+  background: linear-gradient(90deg, #E39393 0%, #C25A5A 100%);
+  box-shadow: 0 8px 8px -8px rgba(42,41,55,0.2), 0 1px 4px 0 rgba(0,9,80,0.15);
+}
+
+.disabled{
+  opacity: 0.8;
+  border:0px;
+  border-radius: 5px;
+  color: #242244;
+  background: linear-gradient(270deg, rgba(137,132,175,0.2) 0%, rgba(81,77,119,0.2) 100%);
+  box-shadow: 0 1px 4px 0 rgba(42,41,55,0.15);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 23px;
+  font-family: "Poppins";
+  font-size: 15px;
+}
+
+.no-border{
+  height: 21px;
+  width: 83px;
+  color: #767299;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 23px;
+}
+
+.no-border:hover{
+  color: #0071BF;
+  cursor:pointer;
+}
+
+.light_from_right_square{
+  height: 40px;
+  width: 170px;
+  border:0px;
+  border-radius: 5px;
+  background: linear-gradient(270deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  line-height: 23px;
+  font-family: "Poppins";
+  text-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.light_from_right_plus{
+  height: 40px;
+  width: 40px;
+  border:0px;
+  font-family: "Poppins";
+  border-radius: 5px;
+  background: linear-gradient(225deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+}
+
+/*buttons with icons*/
+.square-icon{
+  background: linear-gradient(90deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+  border: 0px;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.28px;
+  line-height: 20px;
+  text-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.square-icon-only{
+  background: linear-gradient(135deg, #00CBED 0%, #009CD7 100%);
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.15);
+}
+
+.check-icon{
+  border-radius: 100px 100px 0 0;
+  background-color: #FFFFFF;
+}
+
+.plus-icon-s{
+  height: 15px;
+  width: 15px;
+  border-radius: 1px;
+}
+
+.plus-icon-l{
+  height: 18px;
+  width: 18px;
+  background-color: #FFFFFF;
+}

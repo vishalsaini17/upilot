@@ -8,6 +8,7 @@ import "./Global.css";
 import SignIn from "./Screens/SignIn/SignIn";
 import Activate from "./Screens/ActivateAccount/Activate";
 import ForgotPassword from "./Screens/ForgotPassword/ForgotPassword";
+import ResetPswd from "./Screens/ResetPswd/ResetPswd";
 import { ThemeContext } from "./Themes";
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -19,9 +20,10 @@ export default function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
+          {/* <Route path = '/' caseSensitive = {false} element = {<SignIn/>} />
           <Route path = '/activate' caseSensitive = {false} element = {<Activate/>} />
-          <Route path = '/forgotpassword' caseSensitive = {false} element = {<ForgotPassword/>} />
+          <Route path = '/forgotpassword' caseSensitive = {false} element = {<ForgotPassword/>} /> */}
+          <Route path = '/' caseSensitive = {false} element = {<ResetPswd/>} />
         </Routes>
       </Router>
     </div>
