@@ -103,6 +103,7 @@ export default function DropDown(props){
              
         );
       }
+      //search dropdown
         const simple_dropdown_medium=()=>{
             return (
               <div className="dropdown-container-medium">
@@ -118,7 +119,7 @@ export default function DropDown(props){
                  
             );
             }
-        
+        //search dropdown
     const simple_dropdown_large=()=>{
         return (
           <div className="dropdown-container-large">
@@ -136,6 +137,7 @@ export default function DropDown(props){
     
 }
 
+//search dropdown
 const search_dropdown_large=()=>{
     return (
       <div className="dropdown-search-large">
@@ -153,6 +155,7 @@ const search_dropdown_large=()=>{
     );
 }
 
+//avatar dropdown
 //errorrrrrrrrr, avatar not visible
 const elements_dropdown = () => {
   return (
@@ -168,9 +171,10 @@ const elements_dropdown = () => {
 ); 
 }
 
+//element dropdown with icons
 const icon_dropdown =() => {
   return(
-   <div className= 'icon'>
+   <div className= 'icon-element'>
     <Select
     placeholder="Select Option"
     value={selectedOption}
@@ -187,6 +191,7 @@ const icon_dropdown =() => {
   );
 }
 
+//section dropdown
 //separator line not shown
 const section_dropdown =()=> {
   return (
