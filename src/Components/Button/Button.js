@@ -54,8 +54,8 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
         className="square-button"
         style={{
           height: "50px",
-          //width: '100%' - to fit the form
-          width: "186px",
+          width: '100%' ,
+          // width: "186px",
           fontSize: "18px",
           borderRadius: "8px",
         }}
@@ -108,7 +108,8 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
         style={{
           height: "30px",
           width: "118px",
-          fontSize: "13px",
+          // fontSize: "13px",
+          fontSize: '0.65vw',
           borderRadius: "5px",
         }}
         onClick = {props.onClick}

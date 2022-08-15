@@ -5,7 +5,7 @@ import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
 import Tooltip from "../../Components/Tooltip/Tooltip";
-import DropDown from "../../Components/DropDown/DropDown";
+import DropDown from "../../Components/Dropdown/DropDown";
 
 import { ThemeContext } from "../../Themes";
 

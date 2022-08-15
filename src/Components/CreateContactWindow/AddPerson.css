@@ -1,0 +1,90 @@
+tr, td{
+    padding: 5px;
+    float:right;
+}
+
+td:first-child + td { /*second child */
+    margin-top: 10px;
+    font-style: italic;
+    color: gray;
+    font-family: Roboto;
+}
+
+fieldset{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: gray;
+    margin-bottom: 30px;
+}
+
+.form-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.addperson-form{
+    margin: '0 auto';
+    padding: '1rem 2rem';
+    display: 'flex';
+    flex-direction: 'column';
+    text-align: 'right';
+    border-color: black;
+    width:  750px
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: right;
+    width: 700px
+}
+
+.form-footer{
+    background-color: lightgrey;
+    height: 50px
+}
+
+.form-footer .footer-left{
+    float:left;
+    height: inherit;
+    padding: 10px;
+    display: flex;
+}
+
+.form-footer .footer-right{
+    float:right;
+    display: flex;
+    flex-direction: row;
+    padding:10px
+}
+
+.show-btn{
+    border-radius: 5px;
+    border-color: lightgray;
+    border-width: 1px;
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.cancel-button{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #767299;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 23px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: none
+}
