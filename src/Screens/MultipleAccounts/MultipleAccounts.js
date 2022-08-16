@@ -40,7 +40,7 @@ export default function MultipleAccounts(){
                                           textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
                 <div className = 'logo-wrapper'>
-                    <img src = {logoHandle} style = {{width: '109px', height: '120px'}}></img>
+                    <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
                 </div>
                 <div><p className = 'form-title'> Choose Account </p></div>
                 <div className="form-control">

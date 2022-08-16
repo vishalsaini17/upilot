@@ -5,7 +5,7 @@ import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
 import Tooltip from "../../Components/Tooltip/Tooltip";
-import DropDown from "../../Components/Dropdown/DropDown";
+import DropDown from "../../Components/DropDown/DropDown";
 
 import { ThemeContext } from "../../Themes";
 
@@ -55,7 +55,7 @@ export default function SignIn() {
   }
 
   const logoHandle = () => {
-    if (theme == 'dark-theme'){
+    if (theme === 'dark-theme'){
       return LightLogo
     } else{
       return DarkLogo
@@ -82,7 +82,7 @@ export default function SignIn() {
                                          textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
            <div className = 'logo-wrapper'>
-             <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
+             <img src = {logoHandle()} style = {{width: '109px', height: '120px'}} alt=""/>
            </div>
            <p className = 'form-title'> Sign In </p>
            <div className = 'form-control'>
