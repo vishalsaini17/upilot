@@ -246,6 +246,7 @@ export default function AddPerson({showDetails}){
 
         </div>
       </form>
+      
       }
     </div>
   )

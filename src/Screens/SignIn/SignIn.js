@@ -13,6 +13,7 @@ import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
 
 import "./SignIn.css"
+import AddInPopup from "../../Components/AddInPopup/AddInPopup";
 
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
 
@@ -144,7 +145,10 @@ export default function SignIn() {
                           message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}
         </form>
       </div>
+      <> <AddInPopup /> </>
     </div>
+
+    
     // <><Popup type = 'success'/></>
     // <><Alert type = 'neutral'
     //         message = 'this is a test for alert'/></>

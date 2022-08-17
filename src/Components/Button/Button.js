@@ -410,24 +410,250 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
     );
   };
 
-  const round_plus_xsmall_primary = () => {
+  const round_plus_small_primary = () => {
     return (
       <button
         className="rounded-plus-primary"
         style={{
-          height: "30px",
-          width: "30px",
+          height: "34px",
+          width: "34px",
           fontsize: "14px",
-          borderRadius: "15px",
-        
+          borderRadius: "17px",
         }}
         onClick = {props.onClick}
       >
-          <AddLine size={20}/>
+          <i className='plus-icon-s'><AddLine size={22}/></i>
         {props.text}
       </button>
     );
-  };
+  }
+
+  if (
+    props.size === "xlarge" &&
+    props.shape === "square" &&
+    props.color === "secondary"
+  ) {
+    return <div>{square_button_xlarge_secondary()}</div>;
+  }
+
+  if (
+    props.size === "large" &&
+    props.shape === "square" &&
+    props.color === "secondary"
+  ) {
+    return <div>{square_button_large_secondary()}</div>;
+  }
+
+  if (
+    props.size === "medium" &&
+    props.shape === "square" &&
+    props.color === "secondary"
+  ) {
+    return <div>{square_button_medium_secondary()}</div>;
+  }
+
+  if (
+    props.size === "small" &&
+    props.shape === "square" &&
+    props.color === "secondary"
+  ) {
+    return <div>{square_button_small_secondary()}</div>;
+  }
+
+  if (
+    props.size === "xsmall" &&
+    props.shape === "square" &&
+    props.color === "secondary"
+  ) {
+    return <div>{square_button_xsmall_secondary()}</div>;
+  }
+  if (
+    props.size === "xlarge" &&
+    props.shape === "round" &&
+    props.color === "primary"
+  ) {
+    return <div>{rounded_button_xlarge_primary()}</div>;
+  }
+
+  if (
+    props.size === "large" &&
+    props.shape === "round" &&
+    props.color === "primary"
+  ) {
+    return <div>{rounded_button_large_primary()}</div>;
+  }
+
+
+  if (
+    props.shape === "square_icon" &&
+    props.size === "xsmall"
+  ) {
+    return <div>{square_icon_xsmall()}</div>;
+  }
+
+  if (
+    props.shape === "square_icon" &&
+    props.size === "small"
+  ) {
+    return <div>{square_icon_small()}</div>;
+  }
+
+  if (
+    props.shape === "square_icon" &&
+    props.size === "medium"
+  ) {
+    return <div>{square_icon_medium()}</div>;
+  }
+
+  if (
+    props.shape === "square_icon" &&
+    props.size === "large"
+  ) {
+    return <div>{square_icon_large()}</div>;
+  }
+
+  if (
+    props.shape === "square_icon" &&
+    props.size === "xlarge"
+  ) {
+    return <div>{square_icon_xlarge()}</div>;
+  }
+
+  if (
+    props.shape === "square_deleted"
+  ) {
+    return <div>{square_deleted()}</div>;
+  }
+
+  if (
+    props.shape === "square_completed"
+  ) {
+    return <div>{square_completed()}</div>;
+  }
+  
+
+  if (
+    props.size === "xlarge" &&
+    props.shape === "square_ricon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_ricon_xlarge_primary()}</div>;
+  }
+
+  if (
+    props.size === "xlarge" &&
+    props.shape === "square_licon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_licon_xlarge_primary()}</div>;
+  }
+
+  if (
+    props.size === "large" &&
+    props.shape === "square_ricon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_ricon_large_primary()}</div>;
+  }
+
+  if (
+    props.size === "large" &&
+    props.shape === "square_licon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_licon_large_primary()}</div>;
+  }
+
+  if (
+    props.size === "medium" &&
+    props.shape === "square_ricon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_ricon_medium_primary()}</div>;
+  }
+
+  if (
+    props.size === "medium" &&
+    props.shape === "square_licon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_licon_medium_primary()}</div>;
+  }
+
+
+  if (
+    props.size === "small" &&
+    props.shape === "square_licon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_licon_xsmall_primary()}</div>;
+  }
+
+  if (
+    props.size === "small" &&
+    props.shape === "square_ricon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_ricon_small_primary()}</div>;
+  }
+
+  if (
+    props.size === "xsmall" &&
+    props.shape === "square_licon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_licon_xsmall_primary()}</div>;
+  }
+
+  if (
+    props.size === "xsmall" &&
+    props.shape === "square_ricon" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_ricon_xsmall_primary()}</div>;
+  }
+
+
+
+  if (
+    props.size === "xlarge" &&
+    props.shape === "square" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_button_xlarge_primary()}</div>;
+  }
+
+  if (
+    props.size === "large" &&
+    props.shape === "square" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_button_large_primary()}</div>;
+  }
+
+  if (
+    props.size === "medium" &&
+    props.shape === "square" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_button_medium_primary()}</div>;
+  }
+
+  if (
+    props.size === "small" &&
+    props.shape === "square" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_button_small_primary()}</div>;
+  }
+
+  if (
+    props.size === "xsmall" &&
+    props.shape === "square" &&
+    props.color === "primary"
+  ) {
+    return <div>{square_button_xsmall_primary()}</div>;
+  }
 
   const round_plus_xsmall_secondary = () => {
     return (
@@ -464,24 +690,6 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
       </button>
     );
   };
-
-  const round_plus_small_primary = () => {
-    return (
-      <button
-        className="rounded-plus-primary"
-        style={{
-          height: "34px",
-          width: "34px",
-          fontsize: "14px",
-          borderRadius: "17px",
-        }}
-        onClick = {props.onClick}
-      >
-          <i className='plus-icon-s'><AddLine size={20}/></i>
-        {props.text}
-      </button>
-    );
-  }
 
   const square_plus_small_secondary = () => {
     return (

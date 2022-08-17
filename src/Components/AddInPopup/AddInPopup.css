@@ -1,0 +1,71 @@
+.table-popup{
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 5px
+}
+
+.table-popup .addin-row, .addin-row-text, .addin-row-icon, .shortcut {
+    padding: 7px;   
+    float: none !important;
+}
+
+.table-popup .addin-row {
+    padding-left: 0;
+    border-bottom: 1px solid;
+    border-color: #C9C8CE;
+}
+
+.table-popup th{
+    font-family: Poppins;
+    color: gray;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.table-popup th .close-icon{
+    padding: 5px;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.table-popup .addin-row-icon{
+    color: #C9C8CE;
+    padding-left: 0
+}
+
+.table-popup .addin-row-text{
+    font-family: Roboto;
+    font-style: normal !important;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+}
+
+.table-popup .shortcut{
+    font-size: 12px;
+}
+
+.table-popup .addin-row-text:hover{
+    cursor: pointer;
+    color: var(--secondary-text-hover)
+}
+
