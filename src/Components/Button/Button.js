@@ -943,6 +943,25 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
     );
   };
 
+  const round_plus_xsmall_primary = () => {
+    return (
+      <button
+        className="rounded-plus-primary"
+        style={{
+          height: "30px",
+          width: "30px",
+          fontsize: "14px",
+          borderRadius: "15px",
+        
+        }}
+        onClick = {props.onClick}
+      >
+          <AddLine size={20}/>
+        {props.text}
+      </button>
+    );
+  };
+
   const square_licon_xsmall_primary = () => {
     return (
       <button
