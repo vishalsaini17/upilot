@@ -5,7 +5,6 @@ import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
 import Checkbox from "../../Components/Checkbox/Checkbox";
 import Tooltip from "../../Components/Tooltip/Tooltip";
-import DropDown from "../../Components/Dropdown/DropDown";
 
 import { ThemeContext } from "../../Themes";
 
@@ -13,6 +12,7 @@ import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
 
 import "./SignIn.css"
+import Colorpicker from "../../Components/Colorpicker/Colorpicker";
 
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
 
@@ -120,6 +120,7 @@ export default function SignIn() {
              value = {isChecked}
              onChange = {handleCheckBox}
             />
+
 
          <Button 
             type = "submit" 
