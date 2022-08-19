@@ -13,7 +13,7 @@ import ResetPswd from "./Screens/ResetPswd/ResetPswd"
 import MultipleAccounts from "./Screens/MultipleAccounts/MultipleAccounts";
 import CreateContact from "./Screens/CreateContact/CreateContact";
 import { ThemeContext } from "./Themes";
-import ResetPswd from "./Screens/ResetPswd/ResetPswd"
+import resetpassword from "./Screens/ResetPswd/ResetPswd"
 import CreateDeal from "./Screens/CreateDeal/Deal"
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -30,7 +30,7 @@ export default function App() {
           <><Route path='/' caseSensitive={false} element={<SignIn />} />
           <Route path='/activate' caseSensitive={false} element={<Activate />} />
           <Route path='/forgotpassword' caseSensitive={false} element={<ForgotPassword />} />
-          <Route path='/resetpassword' caseSensitive={false} element={<ResetPswd />} />
+          <Route path='/resetpswd' caseSensitive={false} element={<ResetPswd />} />
           <Route path='/multipleaccounts' caseSensitive={false} element={<MultipleAccounts />} />
           <Route path='/createcontact' caseSensitive={false} element={<CreateContact />} />
           <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
