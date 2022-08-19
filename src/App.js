@@ -9,7 +9,7 @@ import "./Global.css";
 import SignIn from "./Screens/SignIn/SignIn";
 import Activate from "./Screens/ActivateAccount/Activate";
 import ForgotPassword from "./Screens/ForgotPassword/ForgotPassword";
-import ResetPassword from "./Screens/ResetPswd/ResetPswd"
+import ResetPswd from "./Screens/ResetPswd/ResetPswd"
 import MultipleAccounts from "./Screens/MultipleAccounts/MultipleAccounts";
 import CreateContact from "./Screens/CreateContact/CreateContact";
 import { ThemeContext } from "./Themes";
