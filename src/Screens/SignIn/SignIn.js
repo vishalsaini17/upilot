@@ -12,8 +12,8 @@ import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
 
 import "./SignIn.css"
-import Colorpicker from "../../Components/Colorpicker/Colorpicker";
-
+import Colorpicker from "../../Components/Colorpicker/Colorpicker"
+import AddInPopup from "../../Components/AddInPopup/AddInPopup";
 //Go to Components/Buttons/Buttons.js to see how to use the Button component
 
 // test comment to demo git pull and conflict management
@@ -55,7 +55,7 @@ export default function SignIn() {
   }
 
   const logoHandle = () => {
-    if (theme == 'dark-theme'){
+    if (theme === 'dark-theme'){
       return LightLogo
     } else{
       return DarkLogo
@@ -82,7 +82,7 @@ export default function SignIn() {
                                          textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
            <div className = 'logo-wrapper'>
-             <img src = {logoHandle()} style = {{width: '109px', height: '120px'}}></img>
+             <img src = {logoHandle()} style = {{width: '109px', height: '120px'}} alt=""/>
            </div>
            <p className = 'form-title'> Sign In </p>
            <div className = 'form-control'>
@@ -145,7 +145,10 @@ export default function SignIn() {
                           message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}
         </form>
       </div>
+      <> <AddInPopup /> </>
     </div>
+
+    
     // <><Popup type = 'success'/></>
     // <><Alert type = 'neutral'
     //         message = 'this is a test for alert'/></>
