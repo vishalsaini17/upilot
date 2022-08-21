@@ -17,15 +17,16 @@ export default function CreateDeal(){
   
     return (
         <div className = 'deal-screen'>
-      <div className = 'wrapper'>
-      <form className = 'form' style ={{margin: '8 auto',
+      <div className = 'deal-wrapper'>
+      <p fontSize="30px"> Import Data  </p>
+      <form className = 'deal-form' style ={{margin: '8 auto',
                                           padding: '1rem 2rem',
                                          display: 'flex',
                                          flexDirection: 'column',
                                          textAlign: 'center',
                                           maxWidth: 'fit-content'}}>
 
-      <p className = 'form-title'> Add new deal </p>
+      <p className = 'deal-form-title'> Add new deal </p>
 </form>
 </div>
 
@@ -47,7 +48,7 @@ export default function CreateDeal(){
             ))}
           </nav>
          
-          <div className = 'contact-form'>
+          <div className = 'deal-contact-form'>
             {selectedAddType === 'Add deal' ? <Deal showDetails = {showDetails}/> : <Deal/>}
           </div>
           

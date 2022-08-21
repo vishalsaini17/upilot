@@ -1,0 +1,37 @@
+.import-data-wrapper{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: fit-content;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 62%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.box-field{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: rgb(198, 198, 198);
+    margin-bottom: 30px;
+}
+
+  .iconcolor:hover {
+    color: rgb(120, 210, 226);
+  }
+
+  .iconcolor{
+    color: rgb(219, 223, 223);
+  }

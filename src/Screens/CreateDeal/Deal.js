@@ -31,7 +31,7 @@ const showAll = (e) => {
     }
      
 return (
-        <div className = 'form-container'>
+        <div className = 'deal-form-container'>
           {show ? 
             <div>
               <fieldset className = 'summary-field'>
@@ -43,7 +43,7 @@ return (
                           placeholder = 'How would you like to call this deal?'
                           name = 'name'
                           size = "normal"/></td>
-                    <td> <div className = 'form-field' >
+                    <td> <div className = 'deal-form-field' >
         
         <label >Deal name</label></div>
 </td>
@@ -54,7 +54,7 @@ return (
                           placeholder = "What is the name of the contact linked to this deal?"
                           name = 'contact'
                           size = "normal"/></td>
-                    <td> <div className = 'form-field'>
+                    <td> <div className = 'deal-form-field'>
            <label>Contact</label></div>
  </td>
                   </tr>
@@ -77,7 +77,7 @@ return (
                           placeholder = 'What is the value if this deal?'
                           name = 'dealvalue'
                           size = "normal"/></td>
-                    <td> <div className = 'form-field' >
+                    <td> <div className = 'deal-form-field' >
         
         <label >Deal value</label></div>
 </td>
@@ -91,7 +91,7 @@ return (
                           size = "normal"/></td>
                           <Stage></Stage>
                           <Sliderr></Sliderr>
-                    <td> <div className = 'form-field' >
+                    <td> <div className = 'deal-form-field' >
         
         <label >Category / Product(s)</label></div>
 </td>
@@ -99,7 +99,7 @@ return (
                 </table>
               </fieldset>
     
-              <fieldset className = 'contact-field'>
+              <fieldset className = 'deal-contact-field'>
                 <legend align = 'left'> Description</legend>
                 <table>
                   <tr>
@@ -109,7 +109,7 @@ return (
                       
                       <Addtags></Addtags> </td>
                       
-                    <td> <div className = 'form-field'><label>Assign tag(s)</label></div> </td>
+                    <td> <div className = 'deal-form-field'><label>Assign tag(s)</label></div> </td>
                   </tr>
                   <tr>
                     <td> <Input 
@@ -117,7 +117,7 @@ return (
                           placeholder = 'How you met, preferred meeting location, good time to call, etc.'
                           name = 'background'
                           size = "normal"/></td>
-                          <td> <div className = 'form-field'><label>Background Info</label></div> </td>
+                          <td> <div className = 'deal-form-field'><label>Background Info</label></div> </td>
                   </tr>
                   <tr>
                     <td> <Input 
@@ -125,7 +125,7 @@ return (
                           placeholder = 'Add a competitor info'
                           name = 'comprtitor'
                           size = "normal"/></td>
-                    <td> <div className = 'form-field'><label>Competitor Info</label></div> </td>
+                    <td> <div className = 'deal-form-field'><label>Competitor Info</label></div> </td>
                     
                   </tr>
                   <tr>
@@ -133,7 +133,7 @@ return (
                   <td> 
                   <td> 
                      <Colorpicker> </Colorpicker> </td>
-                    <div className = 'form-field'><label>Color code</label></div> </td>
+                    <div className = 'deal-form-field'><label>Color code</label></div> </td>
           
                   </tr>
                 </table>
@@ -147,26 +147,26 @@ return (
                       placeholder = ''
                       name = 'info'
                       size = "normal"/></td>
-                      <td> <div className = 'form-field'><label>Responsible</label></div> </td>
+                      <td> <div className = 'deal-form-field'><label>Responsible</label></div> </td>
               </tr>
               <tr>
                 <td> <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} /></td>
-                      <td> <div className = 'form-field'><label>Creation date</label></div> </td>
+                      <td> <div className = 'deal-form-field'><label>Creation date</label></div> </td>
               </tr>
               
             </table>
           </fieldset> 
 
  
-          <div className = 'form-footer'>
+          <div className = 'deal-form-footer'>
 
-          <div className = 'footer-left'>
-            <button className = 'show-btn'
+          <div className = 'deal-footer-left'>
+            <button className = 'deal-show-btn'
                   onClick = {() => showAll()}> Back to quick create </button>
           </div>
 
-          <div className="footer-right">
-            <button className= 'cancel-button'> Cancel </button>
+          <div className="deal-footer-right">
+            <button className= 'deal-cancel-button'> Cancel </button>
             <Button
               type = "submit"
               text = "> Create Deal"
@@ -184,60 +184,69 @@ return (
                 <table>
                   <tr>
                     <td> 
-                    <div className="form-textbox"><Input 
+                    <div className="deal-form-textbox"><Input 
                           type = "text"
                           placeholder = 'How would you like to call this deal?'
                           name = 'name'
                           size = "normal"/>
                           </div>
                           </td>
-                    <td> <div className = 'form-field' >
+                    <td> <div className = 'deal-form-field' >
         
         <label >Deal name</label></div>
 </td>
                   </tr>
                   <tr>
-                    <td> <Input 
+                    <td> 
+                    <div className="deal-form-textbox"><Input 
                           type = "text"
                           placeholder = "What is the name of the contact linked to this deal?"
                           name = 'contact'
-                          size = "normal"/></td>
-                    <td> <div className = 'form-field'>
+                          size = "normal"/>
+                          </div></td>
+                    <td> <div className = 'deal-form-field'>
            <label>Contact</label></div>
  </td>
                   </tr>
 
                   <tr>
-                    <td> <Input 
+                    <td> 
+                    <div className="deal-form-textbox"><Input 
                           type = "date"
                           placeholder = 'What is the expected closing date for this deal?'
                           name = 'date'
-                          size = "normal"/></td>
-                    <td> <div className = 'form-field' >
+                          size = "normal"/>
+                          </div></td>
+                    <td> <div className = 'deal-form-field' >
         
         <label >Close Date</label></div>
 </td>
                   </tr>
 
                   <tr>
-                    <td> <Input 
+                    <td>
+                    <div className="deal-form-textbox"> <Input 
                           type = "currency"
                           placeholder = 'What is the value if this deal?'
                           name = 'value'
-                          size = "normal"/></td>
-                    <td> <div className = 'form-field' >
+                          size = "normal"/>
+                          </div></td>
+                    <td> <div className = 'deal-form-field' >
         
         <label >Deal value</label></div>
 </td>
                   </tr>
 
                   <tr>
-                    <td> <Input 
+                    <td> 
+                    <div className="deal-form-textbox"><Input 
                           type = "text"
                           placeholder = 'How would you like to call this deal?'
                           name = 'category'
-                          size = "normal"/></td>
-                    <td> <div className = 'form-field' >
+                          size = "normal"/>
+                          </div></td>
+          
+                    <td> <div className = 'deal-form-field' >
         
         <label >Category / Product(s)</label></div>
 </td>
@@ -245,15 +254,15 @@ return (
                 </table>
               </fieldset>
 
-        <div className = 'form-footer'>
+        <div className = 'deal-form-footer'>
 
-          <div className = 'footer-left'>
+          <div className = 'deal-footer-left'>
             <button className = 'show-btn'
                   onClick = {() => showAll()}> Show all fields </button>
           </div>
 
-          <div className="footer-right">
-            <button className= 'cancel-button'> Cancel </button>
+          <div className="deal-footer-right">
+            <button className= 'deal-cancel-button'> Cancel </button>
             <Button
               type = "submit"
               text = "> Create Deal"

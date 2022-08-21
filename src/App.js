@@ -16,6 +16,7 @@ import { ThemeContext } from "./Themes";
 import resetpassword from "./Screens/ResetPswd/ResetPswd"
 import CreateDeal from "./Screens/CreateDeal/Deal"
 import Navbar from "./Components/Navbar/Navbar";
+import ImportData from "./Screens/ImportData/ImportData";
 
 //functions
 export default function App() {
@@ -34,6 +35,7 @@ export default function App() {
           <Route path='/multipleaccounts' caseSensitive={false} element={<MultipleAccounts />} />
           <Route path='/createcontact' caseSensitive={false} element={<CreateContact />} />
           <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
+          <Route path = '/importdata' caseSensitive = {false} element = {<ImportData/>} />
           </>
   }
         </Routes>

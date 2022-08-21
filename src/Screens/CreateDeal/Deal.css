@@ -14,7 +14,7 @@ border-width: thick;
 border-color: #242244;
 }
 
-.wrapper{
+.deal-wrapper{
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -36,7 +36,7 @@ border-color: #242244;
     top: 360px;
     }
 
-.wrapper .form {
+.deal-wrapper .deal-form {
     margin: '0 auto';
     display: 'flex';
     flex-direction: 'row';
@@ -47,16 +47,16 @@ border-color: #242244;
     
 }
 
-.wrapper .form .form-control {
+.deal-wrapper .deal-form .deal-form-control {
     max-width: 'fit-content'
 }
 
-.logo-wrapper{
+.deal-logo-wrapper{
     margin: -80px 0 80px 0
     
 }
 
-.form-title {
+.deal-form-title {
     font-family: Poppins;
     font-size: 24px;
     font-weight: 500;
@@ -66,7 +66,7 @@ border-color: #242244;
   
 }
 
-.form-textbox{
+.deal-form-textbox{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -85,7 +85,7 @@ border-color: #242244;
   line-height: 20px;
 }
 
-.form-field{
+.deal-form-field{
     height: 24px;
     width: 326px;
     color: #7A7882;
@@ -124,7 +124,7 @@ fieldset{
     margin-bottom: 30px;
 }
 
-.form-container{
+.deal-form-container{
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ fieldset{
     font-style: italic;
 }
 
-.addperson-form{
+.deal-addperson-form{
     margin: '0 auto';
     padding: '1rem 2rem';
     display: 'flex';
@@ -142,7 +142,7 @@ fieldset{
     width:  750px
 }
 
-.form-row{
+.deal-form-row{
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -150,26 +150,26 @@ fieldset{
     width: 700px
 }
 
-.form-footer{
+.deal-form-footer{
     background-color: lightgrey;
     height: 50px
 }
 
-.form-footer .footer-left{
+.deal-form-footer .deal-footer-left{
     float:left;
     height: inherit;
     padding: 10px;
     display: flex;
 }
 
-.form-footer .footer-right{
+.deal-form-footer .deal-footer-right{
     float:right;
     display: flex;
     flex-direction: row;
     padding:10px
 }
 
-.show-btn{
+.deal-show-btn{
     border-radius: 5px;
     border-color: lightgray;
     border-width: 1px;
@@ -178,7 +178,7 @@ fieldset{
     letter-spacing: 0.5px;
 }
 
-.cancel-button{
+.deal-cancel-button{
     display: inline-block;
     box-sizing: border-box;
     color: #767299;
