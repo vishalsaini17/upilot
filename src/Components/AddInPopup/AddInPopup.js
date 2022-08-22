@@ -39,7 +39,7 @@ export default function AddInPopup(props){
         },
         {
             id: 4,
-            url: '/',
+            url: '/importdata',
             title: 'Import data',
             icon: <FileDownloadFill size= {18}/>
         },
@@ -75,7 +75,7 @@ export default function AddInPopup(props){
                 )
             }))}
     
-            <tr className = 'addin-row'>
+            {/* <tr className = 'addin-row'>
                 <td className = 'addin-row-icon'> <BriefcaseFillIcon size = {18}/></td>
                 <td className = 'addin-row-text'
                     onMouseOver={handleMouseOver}
@@ -83,7 +83,7 @@ export default function AddInPopup(props){
                     Add new deal 
                 </td>
                 {isHovering && <td className = 'shortcut'> (Shift + D)</td>}
-            </tr>
+            </tr> */}
            
         </table>
     </div>
