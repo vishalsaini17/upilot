@@ -40,11 +40,12 @@
 }
 
 .icon-element{
-  height: 30px;
-  width: 250px;
-  color: #4C4A5C;
+  margin-top: 50px;
+  height: 40px;
+  width: 400px;
+  color: #737185;
   font-family: Poppins;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.41px;
   line-height: 20px;

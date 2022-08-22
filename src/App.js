@@ -12,14 +12,15 @@ import ForgotPassword from "./Screens/ForgotPassword/ForgotPassword";
 import ResetPswd from "./Screens/ResetPswd/ResetPswd"
 import MultipleAccounts from "./Screens/MultipleAccounts/MultipleAccounts";
 import CreateContact from "./Screens/CreateContact/CreateContact";
+import CreateTask from "./Screens/CreateTask/CreateTask";
 import { ThemeContext } from "./Themes";
-import resetpassword from "./Screens/ResetPswd/ResetPswd"
+// import resetpassword from "./Screens/ResetPswd/ResetPswd"
 import CreateDeal from "./Screens/CreateDeal/Deal"
 import Navbar from "./Components/Navbar/Navbar";
 import ImportData from "./Screens/ImportData/ImportData";
 import WithNav from "./WithNav";
 import WithoutNav from "./WithoutNav";
-import Addtags from "./Components/Addtags/Addtags";
+// import Addtags from "./Components/Addtags/Addtags";
 import Addtag from "./Components/Addtags/Addtag";
 
 //functions
@@ -29,7 +30,7 @@ export default function App() {
   return (
     <div className={`App ${theme}`}>
       <Router>
-        <Routes>
+        
           
           <Route element = {<WithNav />}>
             <Route path='/' caseSensitive={false} element={<SignIn />} />
@@ -44,9 +45,10 @@ export default function App() {
             <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
             <Route path= '/test' caseSensitive = {false} element = {<Addtag />} />
             <Route path = '/importdata' caseSensitive = {false} element = {<ImportData />} />
+            {/* <Route path='/createtask' caseSensitive={false} element={<CreateTask />} /> */}
           </Route>
-  
-        </Routes>
+
+       
       </Router>
     </div>
   )

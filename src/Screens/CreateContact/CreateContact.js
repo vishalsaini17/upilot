@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
-import Input from '../../Components/Input/Input'
+import React, {useState} from 'react';
+import Input from '../../Components/Input/Input';
 
-import UserLine from  "remixicon-react/UserLineIcon"
-import BuildingLine from  "remixicon-react/BuildingLineIcon"
+import UserLine from  "remixicon-react/UserLineIcon";
+import BuildingLine from  "remixicon-react/BuildingLineIcon";
 
 import "./CreateContact.css"
 import AddPerson from '../../Components/CreateContactWindow/AddPerson'
@@ -31,11 +31,12 @@ export default function CreateContact(){
 
 
   return (
+    <div className='createcontact-screen'>
     <div className = 'create-contact-wrapper'>
         {showDetails ? 
           <p> Create a new contact</p>
           :
-          <p> Create a new contact - Quick add </p>}
+          <p className='form-title'> Create a new contact - Quick add </p>}
         <nav className = "nav-tabs">
           {addTypes.map((addType) => (
             <a
@@ -57,6 +58,7 @@ export default function CreateContact(){
             </p>
         </div>
         
+    </div>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 import CloseLine from "remixicon-react/CloseLineIcon";
 import SearchLine from "remixicon-react/SearchLineIcon"
-import Dropdown from "../Dropdown/DropDown";
+import Dropdown from "../DropDown/Dropdown";
 import Button from "../Button/Button"
 import "./Addtags.css"
 
