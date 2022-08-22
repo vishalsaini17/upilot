@@ -17,6 +17,10 @@ import resetpassword from "./Screens/ResetPswd/ResetPswd"
 import CreateDeal from "./Screens/CreateDeal/Deal"
 import Navbar from "./Components/Navbar/Navbar";
 import ImportData from "./Screens/ImportData/ImportData";
+import WithNav from "./WithNav";
+import WithoutNav from "./WithoutNav";
+import Addtags from "./Components/Addtags/Addtags";
+import Addtag from "./Components/Addtags/Addtag";
 
 //functions
 export default function App() {
@@ -25,19 +29,23 @@ export default function App() {
   return (
     <div className={`App ${theme}`}>
       <Router>
-        { <Navbar/> }
         <Routes>
-          { 
-          <><Route path='/' caseSensitive={false} element={<SignIn />} />
-          <Route path='/activate' caseSensitive={false} element={<Activate />} />
-          <Route path='/forgotpassword' caseSensitive={false} element={<ForgotPassword />} />
-          <Route path='/resetpswd' caseSensitive={false} element={<ResetPswd />} />
-          <Route path='/multipleaccounts' caseSensitive={false} element={<MultipleAccounts />} />
-          <Route path='/createcontact' caseSensitive={false} element={<CreateContact />} />
-          <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
-          <Route path = '/importdata' caseSensitive = {false} element = {<ImportData/>} />
-          </>
-  }
+          
+          <Route element = {<WithNav />}>
+            <Route path='/' caseSensitive={false} element={<SignIn />} />
+            <Route path='/activate' caseSensitive={false} element={<Activate />} />
+            <Route path='/forgotpassword' caseSensitive={false} element={<ForgotPassword />} />
+            <Route path='/resetpswd' caseSensitive={false} element={<ResetPswd />} />
+            <Route path='/multipleaccounts' caseSensitive={false} element={<MultipleAccounts />} />
+          </Route>
+
+          <Route element = {<WithoutNav />}>
+            <Route path='/createcontact' caseSensitive={false} element={<CreateContact />} />
+            <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
+            <Route path= '/test' caseSensitive = {false} element = {<Addtag />} />
+            <Route path = '/importdata' caseSensitive = {false} element = {<ImportData />} />
+          </Route>
+  
         </Routes>
       </Router>
     </div>

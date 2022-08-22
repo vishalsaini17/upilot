@@ -757,7 +757,7 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
         }}
         onClick = {props.onClick}
       >
-          <i className='plus-icon-s'><AddLine size={20}/></i>
+          <i className='plus-icon-s'><AddLine size={30}/></i>
         {props.text}
       </button>
     );

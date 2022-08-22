@@ -1,3 +1,11 @@
+.addin-wrapper{
+    height:fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: 1;
+    padding: 10px
+}
+
 .table-popup{
     padding: 10px 20px 20px 20px;
     display: flex;
@@ -10,7 +18,8 @@
     text-align: left;
     border: 1px solid;
     border-color: black;
-    border-radius: 5px
+    border-radius: 5px;
+    z-index: 1;
 }
 
 .table-popup .addin-row, .addin-row-text, .addin-row-icon, .shortcut {
@@ -44,6 +53,7 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 
 .table-popup .addin-row-icon{

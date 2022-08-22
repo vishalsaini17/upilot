@@ -1,0 +1,29 @@
+.searchbar-control{
+    margin: 0;
+    padding: 8px;
+    display: block;
+    position: relative;
+}
+
+.searchbar-icon{
+    position: absolute;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    transform: rotateY(180deg);
+    padding: 10px;
+    color: gray
+}
+
+.searchbar{
+    border-radius: 18px;
+    border-width: 2px;
+    max-width: 160px;
+    height: 38px;
+    padding: 12px 30px;
+    font-style: italic;
+    background: lightgray;
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}

@@ -145,7 +145,6 @@ export default function SignIn() {
                           message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}
         </form>
       </div>
-      <> <AddInPopup /> </>
     </div>
 
     
