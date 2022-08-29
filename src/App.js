@@ -23,6 +23,8 @@ import WithoutNav from "./WithoutNav";
 // import Addtags from "./Components/Addtags/Addtags";
 import Addtag from "./Components/Addtags/Addtag";
 
+import Test from "./Screens/Test/test";
+
 //functions
 export default function App() {
   const { theme } = useContext(ThemeContext)
@@ -31,7 +33,7 @@ export default function App() {
     <div className={`App ${theme}`}>
       <Router>
         
-          
+        <Routes>  
           <Route element = {<WithNav />}>
             <Route path='/' caseSensitive={false} element={<SignIn />} />
             <Route path='/activate' caseSensitive={false} element={<Activate />} />
@@ -43,12 +45,12 @@ export default function App() {
           <Route element = {<WithoutNav />}>
             <Route path='/createcontact' caseSensitive={false} element={<CreateContact />} />
             <Route path = '/createdeal' caseSensitive = {false} element = {<CreateDeal/>} />
-            <Route path= '/test' caseSensitive = {false} element = {<Addtag />} />
+            <Route path= '/test' caseSensitive = {false} element = {<Test />} />
             <Route path = '/importdata' caseSensitive = {false} element = {<ImportData />} />
-            {/* <Route path='/createtask' caseSensitive={false} element={<CreateTask />} /> */}
+            <Route path='/createtask' caseSensitive={false} element={<CreateTask />} />
           </Route>
 
-       
+        </Routes>  
       </Router>
     </div>
   )

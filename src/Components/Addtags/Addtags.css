@@ -33,7 +33,8 @@
 .addtag-heading .close-ic{
     float: right;
     text-align: center;
-    color: lightskyblue
+    color: lightskyblue;
+    cursor: pointer
 }
 
 .addtag-body{
@@ -47,6 +48,21 @@
     flex-direction: row;
     width: 760px;
     justify-content: flex-end;
+    align-items: center;
+}
+
+
+.tagsearch-icon {
+    cursor: pointer;
+    width: fit-content;
+    transform: rotateY(180deg);
+    padding: 10px;
+    color: gray;
+    position: absolute;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .taglist{
@@ -59,13 +75,52 @@
 
 .tag{
     height: 40px;
+    width: 214px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gainsboro;
+    background-color: #ebedec;
     color: gray;
     margin: 6px;
-    font-family: Roboto
+    font-family: Roboto;
+    cursor: pointer
+}
+
+.tag:hover{
+    background-color: #d3d3d3;
+    color: var(--secondary-text-hover);
+}
+
+.tag.active{
+    color: black;
+    background-color: white;
+    border: 1px solid lightseagreen
+}
+
+
+.addnew-tag {
+    height: 40px;
+    width: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    border: 1.8px dashed gray;
+    margin: 6px;
+    font-family: Roboto;
+    cursor: pointer
+}
+
+.submit-new-tag {
+    height: 40px;
+    width: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    margin: 6px;
+    font-family: Roboto;
+    cursor: pointer
 }
 
 .addtag-footer{
@@ -76,7 +131,7 @@
     margin: -20px;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px
 }
@@ -101,4 +156,72 @@
     border: none
 }
 
+
+/* Search bar */
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    height: 58px;
+    width: 300px
+}
+
+.search {
+    position: absolute;
+    left: 57px;
+    border: none;
+    outline: none;
+    font-style: italic;
+    /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+    background-color: white;
+    padding: 0;
+    width: 0;
+    height: 58px;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search-ic {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: center;
+}
+
+.searchbutton {
+    position: absolute;
+    font-size: 22px;
+    width: 200px;
+    padding: 10px;
+    margin: 7px auto;
+    z-index:10
+}
+
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+    height: 58px;
+    width: 300px;
+    /* Bar width+1px */
+    padding: 0 16px 0 0;
+    border: 1px solid lightseagreen
+}
+
+.expandright {
+    left: auto;
+    right: 20px;
+    /* Button width-1px */
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
 

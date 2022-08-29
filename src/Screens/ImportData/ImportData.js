@@ -26,37 +26,36 @@ export default function ImportData() {
   
 
   return (
-
-    
         <div className = 'import-data-wrapper'>
-        <div className='wrapper'>
-    <p fontSize="30px"> Import Data  </p>
-    <fieldset className='box-field' align="centre">
-       <legend align = 'left' style={{fontSize: '15px'}}> From where would you like to import your contact/deal from?</legend>  
-           <p></p>
-           <div style={{display: 'flex',  justifyContent:'center'}}>
-    <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example"
-    >
-    <CustomWidthTooltip title={"Insightly, Salesforce, Zoho ..."} arrow>
-      <Tab icon ={<BsFillCloudFill  color= "grey" size= "60px" 
-      onMouseOver={({target})=>target.style.color="#00CBED" }
-   onMouseOut={({target})=>target.style.color="grey"}
-   />} 
-   label="from another CRM" onMouseOver={({target})=>target.style.color="#00CBED" }
-   onMouseOut={({target})=>target.style.color="grey"} />
-   </CustomWidthTooltip>
-      <Tab icon={<FaFileCsv color= "grey" size= "60px" 
-      onMouseOver={({target})=>target.style.color="#00CBED" }
-     onMouseOut={({target})=>target.style.color="grey"}
-     />} 
-      label=" from a csv file" onMouseOver={({target})=>target.style.color="#00CBED" }
-      onMouseOut={({target})=>target.style.color="grey"}/>
-    </Tabs>
-    </div>
-    <p></p>
-    </fieldset>
-    </div>
-    </div>
+          <div className='wrapper'>
+            <p fontSize="30px"> Import Data  </p>
+            <fieldset className='box-field' align="centre">
+            <legend align = 'left' style={{fontSize: '15px'}}> From where would you like to import your contact/deal from?</legend>  
+            <p></p>
+
+            <div style={{display: 'flex',  justifyContent:'center'}}>
+              <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example">
+                <CustomWidthTooltip title={"Insightly, Salesforce, Zoho ..."} arrow>
+                  <Tab icon ={<BsFillCloudFill  color= "grey" size= "60px" 
+                      onMouseOver={({target})=>target.style.color="#00CBED" }
+                      onMouseOut={({target})=>target.style.color="grey"}
+                  />} 
+                  label="from another CRM" onMouseOver={({target})=>target.style.color="#00CBED" }
+                  onMouseOut={({target})=>target.style.color="grey"} />
+                </CustomWidthTooltip>
+
+                <Tab icon={<FaFileCsv color= "grey" size= "60px" 
+                    onMouseOver={({target})=>target.style.color="#00CBED" }
+                    onMouseOut={({target})=>target.style.color="grey"}
+                    />} 
+                  label=" from a csv file" onMouseOver={({target})=>target.style.color="#00CBED" }
+                  onMouseOut={({target})=>target.style.color="grey"}/>
+              </Tabs>
+          </div>
+          <p></p>
+          </fieldset>
+          </div>
+          </div>
   );
 }
 

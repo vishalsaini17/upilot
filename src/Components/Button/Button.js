@@ -22,7 +22,6 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
 
 
  export default function Button(props) {
-
   const iconsList={
     'save' : <SaveLine size={20}/>,
     'plus' : <AddLine size={20}/>,
@@ -102,16 +101,20 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
   };
 
   const square_button_xsmall_primary = () => {
+    console.log(props)
+    const futureStyle = props.futureStyle
+    const currentButtonStyle = {
+        height: '30px', 
+        width: "118px",
+        borderRadius: '5px',
+        fontsize: '0.65vw'
+      }
+    //console.log({...currentButtonStyle, ...futureStyle})
+      
     return (
       <button
         className="square-button"
-        style={{
-          height: "30px",
-          width: "118px",
-          // fontSize: "13px",
-          fontSize: '0.65vw',
-          borderRadius: "5px",
-        }}
+        style={{...currentButtonStyle, ...futureStyle}}
         onClick = {props.onClick}
       >
         {props.text}

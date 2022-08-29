@@ -33,7 +33,7 @@
     border-color: #C9C8CE;
 }
 
-.table-popup th{
+.table-popup .table-heading{
     font-family: Poppins;
     color: gray;
     border-bottom: 1px solid;
@@ -41,20 +41,22 @@
     font-weight: 200;
     letter-spacing: 0.4px;
     line-height: 30px;
-    padding: 6px;
     display: flex;
     align-items: center;
     
 }
 
-.table-popup th .close-icon{
+
+.table-popup .close-icon{
     padding: 5px;
-    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     justify-content: center;
     display: flex;
     cursor: pointer;
+    
 }
+
 
 .table-popup .addin-row-icon{
     color: #C9C8CE;

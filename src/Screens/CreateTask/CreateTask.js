@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 import AddPerson from '../../Components/CreateContactWindow/AddPerson';
 import AddCompany from '../../Components/CreateContactWindow/AddCompany';
-import DropDown from '../../Components/DropDown/Dropdown';
+import DropDown from '../../Components/Dropdown/DropDown';
 
 
 export default function CreateTask() {

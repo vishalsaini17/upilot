@@ -49,7 +49,7 @@ export default function Input(props){
                 name= {name}
                 style={{
                     height: "40px",
-                    width: "300px",
+                    width: "100%",
                     fontSize: "13px",
                     padding: "15px",
                     border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'

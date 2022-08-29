@@ -14,7 +14,7 @@ export default function Sliderr() {
 
   return (
     <Box sx={{ width: 250 }}>
-      <Typography>{"Probability: " + value + "%"}</Typography>
+      <Typography>{value + "%"}</Typography>
       <Slider
         value={value}
         min={0}

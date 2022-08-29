@@ -6,31 +6,38 @@ import Input from '../../Components/Input/Input';
 import Colorpicker from '../../Components/Colorpicker/Colorpicker';
 import DatePicker from 'react-datepicker';
 import Addtags from '../../Components/Addtags/Addtags';
+import Addtag from '../../Components/Addtags/Addtag';
 import Sliderr from '../../Components/Sliderr/slider';
 import Stage from '../../Components/Stage/Stage';
 import "./Deal.css";
 
 export default function Deal() {
     const [deal, setDeal] = useState({name:'',
-                                          contact: '',
+                                      contact: '',
                                       close_date:'',
-                                  deal_value:'',
-                              category:'',})
+                                      deal_value:'',
+                                      category:'',})
+    const [addTagPopup, setAddTagPopup] = useState(false);
 
-const [show, setShow] = useState(false);
-const [startDate, setStartDate] = useState(new Date());
+    const [show, setShow] = useState(false);
+    const [startDate, setStartDate] = useState(new Date());
 
 
-const handleChange = (e) => {
-  const name = e.target.name;
-  const value = e.target.value;
-  setDeal({...deal, [name]: value})
-};
-const showAll = (e) => {
-    setShow(!show)
+    const handleChange = (e) => {
+      const name = e.target.name;
+      const value = e.target.value;
+      setDeal({...deal, [name]: value})
+    };
+
+    const showAll = (e) => {
+        setShow(!show)
+        }
+    
+    const showAddTag = () => {
+      setAddTagPopup(true)
     }
      
-return (
+  return (
         <div className = 'deal-form-container'>
           {show ? 
             <div>
@@ -43,20 +50,24 @@ return (
                           placeholder = 'How would you like to call this deal?'
                           name = 'name'
                           size = "normal"/></td>
-                    <td> <div className = 'deal-form-field' >
-        
-        <label >Deal name</label></div>
-</td>
-                  </tr>
-                  <tr>
-                    <td> <Input 
+                    <td> 
+                      <div className = 'deal-form-field' >
+                        <label >Deal name</label>
+                      </div>
+                    </td>
+                  </tr><tr>
+                    <td> 
+                      <Input 
                           type = "text"
                           placeholder = "What is the name of the contact linked to this deal?"
                           name = 'contact'
-                          size = "normal"/></td>
-                    <td> <div className = 'deal-form-field'>
-           <label>Contact</label></div>
- </td>
+                          size = "normal"/>
+                    </td>
+                    <td> 
+                      <div className = 'deal-form-field'>
+                        <label>Contact</label>
+                      </div>
+                    </td>
                   </tr>
 
                   <tr>
@@ -64,11 +75,13 @@ return (
                           type = "date"
                           placeholder = 'What is the expected closing date for this deal?'
                           name = 'closedate'
-                          size = "normal"/></td>
-                    <td> <div className = 'form-field' >
-        
-        <label >Close Date</label></div>
-</td>
+                          size = "normal"/>
+                    </td>
+                    <td>
+                      <div className = 'deal-form-field' >
+                        <label >Close Date</label>
+                      </div>
+                    </td>
                   </tr>
 
                   <tr>
@@ -77,25 +90,39 @@ return (
                           placeholder = 'What is the value if this deal?'
                           name = 'dealvalue'
                           size = "normal"/></td>
-                    <td> <div className = 'deal-form-field' >
-        
-        <label >Deal value</label></div>
-</td>
+                    <td>
+                      <div className = 'deal-form-field' >
+                        <label >Deal value</label>
+                      </div>
+                    </td>
                   </tr>
 
                   <tr>
-                    <td> <Input 
-                          type = "text"
-                          placeholder = 'How would you like to call this deal?'
-                          name = 'category'
-                          size = "normal"/></td>
-                          <Stage></Stage>
-                          <Sliderr></Sliderr>
-                    <td> <div className = 'deal-form-field' >
-        
-        <label >Category / Product(s)</label></div>
-</td>
+                    <td> 
+                      <div className = 'deal-form-field' >
+                        <label >Category / Product(s)</label></div>
+                    </td>
                   </tr>
+
+                  <tr>     
+                    <td> 
+                      <Stage></Stage>
+                    </td>
+                    <td>
+                      <div className = 'deal-form-field' >
+                        <label> Stage </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>  
+                    <td>
+                      <Sliderr/>
+                    </td>
+                    <div className = 'deal-form-field' >
+                        <label> Probability (%) </label>
+                    </div>
+                  </tr>   
+    
                 </table>
               </fieldset>
     
@@ -104,11 +131,17 @@ return (
                 <table>
                   <tr>
                     <td>
-                       
-                      
-                      
-                      <Addtags></Addtags> </td>
-                      
+                      <Button 
+                          size = 'small'
+                          shape = 'square_plus'
+                          color = 'secondary'
+                          onClick = {showAddTag}
+                      />
+                      <Addtag 
+                        trigger = {addTagPopup}
+                        setTrigger = {setAddTagPopup}
+                      />
+                    </td>
                     <td> <div className = 'deal-form-field'><label>Assign tag(s)</label></div> </td>
                   </tr>
                   <tr>

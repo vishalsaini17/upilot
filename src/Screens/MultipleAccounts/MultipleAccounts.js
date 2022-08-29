@@ -11,15 +11,43 @@ import LightLogo from "../../Logo/UPilot logo - white vertical.svg";
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg";
 
 export default function MultipleAccounts(){
-    const [isChecked, setIsChecked] = useState(false);
-    const {theme, toggleTheme} = useContext(ThemeContext);
+    // theming
+    const {theme, toggleTheme} = useContext(ThemeContext)
+
+
+    const checkedList = [
+        {
+            name: '',
+            label: "https://spjain.upilot.com"
+        },
+        {
+            name: '',
+            label: "https://account2.upilot.com"
+        },
+        {
+            name: '',
+            label: "https://account3.upilot.com"
+        }
+    ];
+
+
+    const [checkedState, setCheckedState] = useState(
+        new Array(checkedList.length).fill(false) 
+    );
+
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
     }
 
-    const handleCheckBox = () => {
-        setIsChecked(!isChecked)
+
+    const handleOnChange = (position) => {
+        const updatedCheckedState = checkedState.map((item, index) => 
+            index === position ? !item : item //reverse the value of item
+        );
+
+        setCheckedState(updatedCheckedState)
     }
 
     const logoHandle = () => {
@@ -45,33 +73,17 @@ export default function MultipleAccounts(){
                 <div><p className = 'form-title'> Choose Account </p></div>
                 <div className="form-control">
                     <div className="form-wrapper">
-                        <div>
-                        <Checkbox 
-                        id = "checkbox"
-                        label = "https://spjain.upilot.com"
-                        value = {isChecked}
-                        onChange = {handleCheckBox}
-                        />
-                        </div>
-
-                        <div>
-                        <Checkbox 
-                        id = "checkbox"
-                        label = "https://account2.upilot.com"
-                        value = {isChecked}
-                        onChange = {handleCheckBox}
-                        />
-                        </div>
-
-                        <div>
-                        <Checkbox 
-                        id = "checkbox"
-                        label = "https://account3.upilot.com"
-                        value = {isChecked}
-                        onChange = {handleCheckBox}
-                        />
-                        </div>
-                    
+                        {checkedList.map(({label}, index) => {
+                            return(
+                                <div key ={index}>
+                                    <Checkbox 
+                                        id = {`custom-checkbox-${index}`}
+                                        label = {label}
+                                        value = {checkedState[index]}
+                                        onChange = {() => handleOnChange(index)}/>
+                                </div>
+                            )
+                        })}                    
                     </div>
                         <Button 
                             type = "submit" 

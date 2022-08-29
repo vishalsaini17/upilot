@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import "./Dropdown.css";
+import React, { useState, useEffect } from "react";
+import "./DropDown.css";
 import Select from "react-select";
       
-export default function DropDown(props){
+export default function DropDown(props){  
 
         const [selectedOption, setSelectedOption] = useState("");
         const optionlist=[
@@ -237,6 +237,46 @@ const section_dropdown =()=> {
       />
       </div>
   );
+};
+
+// sort by dropdown (used in Add or remove tags, etc)
+const Sort_by_dropdown = () => {
+  const [data, setData] = useState([]);
+  const [sortType, setSortType] = useState('id');
+  
+  const dataList = props.data
+
+  useEffect(() => {
+    const sortArray = type => {
+      const types = {
+        alphabetically: 'titleTag',
+        id: 'id',
+      };
+      const sortProperty = types[type];
+      console.log(sortProperty)
+      const sorted = [...dataList].sort((a, b) => a[sortProperty] < b[sortProperty] ? -1 : 1);
+      setData(sorted);
+
+    };
+
+    sortArray(sortType);
+  }, [sortType]);
+  console.log(data)
+
+  return(
+    <div>
+      <select onChange = {(e) => setSortType(e.target.value)}>
+        <option value="alphabetically">Alphabetically</option>
+        <option value="id">Id</option>
+      </select>
+      {data.map(data => (
+        <div key = {data.id} style = {{margin: '30px'}}>
+          <div>{`Id: ${data.id}`}</div>
+          <div>{`Title tag: ${data.titleTag}`}</div>
+        </div>
+      ))}
+    </div>
+  )
 }
 
 if (
@@ -286,6 +326,13 @@ if (
     props.shape === "section_dropdown"
   ) {
     return <div>{section_dropdown()}</div>;
+  };
+
+
+  if (props.type === 'sort_dropdown'){
+    return(
+      <div> {Sort_by_dropdown()}</div>
+    )
   }
 
 }
