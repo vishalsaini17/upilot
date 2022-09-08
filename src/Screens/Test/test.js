@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import DropDown from '../../Components/Dropdown/DropDown';
+import DropDown from '../../Components/DropDown/DropDown';
 
 
 export default function Test(props){

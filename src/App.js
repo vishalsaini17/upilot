@@ -20,6 +20,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import ImportData from "./Screens/ImportData/ImportData";
 import WithNav from "./WithNav";
 import WithoutNav from "./WithoutNav";
+import ImportData3 from "./Screens/ImportData/ImportData3";
 // import Addtags from "./Components/Addtags/Addtags";
 import Addtag from "./Components/Addtags/Addtag";
 
@@ -48,6 +49,7 @@ export default function App() {
             <Route path= '/test' caseSensitive = {false} element = {<Test />} />
             <Route path = '/importdata' caseSensitive = {false} element = {<ImportData />} />
             <Route path='/createtask' caseSensitive={false} element={<CreateTask />} />
+            <Route path='/importdata3' caseSensitive={false} element={<ImportData3 />} />
           </Route>
 
         </Routes>  

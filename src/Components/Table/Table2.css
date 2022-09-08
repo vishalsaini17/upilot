@@ -1,0 +1,54 @@
+
+.deal-cancel-button{
+    display: inline-block;
+    box-sizing: border-box;
+    color: #767299;
+    font-family: Poppins;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    line-height: 23px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: none
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: fit-content;
+    font-size: 30px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 72%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.box-field{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: rgb(198, 198, 198);
+    margin-bottom: 30px;
+}
+
+
+  .form-control {
+    max-width: 'fit-content'
+}
+
+.text-center{
+    font-size: 30px;
+    align-items: center;
+}

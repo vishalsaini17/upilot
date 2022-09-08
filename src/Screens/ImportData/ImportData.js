@@ -1,3 +1,5 @@
+//Import data screen 1
+
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -28,7 +30,7 @@ export default function ImportData() {
   return (
         <div className = 'import-data-wrapper'>
           <div className='wrapper'>
-            <p fontSize="30px"> Import Data  </p>
+            <p style={{fontSize: "40px"}}> Import Data  </p>
             <fieldset className='box-field' align="centre">
             <legend align = 'left' style={{fontSize: '15px'}}> From where would you like to import your contact/deal from?</legend>  
             <p></p>
