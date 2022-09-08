@@ -33,12 +33,20 @@ export default function Input(props){
     console.log(typeof(props.icon))
     console.log(DoorLockBoxLineIcon)
     const iconList = {
-        'password' : <DoorLockBoxLineIcon size = {20}/>,
-        'mail' : <MailLine size = {20}/> 
+        'password' : <DoorLockBoxLineIcon size = {24}/>,
+        'mail' : <MailLine size = {24}/> 
     }
     
 
     const normal_input = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "40px",
+            width: "100%",
+            fontSize: "13px",
+            padding: "15px",
+            border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+        }
         return(
             <div className = 'input-control'>
                 {/* {props.label && <label htmlFor="input-field">{props.label}</label>} */}
@@ -47,13 +55,7 @@ export default function Input(props){
                 placeholder={placeholder}
                 value= {value}
                 name= {name}
-                style={{
-                    height: "40px",
-                    width: "100%",
-                    fontSize: "13px",
-                    padding: "15px",
-                    border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                }}
+                style={{...currentInputStyle, ...futureStyle}}
                 onChange = {onChange}> 
                 </input>
             </div>
@@ -157,7 +159,7 @@ export default function Input(props){
                         width: "350px",
                         fontSize: "16px",
                         padding: "15px 0px 15px 40px",
-                        border: isInvalid ? '1px solid #E7B8B8' : 'none',  
+                        border: isInvalid ? '1px solid #D78989' : ' 1px solid #D2D2D6',  
                     }}
                     onChange = {onChange}
                     > 

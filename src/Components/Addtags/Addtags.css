@@ -120,7 +120,8 @@
     color: gray;
     margin: 6px;
     font-family: Roboto;
-    cursor: pointer
+    cursor: pointer;
+    border: 1.5px solid lightseagreen;
 }
 
 .addtag-footer{
