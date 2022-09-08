@@ -6,7 +6,6 @@ import Dropdown from "../DropDown/DropDown";
 import Button from "../Button/Button";
 import Input from '../Input/Input';
 import "./Addtags.css"
-import { alignProperty } from '@mui/material/styles/cssUtils';
 
 export default function Addtag(props){
     const {setTrigger, trigger} = props
@@ -193,14 +192,15 @@ export default function Addtag(props){
                                         placeholder = 'Enter a new tag'
                                         size = 'normal' 
                                         value = {titleTag}
-                                        onChange = {(e) => setTitleTag(e.target.value)}/>
+                                        onChange = {(e) => setTitleTag(e.target.value)}
+                                        futureStyle = {{fontSize: '12px', border: 'none'}}/>
                                 <Button type = 'submit'
                                         onClick = {addTagSubmit}
                                         color = 'primary'
                                         text = 'Add tag'
-                                        size = 'xsmall'
+                                        size = 'medium'
                                         shape = 'square'
-                                        futureStyle = {{width: '55px', fontSize: '8px'}}
+                                        futureStyle = {{width: '85px', fontSize: '11px', marginRight: '-2px'}}
                                     />
                             </div>
                             :

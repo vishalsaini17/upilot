@@ -8,7 +8,22 @@
     box-shadow: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
     font-family: "Poppins";
     outline: none;
-   
+    letter-spacing: 0.28px;
+    line-height: 23px;  
+    cursor: text
+}
+
+.input-field:hover{
+    cursor: text;
+    border: 1px solid rgba(0, 156, 215, 0.3);
+    box-shadow: 0 1px 4px 0 rgba(36, 34, 68, 0.1);
+}
+
+.input-field:focus{
+    caret-color: #0071BF;
+    border: 1px solid rgba(0, 156, 215, 0.3);
+    box-shadow: 0 15px 15px -15px rgba(36, 34, 68, 0.3), 0 1px 4px 0 rgba(36, 34, 68, 0.1);
+    
 }
 
 .input-field::placeholder{

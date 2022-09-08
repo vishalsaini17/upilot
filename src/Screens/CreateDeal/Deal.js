@@ -205,7 +205,8 @@ export default function Deal() {
               text = "> Create Deal"
               shape = "square"
               size = "xsmall"
-              color = "primary"/>
+              color = "primary"
+              futureStyle={{fontSize: '13px'}}/>
           </div>
 
         </div>
@@ -217,12 +218,14 @@ export default function Deal() {
                 <table>
                   <tr>
                     <td> 
-                    <div className="deal-form-textbox"><Input 
+                    <div className="deal-form-textbox">
+                      <Input 
                           type = "text"
                           placeholder = 'How would you like to call this deal?'
                           name = 'name'
-                          size = "normal"/>
-                          </div>
+                          size = "normal"
+                          futureStyle = {{width: '350px'}}/>
+                    </div>
                           </td>
                     <td> <div className = 'deal-form-field' >
         
@@ -231,12 +234,15 @@ export default function Deal() {
                   </tr>
                   <tr>
                     <td> 
-                    <div className="deal-form-textbox"><Input 
-                          type = "text"
-                          placeholder = "What is the name of the contact linked to this deal?"
-                          name = 'contact'
-                          size = "normal"/>
-                          </div></td>
+                      <div className="deal-form-textbox">
+                        <Input 
+                            type = "text"
+                            placeholder = "What is the name of the contact linked to this deal?"
+                            name = 'contact'
+                            size = "normal"
+                            futureStyle = {{width: '350px'}}/>
+                      </div>
+                    </td>
                     <td> <div className = 'deal-form-field'>
            <label>Contact</label></div>
  </td>
@@ -244,12 +250,15 @@ export default function Deal() {
 
                   <tr>
                     <td> 
-                    <div className="deal-form-textbox"><Input 
-                          type = "date"
-                          placeholder = 'What is the expected closing date for this deal?'
-                          name = 'date'
-                          size = "normal"/>
-                          </div></td>
+                      <div className="deal-form-textbox">
+                        <Input 
+                            type = "date"
+                            placeholder = 'What is the expected closing date for this deal?'
+                            name = 'date'
+                            size = "normal"
+                            futureStyle = {{width: '350px'}}/>
+                            </div>
+                    </td>
                     <td> <div className = 'deal-form-field' >
         
         <label >Close Date</label></div>
@@ -258,12 +267,15 @@ export default function Deal() {
 
                   <tr>
                     <td>
-                    <div className="deal-form-textbox"> <Input 
-                          type = "currency"
-                          placeholder = 'What is the value if this deal?'
-                          name = 'value'
-                          size = "normal"/>
-                          </div></td>
+                      <div className="deal-form-textbox"> 
+                          <Input 
+                            type = "currency"
+                            placeholder = 'What is the value if this deal?'
+                            name = 'value'
+                            size = "normal"
+                            futureStyle = {{width: '350px'}}/>
+                      </div>
+                    </td>
                     <td> <div className = 'deal-form-field' >
         
         <label >Deal value</label></div>
@@ -272,12 +284,15 @@ export default function Deal() {
 
                   <tr>
                     <td> 
-                    <div className="deal-form-textbox"><Input 
-                          type = "text"
-                          placeholder = 'How would you like to call this deal?'
-                          name = 'category'
-                          size = "normal"/>
-                          </div></td>
+                      <div className="deal-form-textbox">
+                        <Input 
+                            type = "text"
+                            placeholder = 'How would you like to call this deal?'
+                            name = 'category'
+                            size = "normal"
+                            futureStyle = {{width: '350px'}}/>
+                      </div>
+                    </td>
           
                     <td> <div className = 'deal-form-field' >
         
@@ -301,7 +316,8 @@ export default function Deal() {
               text = "> Create Deal"
               shape = "square"
               size = "xsmall"
-              color = "primary"/>
+              color = "primary"
+              futureStyle={{fontSize: '13px'}}/>
           </div>
 
         </div>

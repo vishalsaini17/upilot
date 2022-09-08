@@ -66,16 +66,18 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
   };
 
   const square_button_medium_primary = () => {
+    const futureStyle = props.futureStyle;
+    const currentButtonStyle = {
+      height: "40px",
+      width: "168px",
+      fontSize: "15px",
+      borderRadius: "5px",
+    }
+
     return (
       <button
         className="square-button"
-        style={{
-          height: "40px",
-          width: "168px",
-          fontSize: "15px",
-          borderRadius: "5px",
-          
-        }}
+        style={{...currentButtonStyle, ...futureStyle}}
         onClick = {props.onClick}
       >
         {props.text}
@@ -84,15 +86,19 @@ import CloseLineIcon from "remixicon-react/CloseLineIcon";
   };
 
   const square_button_small_primary = () => {
+    const futureStyle = props.futureStyle;
+    const currentButtonStyle = {
+      height: '34px',
+      width: '118px',
+      fontSize: '13px',
+      borderRadius: '5px'
+    }
+
+    
     return (
       <button
         className="square-button"
-        style={{
-          height: "34px",
-          width: "118px",
-          fontSize: "13px",
-          borderRadius: "5px",
-        }}
+        style= {{...currentButtonStyle, ...futureStyle}}
         onClick = {props.onClick}
       >
         {props.text}

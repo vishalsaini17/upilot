@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
+import ChooseResponsible from '../../Components/ChooseResponsible/ChooseResponsible';
 
-import DropDown from '../../Components/DropDown/DropDown';
-
+import DropDown from '../../Components/Dropdown/DropDown';
+import Datepicker from '../../Components/Datepicker/Datepicker';
+import "./test.css"
 
 export default function Test(props){
 
@@ -72,7 +74,16 @@ export default function Test(props){
 
 
   return (
-    <div><DropDown type = 'sort_dropdown'
-                    data = {tags}/></div>
+    <div className = 'hello'>
+        <h1 className = 'datepicker-heading'> Custom 
+            <span> Date </span> Picker </h1>
+        {/* // <DropDown type = 'sort_dropdown' */}
+    {/* //                 data = {tags}/> */}
+                    
+        <ChooseResponsible />                
+        {/* <Datepicker /> */}
+    </div>
+    
   )
 }
+

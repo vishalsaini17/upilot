@@ -242,7 +242,7 @@ const section_dropdown =()=> {
 // sort by dropdown (used in Add or remove tags, etc)
 const Sort_by_dropdown = () => {
   const [data, setData] = useState([]);
-  const [sortType, setSortType] = useState('id');
+  const [sortType, setSortType] = useState('alphabetically');
   
   const dataList = props.data
 

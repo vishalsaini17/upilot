@@ -1,0 +1,90 @@
+.responsible-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1
+}
+
+.responsible-object{
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px 20px 30px 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px 
+}
+
+.responsible-heading{
+    font-family: Poppins;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 390px;
+    justify-content: start;
+    align-items: center;
+}
+
+.responsible-heading .close-ic {
+    float: right;
+    text-align: center;
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+.resp-taglist {
+    margin-bottom: 30px;
+    padding: 6px 14px;
+    list-style: none;
+}
+
+#profileImage {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.resp-tag {
+    height: fit-content;
+    width: 300px;
+    background-color: #ebedec;
+    color: gray;
+    margin: 6px;
+    font-family: Roboto;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 4px;
+    overflow: hidden;
+}
+
+.resp-tag.active {
+    color: black;
+    background-color: white;
+    border: 1px solid lightseagreen
+}
+
+.resp-tag-footer {
+    border-top: gray 1px solid;
+    height: 60px;
+    margin: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px
+}
