@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ChooseResponsible from '../../Components/ChooseResponsible/ChooseResponsible';
 
-import DropDown from '../../Components/Dropdown/DropDown';
+import DropDown from '../../Components/DropDown/DropDown';
 import Datepicker from '../../Components/Datepicker/Datepicker';
 import "./test.css"
 
