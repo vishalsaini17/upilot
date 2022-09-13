@@ -1,9 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react';
 import ChooseResponsible from '../../Components/ChooseResponsible/ChooseResponsible';
 
-import DropDown from '../../Components/DropDown/DropDown';
-import Datepicker from '../../Components/Datepicker/Datepicker';
-import "./test.css"
+import "./test.css";
 
 export default function Test(props){
 

@@ -1,11 +1,6 @@
 import React from 'react';
+import DropDown from '../../Components/Dropdown/DropDown.js';
 import "./CreateTask.css";
-import {Link} from 'react-router-dom';
-
-import AddPerson from '../../Components/CreateContactWindow/AddPerson';
-import AddCompany from '../../Components/CreateContactWindow/AddCompany';
-import DropDown from '../../Components/DropDown/DropDown';
-
 
 export default function CreateTask() {
     return (
