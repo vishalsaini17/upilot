@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
 
 :root {
   --primary: linear-gradient(90deg, #00cbed 0%, #009cd7 100%);
@@ -226,18 +230,19 @@
 }
 
 h1 {
-  font-family: Poppins-medium;
+  font-family: 'Poppins';
+  font-weight: 500;
   font-size: 45px;
 }
 
 h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 0.8px;
 }
 
 h2 {
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 24px;
 }
