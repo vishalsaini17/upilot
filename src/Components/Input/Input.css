@@ -11,7 +11,10 @@
     outline: none;
     letter-spacing: 0.28px;
     line-height: 23px;  
-    cursor: text
+    cursor: text;
+    width: 100%;
+    max-width: 400px !important;
+
 }
 
 .input-field:not(:placeholder-shown){
@@ -51,6 +54,7 @@
 .input-control {
     position: relative;
     display: block;
+    margin: 11px 0px;
 }
 
 .input-control i {

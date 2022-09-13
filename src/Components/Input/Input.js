@@ -126,7 +126,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "50px",
-            width: "350px", 
+            width: "400px", 
             fontSize: "15px",
             padding: "20px",
             color: '#C9C8CE',
@@ -149,9 +149,9 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "50px",
-            width: "350px",
+            width: "400px",
             fontSize: "16px",
-            padding: "15px 0px 15px 40px",
+            padding: "15px 0px 13px 48px",
             border: isInvalid && '1px solid #D78989'
         }
         return(
@@ -180,7 +180,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "50px",
-            width: "350px",
+            width: "400px",
             fontSize: "16px",
             padding: "15px",
             border: isInvalid && '1px solid #D78989', 
@@ -233,7 +233,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "60px",
-            width: "350px",
+            width: "400px",
             fontSize: "18px",
             padding: "20px 40px",
             border: isInvalid && '1px solid #D78989'
@@ -266,7 +266,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "60px",
-            width: "350px",
+            width: "400px",
             fontSize: "18px",
             padding: "25px",
             border: isInvalid && '1px solid #D78989'
