@@ -1,277 +1,243 @@
-:root{
-    --primary: linear-gradient(90deg, #00cbed 0%, #009cd7 100%);
-    --primary-hover: linear-gradient(90deg, #00aae1 0%, #0071bf 100%);
-    --secondary: #FFFFFF;
-    --secondary-text: #767299;
-    --secondary-text-hover: #0071BF; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
 
-    --no-border-btn-light: #767299;
-    --no-border-btn-dark: #E5E3F3;;
-    --no-border-btn-light-hover: #0071BF;
-    --no-border-btn-dark-hover: #4DD9F4;
+:root {
+  --primary: linear-gradient(90deg, #00cbed 0%, #009cd7 100%);
+  --primary-hover: linear-gradient(90deg, #00aae1 0%, #0071bf 100%);
+  --secondary: #FFFFFF;
+  --secondary-text: #767299;
+  --secondary-text-hover: #0071BF;
 
-    /* input field */
-    --bg-primary-light: lightgray;
-    --bg-primary-dark: #252525;
+  --no-border-btn-light: #767299;
+  --no-border-btn-dark: #E5E3F3;
+  ;
+  --no-border-btn-light-hover: #0071BF;
+  --no-border-btn-dark-hover: #4DD9F4;
 
-    --input-bg-light-default: #FFFFFF;
-    --input-bg-dark-default: rgba(225, 223, 246, 0.22);
+  /* input field */
+  --bg-primary-light: lightgray;
+  --bg-primary-dark: #252525;
 
-    --input-border-light-default: #E4E4E7;
-    --input-border-dark-default: rgba(225, 223, 246, 0.22);
+  --input-bg-light-default: #FFFFFF;
+  --input-bg-dark-default: rgba(225, 223, 246, 0.22);
 
-    --input-border-light-default-filled: #D2D2D6;
-    --input-border-dark-default-filled: rgba(225, 223, 246, 0.22);
+  --input-border-light-default: #E4E4E7;
+  --input-border-dark-default: rgba(225, 223, 246, 0.22);
 
-    --input-shadow-light-default: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
-    --input-shadow-dark-default: 0 1px 4px 0 rgba(42, 41, 55, 0.3);
+  --input-border-light-default-filled: #D2D2D6;
+  --input-border-dark-default-filled: rgba(225, 223, 246, 0.22);
 
-    --input-shadow-light-default-filled: 0 1px 4px 0 rgba(36, 34, 68, 0.1);
-    --input-shadow-dark-default-filled: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(42, 41, 55, 0.3);
+  --input-shadow-light-default: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
+  --input-shadow-dark-default: 0 1px 4px 0 rgba(42, 41, 55, 0.3);
 
-        /* FOCUS STATE */
-    --input-bg-light-focus: #FFFFFF;
-    --input-bg-dark-focus: rgba(225, 223, 246, 0.34);
+  --input-shadow-light-default-filled: 0 1px 4px 0 rgba(36, 34, 68, 0.1);
+  --input-shadow-dark-default-filled: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(42, 41, 55, 0.3);
 
-    --input-border-light-focus: rgba(0, 156, 215, 0.3);
-    --input-border-dark-focus: rgba(77, 217, 244, 0.3);
+  /* FOCUS STATE */
+  --input-bg-light-focus: #FFFFFF;
+  --input-bg-dark-focus: rgba(225, 223, 246, 0.34);
 
-    --input-shadow-light-focus:0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(36, 34, 68, 0.1);
-    --input-shadow-dark-focus: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(42, 41, 55, 0.3);
+  --input-border-light-focus: rgba(0, 156, 215, 0.3);
+  --input-border-dark-focus: rgba(77, 217, 244, 0.3);
 
-    --input-border-light-focus-filled: rgba(0, 156, 215, 0.3);
-    --input-border-dark-focus-filled:rgba(77, 217, 244, 0.3);
+  --input-shadow-light-focus: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(36, 34, 68, 0.1);
+  --input-shadow-dark-focus: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(42, 41, 55, 0.3);
 
-    --input-shadow-light-focus-filled: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(36, 34, 68, 0.1);
-    --input-shadow-dark-focus-filled:0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(42, 41, 55, 0.3);
+  --input-border-light-focus-filled: rgba(0, 156, 215, 0.3);
+  --input-border-dark-focus-filled: rgba(77, 217, 244, 0.3);
+
+  --input-shadow-light-focus-filled: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(36, 34, 68, 0.1);
+  --input-shadow-dark-focus-filled: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(42, 41, 55, 0.3);
 
 
-        /* HOVER STATE */
-    --input-border-light-hover: rgba(0, 156, 215, 0.3);
-    --input-border-dark-hover: rgba(225, 223, 246, 0.34);
+  /* HOVER STATE */
+  --input-border-light-hover: rgba(0, 156, 215, 0.3);
+  --input-border-dark-hover: rgba(225, 223, 246, 0.34);
 
-    --input-shadow-light-hover: 0 1px 4px 0 rgba(36, 34, 68, 0.1);
-    --input-shadow-dark-hover: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
-        0 1px 4px 0 rgba(42, 41, 55, 0.3);
+  --input-shadow-light-hover: 0 1px 4px 0 rgba(36, 34, 68, 0.1);
+  --input-shadow-dark-hover: 0 15px 15px -15px rgba(36, 34, 68, 0.3),
+    0 1px 4px 0 rgba(42, 41, 55, 0.3);
 
-    --input-placeholder-light: #242244;
-    --input-placeholder-dark: #C9C8CE;
+  --input-placeholder-light: #242244;
+  --input-placeholder-dark: #C9C8CE;
 
-    --form-title-light: #000000;
-    --form-title-dark: #FFFFFF;
+  --form-title-light: #000000;
+  --form-title-dark: #FFFFFF;
 
-    --info-text-light: #000000;
-    --info-text-dark: #D2D2D6;
+  --info-text-light: #000000;
+  --info-text-dark: #D2D2D6;
 
-    
 
-    --checkbox-label-light: #000000;
-    --checkbox-label-dark: #C9C8CE;
 
-    --tooltip-bg-light: #4C4A5C;
-    --tooltip-bg-dark: #FFFFFF;
+  --checkbox-label-light: #000000;
+  --checkbox-label-dark: #C9C8CE;
 
-    --tooltip-text-light: #FFFFFF;
-    --tooltip-text-dark: #4C4A5C;
+  --tooltip-bg-light: #4C4A5C;
+  --tooltip-bg-dark: #FFFFFF;
+
+  --tooltip-text-light: #FFFFFF;
+  --tooltip-text-dark: #4C4A5C;
 }
 
-.light-theme{
-    --bg-color: var(--bg-primary-light);
-    --btn-primary: var(--primary);
-    --btn-primary-hover: var(--primary-hover);
-    --btn-secondary: var(--secondary);
-    --btn-secondary-text: var(--secondary-text);
-    --btn-secondary-text-hover: var(--secondary-text-hover);
-    --no-border-btn: var(--no-border-btn-light);
-    --no-border-btn-hover: var(--no-border-btn-light-hover);
-    
-    /* input field */
-    --input-bg-default: var(--input-bg-light-default);
-    --input-border-default: var(--input-border-light-default);
-    --input-border-default-filled: var(--input-border-light-default-filled);
-    --input-shadow: var(--input-shadow-light);
-    --input-shadow-default-filled: var(--input-shadow-light-default-filled);
+.light-theme {
+  --bg-color: var(--bg-primary-light);
+  --btn-primary: var(--primary);
+  --btn-primary-hover: var(--primary-hover);
+  --btn-secondary: var(--secondary);
+  --btn-secondary-text: var(--secondary-text);
+  --btn-secondary-text-hover: var(--secondary-text-hover);
+  --no-border-btn: var(--no-border-btn-light);
+  --no-border-btn-hover: var(--no-border-btn-light-hover);
 
-        /* FOCUS STATE */
-    --input-bg-focus: var(--input-bg-light-focus);
-    --input-border-focus: var(--input-border-light-focus);
-    --input-border-focus-filled: var(--input-border-light-focus-filled);
-    --input-shadow-focus: var(--input-shadow-light-focus);
-    --input-shadow-focus-filled: var(--input-shadow-light-focus-filled);
+  /* input field */
+  --input-bg-default: var(--input-bg-light-default);
+  --input-border-default: var(--input-border-light-default);
+  --input-border-default-filled: var(--input-border-light-default-filled);
+  --input-shadow: var(--input-shadow-light);
+  --input-shadow-default-filled: var(--input-shadow-light-default-filled);
 
-        /* HOVER STATE */
-    --input-border-hover: var(--input-border-light-hover);
-    --input-shadow-hover: var(--input-shadow-light-hover);
+  /* FOCUS STATE */
+  --input-bg-focus: var(--input-bg-light-focus);
+  --input-border-focus: var(--input-border-light-focus);
+  --input-border-focus-filled: var(--input-border-light-focus-filled);
+  --input-shadow-focus: var(--input-shadow-light-focus);
+  --input-shadow-focus-filled: var(--input-shadow-light-focus-filled);
 
-    --input-placeholder: var(--input-placeholder-light);
+  /* HOVER STATE */
+  --input-border-hover: var(--input-border-light-hover);
+  --input-shadow-hover: var(--input-shadow-light-hover);
 
-    --form-title: var(--form-title-light);
+  --input-placeholder: var(--input-placeholder-light);
 
-    --info-text: var(--info-text-light);
-    
+  --form-title: var(--form-title-light);
 
-    --checkbox-label: var(--checkbox-label-light);
-    
-    --tooltip-bg: var(--tooltip-bg-light);
-    --tooltip-text: var(--tooltip-text-light)
+  --info-text: var(--info-text-light);
+
+
+  --checkbox-label: var(--checkbox-label-light);
+
+  --tooltip-bg: var(--tooltip-bg-light);
+  --tooltip-text: var(--tooltip-text-light)
 }
 
-.dark-theme{
-    --bg-color: var(--bg-primary-dark);
-    --btn-primary: var(--primary);
-    --btn-primary-hover: var(--primary-hover);
-    --btn-secondary: var(--secondary);
-    --btn-secondary-text: var(--secondary-text);
-    --btn-secondary-text-hover: var(--secondary-text-hover);
-    --no-border-btn: var(--no-border-btn-dark);
-    --no-border-btn-hover: var(--no-border-btn-dark-hover);
+.dark-theme {
+  --bg-color: var(--bg-primary-dark);
+  --btn-primary: var(--primary);
+  --btn-primary-hover: var(--primary-hover);
+  --btn-secondary: var(--secondary);
+  --btn-secondary-text: var(--secondary-text);
+  --btn-secondary-text-hover: var(--secondary-text-hover);
+  --no-border-btn: var(--no-border-btn-dark);
+  --no-border-btn-hover: var(--no-border-btn-dark-hover);
 
-    /* input field */
-    --input-bg-default: var(--input-bg-dark-default);
-    --input-border-default: var(--input-border-dark-default);
-    --input-border-default-filled: var(--input-border-dark-default-filled);
-    --input-shadow: var(--input-shadow-dark);
-    --input-shadow-default-filled: var(--input-shadow-dark-default-filled);
+  /* input field */
+  --input-bg-default: var(--input-bg-dark-default);
+  --input-border-default: var(--input-border-dark-default);
+  --input-border-default-filled: var(--input-border-dark-default-filled);
+  --input-shadow: var(--input-shadow-dark);
+  --input-shadow-default-filled: var(--input-shadow-dark-default-filled);
 
-        /* FOCUS STATE */
-    --input-bg-focus: var(--input-bg-dark-focus);
-    --input-border-focus: var(--input-border-dark-focus);
-    --input-border-focus-filled: var(--input-border-dark-focus-filled);
-    --input-shadow-focus: var(--input-shadow-dark-focus);
-    --input-shadow-focus-filled: var(--input-shadow-dark-focus-filled);
+  /* FOCUS STATE */
+  --input-bg-focus: var(--input-bg-dark-focus);
+  --input-border-focus: var(--input-border-dark-focus);
+  --input-border-focus-filled: var(--input-border-dark-focus-filled);
+  --input-shadow-focus: var(--input-shadow-dark-focus);
+  --input-shadow-focus-filled: var(--input-shadow-dark-focus-filled);
 
-        /* HOVER STATE */
-    --input-border-hover: var(--input-border-dark-hover);
-    --input-shadow-hover: var(--input-shadow-dark-hover);
-    
-    --input-placeholder: var(--input-placeholder-dark);
+  /* HOVER STATE */
+  --input-border-hover: var(--input-border-dark-hover);
+  --input-shadow-hover: var(--input-shadow-dark-hover);
 
-    --form-title: var(--form-title-dark);
+  --input-placeholder: var(--input-placeholder-dark);
 
-    --info-text: var(--info-text-dark);
-    --link-text: var(--link-text-dark);
+  --form-title: var(--form-title-dark);
 
-    --checkbox-label: var(--checkbox-label-dark);
+  --info-text: var(--info-text-dark);
+  --link-text: var(--link-text-dark);
 
-    --tooltip-bg: var(--tooltip-bg-dark);
-    --tooltip-text: var(--tooltip-text-dark)
+  --checkbox-label: var(--checkbox-label-dark);
+
+  --tooltip-bg: var(--tooltip-bg-dark);
+  --tooltip-text: var(--tooltip-text-dark)
 }
 
-.dark-theme.morning{
-    background-image: radial-gradient(circle at top center, rgba(145, 167, 209, .3), rgba(145, 167, 209, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%,
-     rgba(186, 183, 224, .1) 50%, rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
+.dark-theme.morning {
+  background-image: radial-gradient(circle at top center, rgba(145, 167, 209, .3), rgba(145, 167, 209, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%,
+      rgba(186, 183, 224, .1) 50%, rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
 }
 
-.dark-theme.neutral{
-    background-image: radial-gradient(circle at top center, rgba(181, 179, 211, .3), rgba(181, 179, 211, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%, rgba(186, 183, 224, .1) 50%,
-     rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
+.dark-theme.neutral {
+  background-image: radial-gradient(circle at top center, rgba(181, 179, 211, .3), rgba(181, 179, 211, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%, rgba(186, 183, 224, .1) 50%,
+      rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
 }
 
-.dark-theme.night{
-        background-image: radial-gradient(circle at top center, rgba(213, 203, 203, .3), rgba(213, 203, 203, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%,
-         rgba(186, 183, 224, .1) 50%, rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
+.dark-theme.night {
+  background-image: radial-gradient(circle at top center, rgba(213, 203, 203, .3), rgba(213, 203, 203, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%,
+      rgba(186, 183, 224, .1) 50%, rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
 }
 
 
-@font-face {
-    font-family: 'Poppins-bold';
-    src: url("Font/Poppins-Black.ttf") format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins-light';
-    src: url("Font/Poppins-Light.ttf") format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins-medium';
-    src: url("Font/Poppins-Medium.ttf") format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Poppins';
-    src: url("Font/Poppins-Regular.ttf") format('truetype');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url("Font/Roboto-Medium.ttf") format('truetype');
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'Roboto-light';
-    src: url("Font/Roboto-Light.ttf") format("truetype");
-    font-style: normal
-}
-
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 #right {
-    position: fixed;
-    width: 100px;
-    right: 0;
-    bottom: 0;
+  position: fixed;
+  width: 100px;
+  right: 0;
+  bottom: 0;
 }
 
-.theme-actions{
-    margin: 0 0 30px 0;
+.theme-actions {
+  margin: 0 0 30px 0;
 }
 
-.theme-action{
-    list-style: none;
-    margin: 0 auto 10px auto;
-    width: 40px;
-    height: 40px;
+.theme-action {
+  list-style: none;
+  margin: 0 auto 10px auto;
+  width: 40px;
+  height: 40px;
 }
 
 .theme-action a {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    fill: #fff;
-    background: linear-gradient(135deg, #00CBED 0%, #009CD7 100%) !important;
-    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
-    cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  background: linear-gradient(135deg, #00CBED 0%, #009CD7 100%) !important;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 15%);
+  cursor: pointer;
 }
 
-.theme-action svg{
-    display: block;
-    width: 26px;
-    height: 26px;
-    opacity: 1 !important;
+.theme-action svg {
+  display: block;
+  width: 26px;
+  height: 26px;
+  opacity: 1 !important;
 }
 
-h1{
-    font-family: Poppins-medium;
-    font-size: 45px;
-}
-
-h2 {
-    font-family: Poppins;
-    font-weight: normal;
-    font-size: 30px;
-    letter-spacing: 0.8px;
+h1 {
+  font-family: Poppins-medium;
+  font-size: 45px;
 }
 
 h2 {
-    font-family: Poppins;
-    font-size: 24px;
+  font-family: Poppins;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 0.8px;
 }
 
+h2 {
+  font-family: Poppins;
+  font-size: 24px;
+}
