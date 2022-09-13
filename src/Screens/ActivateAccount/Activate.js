@@ -1,24 +1,25 @@
-import React, {useState, useContext} from 'react'
-import Input from '../../Components/Input/Input'
-import FormError from '../../Components/FormError/FormError'
-import Checkbox from '../../Components/Checkbox/Checkbox'
+import React, { useContext, useState } from 'react'
 import Button from '../../Components/Button/Button'
-import Popup from '../../Components/Popup/Popup'
+import Checkbox from '../../Components/Checkbox/Checkbox'
+import FormError from '../../Components/FormError/FormError'
+import Input from '../../Components/Input/Input'
 
-import { ThemeContext } from "../../Themes";
+import AppContext from "../../AppContext"
+import { ThemeContext } from "../../Themes"
 
 // css
 import "./Activate.css"
 
 //icons
-import TeamLine from "remixicon-react/TeamLineIcon"
 import Link from "remixicon-react/LinkIcon"
+import TeamLine from "remixicon-react/TeamLineIcon"
 
-import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
+import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 
 const Activate = () => {
     const {theme, toggleTheme} = useContext(ThemeContext);
+    const themeTone = useContext(AppContext);
 
     const [account, setAccount] = useState({password: '',
                                             confirmPassword: ''});
@@ -73,7 +74,7 @@ const Activate = () => {
     }
 
     return (
-    <div className = 'activate-screen'>
+    <div className = {`activate-screen ${theme} ${themeTone}`}>
         <div className = 'wrapper'>
             <div className = 'activate-form'>
                 <div className = 'logo-wrapper'>
@@ -109,6 +110,7 @@ const Activate = () => {
                     size = "large"
                     icon_left = 'yes'
                     icon = 'password'
+                    isInvalid = {isInvalid.password}
                 />
                 <FormError errormessage = {errorMessage.password}/>
                 </div>
@@ -123,6 +125,7 @@ const Activate = () => {
                     size = "large"
                     icon_left = 'yes'
                     icon  = 'password'
+                    isInvalid = {isInvalid.confirmPassword}
                 />
                 <FormError errormessage = {errorMessage.confirmPassword}/>
                 </div>
@@ -142,6 +145,7 @@ const Activate = () => {
                     color = "primary" 
                     size = "large" 
                     onClick = {handleSubmit}
+                    futureStyle = {{width: '100%'}}
                 />
 
             </div>

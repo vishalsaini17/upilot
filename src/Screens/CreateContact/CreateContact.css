@@ -1,12 +1,12 @@
-/* .createcontact-screen {
-    background: var(--bg-color);
+.createcontact-screen {
+    /* background: var(--bg-color); */
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     overflow: auto;
-} */
+}
 
 .create-contact-wrapper{
     text-align: center;
@@ -17,6 +17,9 @@
     border-width: 1px 1px 0 1px; */
 }
 
+.icon-title{
+    vertical-align:middle
+}
 
 .nav-tabs{
     margin: 15px auto;
@@ -85,4 +88,50 @@
 .multiple-contact span{
     color: blue;
     cursor: pointer;
+}
+
+
+.contact-headerr{
+    font-family: "Roboto";
+    color: var(--form-title);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.contact-form-textbox{
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+  height: 40px;
+  width: 350px;
+  opacity: 0.4;
+  color: #242244;
+  font-size: 13px;
+  font-family: Poppins;
+  font-style: italic;
+  letter-spacing: 0.24px;
+}
+
+.contact-form-container{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.contact-form-field{
+    height: 24px;
+    width: 326px;
+    color: #7A7882;
+    opacity: 0.4;
+    font-family: Roboto;
+    font-size: 13px;
+    padding: 0 0 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: right;
 }

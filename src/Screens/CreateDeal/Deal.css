@@ -8,8 +8,7 @@
     overflow: auto;
     box-sizing: border-box;
 width: 100%;
-border: solid #5B6DCD 10px;
-padding: 5px;
+border: solid #5B6DCD 30px;
 border-width: thick;
 border-color: #242244;
 }
@@ -21,11 +20,9 @@ border-color: #242244;
     width: fit-content;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    overflow-y: auto;
     position: fixed;
-    width: 100%;
-    padding: 0 0 0 0;
+    width: 90%;
+    /* padding: 0 0 0 0;
     display: block!important;
     background: #fff;
     box-sizing: content-box;
@@ -33,7 +30,7 @@ border-color: #242244;
     position: fixed;
     border-width: thick;
     border-color: #242244;
-    top: 360px;
+    top: 360px; */
     }
 
 .deal-wrapper .deal-form {
@@ -47,9 +44,6 @@ border-color: #242244;
     
 }
 
-.deal-wrapper .deal-form .deal-form-control {
-    max-width: 'fit-content'
-}
 
 .deal-logo-wrapper{
     margin: -80px 0 80px 0
@@ -67,24 +61,28 @@ border-color: #242244;
 }
 
 .deal-form-textbox{
-    box-sizing: border-box;
+    
+    background-color: #eee;
     display: flex;
     flex-direction: row;
-  height: 40px;
+  height: 10px;
   width: 350px;
-  padding: 0 0 0 0;
-  border: 1px solid #E4E4E7;
-  background-color: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(81,77,119,0.1);
   opacity: 0.4;
   color: #242244;
-  font-family: Roboto;
   font-size: 13px;
+  font-family: Poppins;
   font-style: italic;
   letter-spacing: 0.24px;
-  line-height: 20px;
+  line-height: 10px;
 }
-
+.create-deal-wrapper{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    /* border-color: black;
+    border-width: 1px 1px 0 1px; */
+}
 .deal-form-field{
     height: 24px;
     width: 326px;
@@ -97,31 +95,31 @@ border-color: #242244;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.5px;
-    line-height: 24px;
     text-align: right;
 }
 
 
-  tr, td{
-    padding: 5px;
-    float:right;
-}
 
-td:first-child + td { /*second child */
-    margin-top: 10px;
+td:first-child + td +tr { /*second child */
+    margin-top: 1px;
     font-style: italic;
     color: gray;
     font-family: Roboto;
     font-style: italic;
+    border-collapse: collapse;
+    margin: 0 0 10px 0;
+    min-height: 40px;
 }
 
 fieldset{
-    width: 750px;
+    width: 880px;
     display: flex;
     flex-direction: column;
     border: 1px solid;
     border-color: gray;
-    margin-bottom: 30px;
+    margin-bottom: 3px;
+    margin: 0 0 10px 0;
+    min-height: 40px;
 }
 
 .deal-form-container{
@@ -129,36 +127,27 @@ fieldset{
     justify-content: center;
     align-items: center;
     display: flex;
-    font-style: italic;
-}
-
-.deal-addperson-form{
-    margin: '0 auto';
-    padding: '1rem 2rem';
-    display: 'flex';
-    flex-direction: 'column';
-    text-align: 'right';
-    border-color: black;
-    width:  750px
+    margin: 0 0 10px 0;
+    min-height: 40px;
 }
 
 .deal-form-row{
     display: flex;
     flex-direction: row;
-    padding: 10px;
     justify-content: right;
-    width: 700px
+    width: 400px;
+    margin: 0 0 10px 0;
+    min-height: 40px;
 }
 
 .deal-form-footer{
     background-color: lightgrey;
-    height: 50px
+    height: 40px
 }
 
 .deal-form-footer .deal-footer-left{
     float:left;
     height: inherit;
-    padding: 10px;
     display: flex;
 }
 
@@ -166,7 +155,6 @@ fieldset{
     float:right;
     display: flex;
     flex-direction: row;
-    padding:10px
 }
 
 .deal-show-btn{
@@ -199,4 +187,37 @@ fieldset{
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 0 0 10px 0;
+    min-height: 40px;
+}
+
+
+.headerr{
+    font-family: "Roboto";
+    color: var(--form-title);
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    line-height: 5px;
+    text-align: center;
+}
+
+.container {
+    display: table;
+    width: 100%
+}
+  
+.label {
+    display: table-cell;
+    width: 1px;
+    white-space: nowrap;
+}
+  
+.span {
+    display: table-cell;
+    padding: 0 4px 0 6px;
+}
+  
+.input {
+    width: 70%;
 }

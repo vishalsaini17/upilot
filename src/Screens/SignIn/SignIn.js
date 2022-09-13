@@ -1,5 +1,5 @@
 import React, {useState, useContext} from "react";
-import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import Input from "../../Components/Input/Input"
 import Button from "../../Components/Button/Button";
 import FormError from "../../Components/FormError/FormError";
@@ -7,6 +7,7 @@ import Checkbox from "../../Components/Checkbox/Checkbox";
 import Tooltip from "../../Components/Tooltip/Tooltip";
 
 import { ThemeContext } from "../../Themes";
+import AppContext from "../../AppContext";
 
 import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
@@ -18,6 +19,8 @@ import AddInPopup from "../../Components/AddInPopup/AddInPopup";
 
 // test comment to demo git pull and conflict management
 export default function SignIn() {
+  const navigate = useNavigate();
+
   const [person, setPerson] = useState({email:'',
                                         password: ''});
   const [errorMessage, setErrorMessage] = useState({});
@@ -26,7 +29,8 @@ export default function SignIn() {
   const [isHovering, setIsHovering] = useState(false);
 
   const {theme, toggleTheme} = useContext(ThemeContext)
-
+  const themeTone = useContext(AppContext);
+  // console.log('---------',themeTone)
 
   const handleChange = (e) => {
     const name = e.target.name; //geting name of variable you change
@@ -71,11 +75,9 @@ export default function SignIn() {
     }
 
   return (
-    
-    
-    <div className = 'signin-screen'>
+    <div className = {`signin-screen ${theme} ${themeTone}`}>
       <div className = 'wrapper'>
-        <form className = 'form' style ={{margin: '0 auto',
+        <form className = 'signin-form' style ={{margin: '0 auto',
                                           padding: '1rem 2rem',
                                          display: 'flex',
                                          flexDirection: 'column',
@@ -84,7 +86,7 @@ export default function SignIn() {
            <div className = 'logo-wrapper'>
              <img src = {logoHandle()} style = {{width: '109px', height: '120px'}} alt=""/>
            </div>
-           <p className = 'form-title'> Sign In </p>
+           <h2 style = {{color: 'white'}}> Sign In </h2>
            <div className = 'form-control'>
              <Input 
              type = "text"
@@ -126,20 +128,17 @@ export default function SignIn() {
             type = "submit" 
             text = " Sign In" 
             shape = "square" 
-            size="large"
+            size="xlarge"
             color= "primary"
             onClick = {handleSubmit}
-            
-            
-            />
-            
+            futureStyle = {{width: '100%'}}
+          />
           
-          <Link to = '/forgotpassword' 
-              onMouseOver = {handleMouseOver}
-              onMouseOut = {handleMouseOut}>
-            <p className ='forget-pwd'> Forgot your password? </p>
-            
-          </Link>
+          <Button shape = 'no_border'
+                  size = 'small'
+                  text = 'Forgot your password?'
+                  futureStyle ={{width: '100%'}}
+                  onClick = {() => navigate('/forgotpassword')}/>
 
           {isHovering && <Tooltip type = "leftarrow"
                           message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}

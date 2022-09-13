@@ -75,8 +75,10 @@ export default function ChooseResponsible(props){
             </ul>
         </div>
         <div className="resp-tag-footer" >
-                <button className = 'cancel-btn'
-                onClick = ''> Cancel </button>
+                <Button text = 'Cancel'
+                        shape = 'no_border'
+                        size = 'small'
+                />
                 <Button type = 'submit'
                         text= 'Apply'
                         shape = 'square'

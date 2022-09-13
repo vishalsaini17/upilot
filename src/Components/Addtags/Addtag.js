@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react'
+
 import CloseLine from "remixicon-react/CloseLineIcon";
-import SearchLine from "remixicon-react/SearchLineIcon";
+import SearchLine from "remixicon-react/SearchLineIcon"
 import Button from "../Button/Button";
 import Input from '../Input/Input';
-import "./Addtags.css";
+import "./Addtags.css"
 
 export default function Addtag(props){
     const {setTrigger, trigger} = props

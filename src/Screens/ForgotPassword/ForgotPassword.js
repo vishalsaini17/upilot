@@ -1,20 +1,25 @@
-import React, {useState, useContext} from 'react';
-import {Link} from 'react-router-dom'
+import React, { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import "./ForgotPassword.css"
-import Input from '../../Components/Input/Input';
-import FormError from '../../Components/FormError/FormError';
 import Button from '../../Components/Button/Button';
+import FormError from '../../Components/FormError/FormError';
+import Input from '../../Components/Input/Input';
+import "./ForgotPassword.css";
 
+import AppContext from "../../AppContext";
 import { ThemeContext } from "../../Themes";
 
-import LightLogo from "../../Logo/UPilot logo - white vertical.svg"
-import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg"
+import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg";
+import LightLogo from "../../Logo/UPilot logo - white vertical.svg";
 
 export default function ForgotPassword(){
+    const navigate = useNavigate();
+    
     const {theme, toggleTheme} = useContext(ThemeContext);
+    const themeTone = useContext(AppContext);
     
     const [email, setEmail] = useState('');
+    const [isInvalid, setIsInvalid] = useState(false);
     const [errorMessage, setErrorMessage] = useState('')
 
     const handleChange = (e) => {
@@ -25,6 +30,7 @@ export default function ForgotPassword(){
         e.preventDefault();
         if (email === ''){
             setErrorMessage('Info missing')
+            setIsInvalid(true);
         }
     }
 
@@ -37,7 +43,7 @@ export default function ForgotPassword(){
     }
 
   return (
-    <div className = 'forgotpwd-screen'>
+    <div className = {`forgotpwd-screen ${theme} ${themeTone}`}>
         <div className = 'wrapper'>
             <div className = 'forgotpwd-form'>
                 <div className = 'logo-wrapper'>
@@ -60,6 +66,7 @@ export default function ForgotPassword(){
                     size = "large"
                     icon_left = 'yes'
                     icon = 'mail'
+                    isInvalid = {isInvalid}
                 />
                 <FormError errormessage = {errorMessage}/>
                 </div>
@@ -71,10 +78,14 @@ export default function ForgotPassword(){
                     color = "primary" 
                     size = "large" 
                     onClick = {handleSubmit}
+                    futureStyle = {{width: '100%'}}
                 />
-                <Link to ='/'>
-                    <p className ='cancel'> Cancel </p>
-                </Link>
+
+                <Button shape = 'no_border'
+                        size = 'small'
+                        text = 'Cancel'
+                        futureStyle ={{width: '100%'}}
+                        onClick = {() => navigate('/')} />
             </div>
         </div>
     </div>

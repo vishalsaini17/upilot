@@ -21,42 +21,50 @@ export default function AddInPopup(props){
     const [isHovering, setIsHovering] = useState(false);
     const {trigger, setTrigger} = props;
 
-    useMouseTrap("shift+d", () => navigate('/createdeal'))
+    useMouseTrap("shift+d", () => navigate('/createdeal'));
+    useMouseTrap('shift+c', () => navigate('/createcontact'));
+    useMouseTrap("shift+t", () => navigate('/createtask'));
+    useMouseTrap('shift+i', () => navigate('/createcontact'));
 
     const popupItems = [
         {
             id: 1,
             url: '/createcontact',
             title: 'Add new contact',
+            shortcut: '(Shift + C)',
             icon: <ContactsBookFillIcon size= {18}/>
         },
         {
             id: 2,
             url: '/createdeal',
             title: 'Add new deal',
+            shortcut: '(Shift + D)',
             icon: <BriefcaseFillIcon size= {18}/>,
         },
         {
             id: 3,
             url: '/createtask',
             title: 'Add new task',
+            shortcut: '(Shift + T)',
             icon: <TaskFill size= {18}/>
         },
         {
             id: 4,
             url: '/importdata',
             title: 'Import data',
+            shortcut: '(Shift + I)',
             icon: <FileDownloadFill size= {18}/>
         },
 
     ]
 
-    const handleMouseOver =() => {
-        setIsHovering(true)
+    const handleMouseOver =(selected) => {
+        console.log(selected)
+        setIsHovering(selected)
     }
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    }
+    // const handleMouseOut = () => {
+    //     setIsHovering();
+    // }
     
   return (props.trigger) ? (
     <div className = 'addin-wrapper'>
@@ -81,11 +89,12 @@ export default function AddInPopup(props){
                         </td>
                         <td className = 'addin-row-text'
                             onClick = {() => navigate(item.url)}
-                            onMouseOver = {handleMouseOver}
-                            onMouseOut = {handleMouseOut}>
+                            onMouseOver = {() => handleMouseOver(item)}>
+                            {/* // onMouseOut = {handleMouseOut}> */}
                             {item.title}
                         </td>
-                        {(isHovering && item.title === 'Add new deal' ) && <td className = 'shortcut'> (Shift + D)</td>}
+                        {(isHovering.id === item.id) && <td className = 'shortcut'> {item.shortcut}</td>}
+                        {/* {(isHovering && item.title === 'Add new deal' ) && <td className = 'shortcut'> (Shift + D)</td>} */}
                     </tr>
                 )
             }))}

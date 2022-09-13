@@ -45,8 +45,9 @@ fieldset{
 }
 
 .form-footer{
-    background-color: lightgrey;
-    height: 50px
+    border: 1px solid lightgray;
+    height: 60px;
+    padding: 0 10px;
 }
 
 .form-footer .footer-left{

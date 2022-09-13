@@ -1,12 +1,14 @@
 .signin-screen {
-    background: var(--bg-color);
+    background-color: var(--bg-color);
+    background-size: 100% 100vh, cover, 150px;
     position: fixed;
-    top: 0;
+    display: block;
     left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: auto;
-
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat, repeat-x, repeat;
+    z-index: 0;
+    top: 0
 }
 
 .wrapper{

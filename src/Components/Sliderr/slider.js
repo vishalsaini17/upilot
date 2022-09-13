@@ -13,7 +13,7 @@ export default function Sliderr() {
   };
 
   return (
-    <Box sx={{ width: 250 }}>
+    <Box sx={{ width: 350 }}>
       <Typography>{value + "%"}</Typography>
       <Slider
         value={value}
@@ -21,7 +21,7 @@ export default function Sliderr() {
         step={5}
         max={100}
         onChange={handleChange}
-        valueLabelDisplay="auto"
+        // valueLabelDisplay="auto"
         aria-labelledby="non-linear-slider"
       />
     </Box>

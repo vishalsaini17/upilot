@@ -1,7 +1,7 @@
 //Main create deal screen
 
-import React, {useState} from 'react'
-import Deal from './Deal'
+import React, { useState } from 'react';
+import Deal from './Deal';
 import "./Deal.css";
 export default function CreateDeal(){
 
@@ -17,25 +17,13 @@ export default function CreateDeal(){
   
     return (
         <div className = 'deal-screen'>
-      <div className = 'deal-wrapper'>
-      <p fontSize="30px"> Import Data  </p>
-      <form className = 'deal-form' style ={{margin: '8 auto',
-                                          padding: '1rem 2rem',
-                                         display: 'flex',
-                                         flexDirection: 'column',
-                                         textAlign: 'center',
-                                          maxWidth: 'fit-content'}}>
-
-      <p className = 'deal-form-title'> Add new deal </p>
-</form>
-</div>
-
-        
+            
       <div className = 'create-deal-wrapper'>
+        
           {showDetails ? 
-            <p> Create a deal</p>
+            <p className='headerr'> Add new deal</p>
             :
-            <p> Create a new deal - Quick add </p>}
+            <p className='headerr'> Add new Deal </p>}
           <nav className = "nav-tabs">
             {addTypes.map((addType) => (
               <a
@@ -50,6 +38,7 @@ export default function CreateDeal(){
          
           <div className = 'deal-contact-form'>
             {selectedAddType === 'Add deal' ? <Deal showDetails = {showDetails}/> : <Deal/>}
+  
           </div>
           
       </div>

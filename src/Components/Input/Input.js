@@ -27,11 +27,11 @@ import "./Input.css"
 
 export default function Input(props){
     const {size, type, value, placeholder, name, onChange,
-        icon, isEmpty, isInvalid} = props
+        icon, isEmpty, isInvalid, futureStyle} = props
 
-    console.log(props.icon)
-    console.log(typeof(props.icon))
-    console.log(DoorLockBoxLineIcon)
+    // console.log(props.icon)
+    // console.log(typeof(props.icon))
+    // console.log(DoorLockBoxLineIcon)
     const iconList = {
         'password' : <DoorLockBoxLineIcon size = {24}/>,
         'mail' : <MailLine size = {24}/> 
@@ -45,11 +45,10 @@ export default function Input(props){
             width: "100%",
             fontSize: "13px",
             padding: "15px",
-            border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+            border: isInvalid && '1px solid #D78989'
         }
         return(
             <div className = 'input-control'>
-                {/* {props.label && <label htmlFor="input-field">{props.label}</label>} */}
                 <input className="input-field"
                 type = {type}
                 placeholder={placeholder}
@@ -63,7 +62,15 @@ export default function Input(props){
     }
 
     const normal_input_icon_left = () =>{
-        const ic = icon
+        const ic = icon;
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "40px",
+            width: "300px",
+            fontSize: "13px",
+            padding: "12px 32px",
+            border: isInvalid && '1px solid #D78989'
+        }
         return(
             <div className = 'input-control'>
                 <i className='icon'
@@ -77,13 +84,7 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name= {name}
-                    style={{
-                        height: "40px",
-                        width: "300px",
-                        fontSize: "13px",
-                        padding: "12px 32px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                        }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}> 
                 </input>
             </div>
@@ -91,19 +92,21 @@ export default function Input(props){
     }
 
     const normal_input_icon_right = () =>{
-        const ic = icon
+        const ic = icon;
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "40px",
+            width: "300px",
+            fontSize: "13px",
+            padding: "15px",
+            border: isInvalid && '1px solid #D78989'
+        }
         return(
             <div className = 'input-control'>
                 <input className="input-field"
                     type = {type}
                     placeholder={placeholder}
-                    style={{
-                        height: "40px",
-                        width: "300px",
-                        fontSize: "13px",
-                        padding: "15px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                        }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}
                     value= {value}
                     name= {name}> 
@@ -120,19 +123,21 @@ export default function Input(props){
     }
 
     const large_input = () => {
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "50px",
+            width: "350px", 
+            fontSize: "15px",
+            padding: "20px",
+            color: '#C9C8CE',
+            border: isInvalid && '1px solid #D78989',
+        }
         return(
             <input className = 'input-field'
             type = {props.type}
             placeholder={props.placeholder}
             name= {name}
-            style = {{
-                height: "50px",
-                width: "350px", 
-                fontSize: "15px",
-                padding: "20px",
-                color: '#C9C8CE',
-                border: (isInvalid ? '1px solid #E7B8B8' : 'none'),
-            }}
+            style = {{...currentInputStyle, ...futureStyle}}
             onChange = {props.onChange}
             value= {props.value}>
             </input>
@@ -140,7 +145,15 @@ export default function Input(props){
     }
 
     const large_input_icon_left = () =>{
-        const ic = icon
+        const ic = icon;
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "50px",
+            width: "350px",
+            fontSize: "16px",
+            padding: "15px 0px 15px 40px",
+            border: isInvalid && '1px solid #D78989'
+        }
         return(
             <div className = 'input-control'>
                 <i className='icon' 
@@ -154,13 +167,7 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name= {name}
-                    style={{
-                        height: "50px",
-                        width: "350px",
-                        fontSize: "16px",
-                        padding: "15px 0px 15px 40px",
-                        border: isInvalid ? '1px solid #D78989' : ' 1px solid #D2D2D6',  
-                    }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}
                     > 
                 </input>
@@ -169,7 +176,15 @@ export default function Input(props){
     }
 
     const large_input_icon_right = () =>{
-        const ic = icon
+        const ic = icon;
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "50px",
+            width: "350px",
+            fontSize: "16px",
+            padding: "15px",
+            border: isInvalid && '1px solid #D78989', 
+        }
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -177,13 +192,7 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{
-                        height: "50px",
-                        width: "350px",
-                        fontSize: "16px",
-                        padding: "15px",
-                        border: isInvalid ? '1px solid #E7B8B8' : 'none', 
-                        }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}
                     > 
                 </input>
@@ -199,19 +208,21 @@ export default function Input(props){
     }
 
     const xlarge_input = () => {
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: '50px',
+            width: '400px',
+            fontSize: '18px',
+            padding: '25px',
+            border: isInvalid && '1px solid #D78989' 
+        }
         return(
             <input className='input-field'
             type = {type}
             placeholder={placeholder}
             value= {value}
             name = {name}
-            style= {{
-                height: '50px',
-                width: '400px',
-                fontSize: '18px',
-                padding: '25px',
-                border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-            }}
+            style= {{...currentInputStyle, ...futureStyle}}
             onChange = {onChange}>
             </input>
 
@@ -219,6 +230,14 @@ export default function Input(props){
     }
 
     const xlarge_input_icon_left = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "60px",
+            width: "350px",
+            fontSize: "18px",
+            padding: "20px 40px",
+            border: isInvalid && '1px solid #D78989'
+        }
         const ic = icon
         return(
             <div className = 'input-control'>
@@ -233,13 +252,7 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{
-                        height: "60px",
-                        width: "350px",
-                        fontSize: "18px",
-                        padding: "20px 40px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                        }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}
                     > 
                 </input>
@@ -249,7 +262,15 @@ export default function Input(props){
     
 
     const xlarge_input_icon_right = () =>{
-        const ic = icon
+        const ic = icon;
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            height: "60px",
+            width: "350px",
+            fontSize: "18px",
+            padding: "25px",
+            border: isInvalid && '1px solid #D78989'
+        }
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -257,14 +278,9 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{
-                        height: "60px",
-                        width: "350px",
-                        fontSize: "18px",
-                        padding: "25px",
-                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
-                        }}
+                    style={{...currentInputStyle, ...futureStyle}}
                     onChange = {onChange}
+                    
                     > 
                 </input>
                 <i className='icon' 
@@ -274,6 +290,110 @@ export default function Input(props){
                     }}> 
                     {iconList[ic]}
                 </i>
+            </div>
+        )
+    }
+
+    const focus_empty = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            boxSizing: "borderBox",
+  height: "40px",
+  width: "300px",
+  border: "1px solid rgba(0,156,215,0.3)",
+  backgroundColor: "#FFFFFF",
+  boxShadow: "0 15px 15px -15px rgba(36,34,68,0.3), 0 1px 4px 0 rgba(36,34,68,0.1)",
+        }
+        return(
+            <div className = 'input-control'>
+                <input className="input-field"
+                    type = {type}
+                    placeholder={placeholder}
+                    value= {value}
+                    name ={name}
+                    style={{...currentInputStyle, ...futureStyle}}
+                    onChange = {onChange}
+                    > 
+                </input>
+            
+            </div>
+        )
+    }
+
+    const focus_filling = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            boxSizing: "borderBox",
+  height: "40px",
+  width: "300px",
+  border: "1px solid rgba(0,156,215,0.3)",
+  backgroundColor: "#FFFFFF",
+  boxShadow: "0 15px 15px -15px rgba(36,34,68,0.3), 0 1px 4px 0 rgba(36,34,68,0.1)",
+        }
+        return(
+            <div className = 'input-control'>
+                <input className="input-field"
+                    type = {type}
+                    placeholder={placeholder}
+                    value= {value}
+                    name ={name}
+                    style={{...currentInputStyle, ...futureStyle}}
+                    onChange = {onChange}
+                    > 
+                </input>
+            
+            </div>
+        )
+    }
+
+    const default_filled = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            boxSizing: "borderBox",
+  height: "40px",
+  width: "300px",
+  border: "1px solid #D2D2D6",
+  backgroundColor: "#FFFFFF",
+  boxShadow: " 0 1px 4px 0 rgba(36,34,68,0.1)",
+        }
+        return(
+            <div className = 'input-control'>
+                <input className="input-field"
+                    type = {type}
+                    placeholder={placeholder}
+                    value= {value}
+                    name ={name}
+                    style={{...currentInputStyle, ...futureStyle}}
+                    onChange = {onChange}
+                    > 
+                </input>
+            
+            </div>
+        )
+    }
+
+    const mouse_filled = () =>{
+        const futureStyle = props.futureStyle;
+        const currentInputStyle = {
+            boxSizing: "borderBox",
+  height: "40px",
+  width: "300px",
+  border: "1px solid rgba(0,156,215,0.3)",
+  backgroundColor: "#FFFFFF",
+  boxShadow: "0 1px 4px 0 rgba(36,34,68,0.1)",
+        }
+        return(
+            <div className = 'input-control'>
+                <input className="input-field"
+                    type = {type}
+                    placeholder={placeholder}
+                    value= {value}
+                    name ={name}
+                    style={{...currentInputStyle, ...futureStyle}}
+                    onChange = {onChange}
+                    > 
+                </input>
+            
             </div>
         )
     }
@@ -350,6 +470,33 @@ export default function Input(props){
         return <div className='form-control'>{xlarge_input()}</div>
     }
 
+    if (
+        props.size === 'normal' && 
+        props.filling=== 'no'
+    ){
+        return  (<div>{focus_empty()}</div>)
+    };
+
+    if (
+        props.size === 'normal' && 
+        props.filling=== 'yes'
+    ){
+        return  (<div>{focus_filling()}</div>)
+    };
+
+    if (
+        props.size === 'normal' && 
+        props.value=== 'yes'
+    ){
+        return  (<div>{default_filled()}</div>)
+    };
+
+    if (
+        props.size === 'mouse' && 
+        props.value === 'yes'
+    ){
+        return  (<div>{mouse_filled()}</div>)
+    };
 }
     
 

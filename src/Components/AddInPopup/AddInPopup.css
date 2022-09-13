@@ -3,7 +3,13 @@
     width: fit-content;
     position: absolute;
     z-index: 1;
-    padding: 10px
+    /* top: 100%; */
+    left: 0;
+    right: auto;
+    padding: 5px 0;
+    background: #fff;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 60%);
+    border-radius: 5px;
 }
 
 .table-popup{
@@ -16,10 +22,11 @@
     align-items: left;
     justify-content: left;
     text-align: left;
-    border: 1px solid;
-    border-color: black;
+    /* border: 1px solid;
+    border-color: black; */
     border-radius: 5px;
     z-index: 1;
+        
 }
 
 .table-popup .addin-row, .addin-row-text, .addin-row-icon, .shortcut {

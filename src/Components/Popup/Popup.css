@@ -16,7 +16,7 @@
 .popup {
     box-sizing: border-box;
     position: relative;
-    padding: 35px;
+    padding: 25px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@
     background: linear-gradient(180deg, rgba(81, 77, 119, 0) 0%, #514D77 100%);
 }
 
-.cancel-btn {
+/* .cancel-btn {
     display: inline-block;
     box-sizing: border-box;
     color:#767299;
@@ -77,7 +77,7 @@
     overflow: hidden;
     border: none
 
-}
+} */
 
 .confirm-btn {
     display: inline-block;
@@ -116,7 +116,6 @@
 .button-row {
     text-align: right;
     display: table-row;
-    margin-top: 10px
 }
 
 @media only screen and (max-width: 600px) {

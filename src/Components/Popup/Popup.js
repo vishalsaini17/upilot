@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import React, {useState} from 'react';
 import "./Popup.css"
 
@@ -31,8 +32,9 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'
-                        onClick = {cancelButton}> Cancel </button>
+                        <Button shape = 'no_border'
+                                text = 'Cancel'
+                                onClick = {cancelButton}/>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
@@ -64,8 +66,9 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'
-                        onClick = {cancelButton}> Cancel </button>
+                        <Button shape = 'no_border'
+                                text = 'Cancel'
+                                onClick = {cancelButton}/>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
@@ -96,8 +99,9 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'
-                        onClick = {cancelButton}> Cancel </button>
+                        <Button shape = 'no_border'
+                                text = 'Cancel'
+                                onClick = {cancelButton}/>
                         <button className = 'confirm-btn'> Save </button>
 
                     </div>
@@ -128,8 +132,9 @@ export default function Popup(props){
                     </div>
                     <div className = 'bar'></div>
                     <div className = 'button-row'>
-                        <button className = 'cancel-btn'
-                        onClick = {cancelButton}> Cancel </button>
+                        <Button shape = 'no_border'
+                                text = 'Cancel'
+                                onClick = {cancelButton}/>
                         <button className = 'delete-btn'> Delete </button>
 
                     </div>

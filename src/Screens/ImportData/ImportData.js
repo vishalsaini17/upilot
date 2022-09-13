@@ -1,13 +1,13 @@
 //Import data screen 1
 
-import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import "./ImportData.css"
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
-import {FaFileCsv} from 'react-icons/fa' ;
-import {BsFillCloudFill} from 'react-icons/bs';
 import { styled } from '@mui/material/styles';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
+import * as React from 'react';
+import { BsFillCloudFill } from 'react-icons/bs';
+import { FaFileCsv } from 'react-icons/fa';
+import "./ImportData.css";
 
 
 export default function ImportData() {
@@ -29,7 +29,7 @@ export default function ImportData() {
 
   return (
         <div className = 'import-data-wrapper'>
-          <div className='wrapper'>
+          <div className='import-wrapper'>
             <p style={{fontSize: "40px"}}> Import Data  </p>
             <fieldset className='box-field' align="centre">
             <legend align = 'left' style={{fontSize: '15px'}}> From where would you like to import your contact/deal from?</legend>  

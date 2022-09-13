@@ -1,18 +1,18 @@
-import React, {useState, useContext} from "react";
-import {Link} from 'react-router-dom';
+import React, { useContext, useState } from "react";
 
-import "./MultipleAccounts.css"
 import Button from '../../Components/Button/Button';
 import Checkbox from '../../Components/Checkbox/Checkbox';
-import FormError from "../../Components/FormError/FormError";
+import "./MultipleAccounts.css";
 
-import { ThemeContext } from "../../Themes";
-import LightLogo from "../../Logo/UPilot logo - white vertical.svg";
+import AppContext from "../../AppContext";
 import DarkLogo from "../../Logo/UPilot logo - dark vertical.svg";
+import LightLogo from "../../Logo/UPilot logo - white vertical.svg";
+import { ThemeContext } from "../../Themes";
 
 export default function MultipleAccounts(){
     // theming
-    const {theme, toggleTheme} = useContext(ThemeContext)
+    const {theme, toggleTheme} = useContext(ThemeContext);
+    const themeTone = useContext(AppContext);
 
 
     const checkedList = [
@@ -59,7 +59,7 @@ export default function MultipleAccounts(){
     }
 
   return (
-    <div className = 'multipleacc-screen'>
+    <div className = {`multipleacc-screen ${theme} ${themeTone}`}>
         <div className = 'wrapper'>
         <form className = 'multipleacc-form' style ={{margin: '0 auto',
                                           padding: '1rem 2rem',
@@ -92,6 +92,7 @@ export default function MultipleAccounts(){
                             color = "primary" 
                             size = "large" 
                             onClick = {handleSubmit}
+                            futureStyle = {{width: '100%'}}
                         />
                     
                 </div>

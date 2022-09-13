@@ -1,33 +1,41 @@
-import React, {useState} from 'react';
-import Input from '../../Components/Input/Input';
+import React, { useState } from 'react';
+import Alert from '../../Components/Alert/Alert';
 
-import UserLine from  "remixicon-react/UserLineIcon";
-import BuildingLine from  "remixicon-react/BuildingLineIcon";
+import BuildingLine from "remixicon-react/BuildingLineIcon";
+import UserLine from "remixicon-react/UserLineIcon";
 
-import "./CreateContact.css"
-import AddPerson from '../../Components/CreateContactWindow/AddPerson'
-import AddCompany from '../../Components/CreateContactWindow/AddCompany'
-
+import AddCompany from '../../Components/CreateContactWindow/AddCompany';
+import AddPerson from '../../Components/CreateContactWindow/AddPerson';
+import Tabs from '../../Components/Tabss/Tabs';
+import "./CreateContact.css";
 
 export default function CreateContact(){
 
-  const [selectedAddType, setSelectedAddType] = useState("Add a person")
-
   const [showDetails, setShowDetails] = useState(false)
-  const addTypes = ["Add a person", "Add a company"]
+
+  const tabList = [
+        {
+            id: 'tab1',
+            name: <>
+                    <i className = 'icon-title'>
+                    {<UserLine size = {22}/>}</i> Add a person
+                  </>,
+            content: <AddPerson />
+
+        },
+        {
+            id: 'tab2',
+            name: <>
+                    <i className = 'icon-title'>
+                      {<BuildingLine size = {22} />}
+                    </i> Add a company
+                  </>,
+            content: <AddCompany />
+        },
+
+    ]
   const iconTypes = ['<UserLine/>', '<BuildingLine/>']
 
-  const changeAddType = (type) => {
-    setSelectedAddType(type);
-  };
-
-  const returnClassname = (addType) => {
-    if (addType === selectedAddType){
-      return "nav-tabs item-active"
-    } else {
-      return "nav-tabs item"
-    }
-  }
 
 
   return (
@@ -35,29 +43,19 @@ export default function CreateContact(){
     <div className = 'create-contact-wrapper'>
         {showDetails ? 
           <p> Create a new contact</p>
-          :
-          <p className='form-title'> Create a new contact - Quick add </p>}
-        <nav className = "nav-tabs">
-          {addTypes.map((addType) => (
-            <a
-              onClick={() => changeAddType(addType)}
-              className={returnClassname(addType)}
-            >
-              <i> </i>
-              {addType}
-            </a>
-          ))}
-        </nav>
+          :<p className='contact-headerr'> Create a new contact - Quick add </p>}
        
-        <div className = 'contact-form'>
-          {selectedAddType === 'Add a person' ? <AddPerson showDetails = {showDetails}/> : <AddCompany/>}
-        </div>
-        <div className = 'multiple-contact'>
-            <p> Want to add multiple contacts? 
-              <span> Import contacts </span>
-            </p>
-        </div>
-        
+
+        <Tabs tabList = {tabList} 
+            size = 'large'
+            shape = 'square'/>
+
+        <Alert className = 'multiple-contact' 
+          type = 'neutral' 
+          message = {<> Want to add multiple contacts? 
+                        <span className = 'message-bold'> Import contacts </span></>} 
+          futureStyle = {{width: '750px'}}
+        />
     </div>
     </div>
   )

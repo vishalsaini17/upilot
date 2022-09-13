@@ -54,7 +54,7 @@ class Colorpicker extends React.Component {
     return (
       <GithubPicker
         colors={colors}
-        width="235px"
+        width="120px"
         triangle = "hide"
         onChange={this.handleChange}
         onChangeComplete={this.handleChangeComplete}
