@@ -35,7 +35,7 @@ import ArrowDown from "remixicon-react/ArrowDownLineIcon"
     const futureStyle = props.futureStyle;
     const currentButtonStyle = {
         height: "60px",
-        width: "239px",
+        width: "400px",
         fontSize: "20px",
         borderRadius: "12px",
     }

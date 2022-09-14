@@ -43,9 +43,8 @@
     margin-bottom: 30px;
 }
 
-
-  .form-control {
-    max-width: 'fit-content'
+.form-control {
+    margin-bottom: 14px;
 }
 
 .text-center{

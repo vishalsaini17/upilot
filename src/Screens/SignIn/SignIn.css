@@ -64,6 +64,6 @@
     letter-spacing: 0.3px;
     line-height: 20px;
     cursor: pointer;
-    color: var(--link-text);
+    color: var(--form-title-dark);
 }
 
