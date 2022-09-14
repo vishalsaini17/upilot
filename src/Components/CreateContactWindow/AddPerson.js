@@ -85,7 +85,7 @@ export default function AddPerson({showDetails}){
                       placeholder = 'Add a company here'
                       name = 'company'
                       size = "normal"
-                      futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                      futureStyle = {{width: '350px', font: 'Poppins'}}/>
                       </div></td>
                 <td>
                 <div className = 'contact-form-field' >

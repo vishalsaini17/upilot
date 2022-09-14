@@ -45,6 +45,10 @@ fieldset{
     border: 1px solid lightgray;
     height: 60px;
     padding: 0 10px;
+    margin-left: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .form-footer .footer-left{
@@ -85,4 +89,9 @@ fieldset{
     background-repeat: no-repeat;
     overflow: hidden;
     border: none
+}
+.outlet {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 10px;
 }

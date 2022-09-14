@@ -270,7 +270,7 @@ export default function AddCompany(){
                   name = 'website'
                   onChange = {handleChange}
                   size = "normal" 
-                  futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                  futureStyle = {{width: '350px', font: 'Poppins'}}/>
                   </div>
             </td>
             <td> <div className = 'contact-form-field' > Website</div> </td>
@@ -285,7 +285,7 @@ export default function AddCompany(){
                   name = 'company'
                   onChange = {handleChange}
                   size = "normal" 
-                  futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                  futureStyle = {{width: '350px', font: 'Poppins'}}/>
                   </div>
             </td>
             <td>
