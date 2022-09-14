@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import "./Checkbox.css"
+import "./Checkbox.css";
+
+
 
 export default function Checkbox(props){
     const {id, label, value, onChange} = props;
@@ -28,6 +30,8 @@ export default function Checkbox(props){
                 </input>
 
                 <label className = 'checkbox-label' htmlFor = {id}>{label}</label>
+  
+              
                  
             </div>
         )

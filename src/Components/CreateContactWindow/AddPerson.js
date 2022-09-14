@@ -53,7 +53,7 @@ export default function AddPerson({showDetails}){
                       placeholder = 'Add First name here'
                       name = 'firstname'
                       size = "normal"
-                      futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                      futureStyle = {{width: '350px', font: 'Poppins'}}/>
                       </div></td>
             
                 <td> 
@@ -70,7 +70,7 @@ export default function AddPerson({showDetails}){
                       placeholder = 'Add Last name here'
                       name = 'lastname'
                       size = "normal"
-                      futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                      futureStyle = {{width: '350px', font: 'Poppins'}}/>
                       </div>
                       </td>
                 <td> 
@@ -318,7 +318,7 @@ export default function AddPerson({showDetails}){
                   name = 'email'
                   onChange = {handleChange}
                   size = "normal" 
-                  futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                  futureStyle = {{width: '350px', font: 'Poppins'}}/>
            </div>
             </td>
             <td> <div className = 'contact-form-field' >Email </div></td>
@@ -334,7 +334,7 @@ export default function AddPerson({showDetails}){
                   name = 'firstname'
                   onChange = {handleChange}
                   size = "normal"
-                  futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}} />
+                  futureStyle = {{width: '350px', font: 'Poppins'}} />
             
             </div>
             </td>
@@ -350,7 +350,7 @@ export default function AddPerson({showDetails}){
                   name = 'lastname'
                   onChange = {handleChange}
                   size = "normal" 
-                  futureStyle = {{width: '350px', borderColor: 'transparent', fontStyle: 'italic', font: 'Poppins'}}/>
+                  futureStyle = {{width: '350px', font: 'Poppins'}}/>
                   </div>
             </td>
             <td> <div className = 'contact-form-field' >Last name </div> </td>

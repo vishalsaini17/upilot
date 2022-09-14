@@ -4,9 +4,9 @@
 }
 
 .input-field{
-    background: var(--input-bg-default);
-    border: var(--input-border-default);
-    box-shadow: 0 1px 4px 0 rgba(81, 77, 119, 0.1);
+    /* background: var(--input-bg-default);
+    border: var(--input-border-default); */
+    /* box-shadow: 0 1px 4px 0 rgba(81, 77, 119, 0.1); */
     font-family: "Poppins";
     outline: none;
     letter-spacing: 0.28px;
@@ -37,13 +37,14 @@
 .input-control {
     position: relative;
     display: block;
+    border: 1px solid #E4E4E7;
 }
 
 .input-control i {
    position: absolute;
    align-items: center;
    cursor: pointer;
-   color: var(--input-placeholder)
+   color: ;
 }
 
 
