@@ -27,12 +27,11 @@
     height: 21px; 
     /* color: #C9C8CE; */
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0.38px;
     line-height: 23px;
     color: var(--form-title);
     opacity: 0.6;
-    padding-left: 10px;
 }
 
 .square-checked{

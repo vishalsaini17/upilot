@@ -8,8 +8,9 @@ export default function Checkbox(props){
         return(
             <div className = 'checkbox-wrapper'
                 style= {{
-                    height: '34px',
-                    width: '350px',
+                    paddingLeft:"10px",
+                    height: '50px',
+                    width: '400px',
                 }}>
 
                 <input className = 'checkbox'

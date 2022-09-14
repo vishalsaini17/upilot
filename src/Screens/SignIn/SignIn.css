@@ -36,7 +36,8 @@
 }
 
 .wrapper .form .form-control {
-    max-width: 'fit-content'
+    max-width: 'fit-content';
+    margin:10px;
 }
 
 .logo-wrapper{
@@ -56,13 +57,13 @@
 .forget-pwd{
     padding: 15px 0 15px 0;
     margin: 20px 0 20px 0;
-    opacity: 0.6;
+    opacity: 70%;
     font-family: Poppins;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.3px;
     line-height: 20px;
     cursor: pointer;
-    color: var(--link-text)
+    color: var(--link-text);
 }
 
