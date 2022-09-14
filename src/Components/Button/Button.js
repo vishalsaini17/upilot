@@ -73,7 +73,7 @@ import ArrowDown from "remixicon-react/ArrowDownLineIcon"
     const futureStyle = props.futureStyle;
     const currentButtonStyle = {
       height: "40px",
-      width: "168px",
+      width: "169px",
       fontSize: "15px",
       borderRadius: "5px",
     }
@@ -173,8 +173,9 @@ import ArrowDown from "remixicon-react/ArrowDownLineIcon"
   const square_button_medium_secondary = () => {
     const futureStyle = props.futureStyle;
     const currentButtonStyle = {
+      
       height: "40px",
-      width: "168px",
+      width: "169px",
       fontSize: "15px",
       borderRadius: "5px",
     }
@@ -1426,7 +1427,7 @@ import ArrowDown from "remixicon-react/ArrowDownLineIcon"
     const futureStyle = props.futureStyle;
     const currentButtonStyle = {
       height: '40px',
-      width: '168px',
+      width: '169px',
       fontSize: '15px',
       borderRadius: '5px'
     }

@@ -294,7 +294,7 @@ export default function AddPerson({showDetails}){
 
           <div className="footer-right">
             <button className= 'cancel-button'> Cancel </button>
-            <Button
+            <Button className="contact-btn"
               type = "submit"
               text = "Create Contact"
               shape = "square"
@@ -375,7 +375,7 @@ export default function AddPerson({showDetails}){
               shape = 'no_border'
               text = 'Cancel'  
             />
-            <Button
+            <Button className="contact-btn"
               type = "submit"
               text = "Create Contact"
               shape = "square"

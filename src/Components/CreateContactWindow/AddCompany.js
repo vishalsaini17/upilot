@@ -246,7 +246,7 @@ export default function AddCompany(){
           </div>
 
           <div className="footer-right">
-            <button className= 'cancel-button'> Cancel </button>
+            <button className= 'cancel-button'>  </button>
             <Button
               type = "submit"
               text = "Create Contact"
