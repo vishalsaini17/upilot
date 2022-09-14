@@ -126,7 +126,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "50px",
-            width: "350px", 
+            width: "400px", 
             fontSize: "15px",
             padding: "20px",
             color: '#C9C8CE',
@@ -137,7 +137,14 @@ export default function Input(props){
             type = {props.type}
             placeholder={props.placeholder}
             name= {name}
-            style = {{...currentInputStyle, ...futureStyle}}
+            style = {{
+                // height: "70px",
+                // width: "400px", 
+                fontSize: "15px",
+                padding: "20px",
+                color: '#C9C8CE',
+                border: (isInvalid ? '1px solid #E7B8B8' : 'none'),
+            }}
             onChange = {props.onChange}
             value= {props.value}>
             </input>
@@ -149,9 +156,9 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "50px",
-            width: "350px",
+            width: "400px",
             fontSize: "16px",
-            padding: "15px 0px 15px 40px",
+            padding: "15px 0px 13px 48px",
             border: isInvalid && '1px solid #D78989'
         }
         return(
@@ -167,7 +174,13 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name= {name}
-                    style={{...currentInputStyle, ...futureStyle}}
+                    style={{
+                        // height: "50px",
+                        // width: "350px",
+                        fontSize: "16px",
+                        padding: "15px 0px 15px 40px",
+                        border: isInvalid ? '1px solid #D78989' : ' 1px solid #D2D2D6',  
+                    }}
                     onChange = {onChange}
                     > 
                 </input>
@@ -176,15 +189,7 @@ export default function Input(props){
     }
 
     const large_input_icon_right = () =>{
-        const ic = icon;
-        const futureStyle = props.futureStyle;
-        const currentInputStyle = {
-            height: "50px",
-            width: "350px",
-            fontSize: "16px",
-            padding: "15px",
-            border: isInvalid && '1px solid #D78989', 
-        }
+        const ic = icon
         return(
             <div className = 'input-control'>
                 <input className="input-field"
@@ -192,7 +197,13 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{...currentInputStyle, ...futureStyle}}
+                    style={{
+                        // height: "70px",
+                        // width: "400px",
+                        fontSize: "16px",
+                        padding: "15px",
+                        border: isInvalid ? '1px solid #E7B8B8' : 'none', 
+                        }}
                     onChange = {onChange}
                     > 
                 </input>
@@ -208,21 +219,19 @@ export default function Input(props){
     }
 
     const xlarge_input = () => {
-        const futureStyle = props.futureStyle;
-        const currentInputStyle = {
-            height: '50px',
-            width: '400px',
-            fontSize: '18px',
-            padding: '25px',
-            border: isInvalid && '1px solid #D78989' 
-        }
         return(
             <input className='input-field'
             type = {type}
             placeholder={placeholder}
             value= {value}
             name = {name}
-            style= {{...currentInputStyle, ...futureStyle}}
+            style= {{
+                // height: '50px',
+                // width: '400px',
+                fontSize: '18px',
+                padding: '25px',
+                border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+            }}
             onChange = {onChange}>
             </input>
 
@@ -233,7 +242,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "60px",
-            width: "350px",
+            width: "400px",
             fontSize: "18px",
             padding: "20px 40px",
             border: isInvalid && '1px solid #D78989'
@@ -252,7 +261,13 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{...currentInputStyle, ...futureStyle}}
+                    style={{
+                        // height: "60px",
+                        // width: "350px",
+                        fontSize: "18px",
+                        padding: "20px 40px",
+                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+                        }}
                     onChange = {onChange}
                     > 
                 </input>
@@ -266,7 +281,7 @@ export default function Input(props){
         const futureStyle = props.futureStyle;
         const currentInputStyle = {
             height: "60px",
-            width: "350px",
+            width: "400px",
             fontSize: "18px",
             padding: "25px",
             border: isInvalid && '1px solid #D78989'
@@ -278,7 +293,13 @@ export default function Input(props){
                     placeholder={placeholder}
                     value= {value}
                     name ={name}
-                    style={{...currentInputStyle, ...futureStyle}}
+                    style={{
+                        // height: "60px",
+                        // width: "350px",
+                        fontSize: "18px",
+                        padding: "25px",
+                        border: isInvalid ? '1px solid #E7B8B8' : '1px solid #E4E4E7'
+                        }}
                     onChange = {onChange}
                     
                     > 

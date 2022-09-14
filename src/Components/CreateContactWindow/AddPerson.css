@@ -5,7 +5,7 @@ tr, td{
 
 td:first-child + td { /*second child */
     margin-top: 10px;
-    font-style: italic;
+    /* font-style: italic; */
     color: gray;
     font-family: Roboto;
 }
@@ -14,8 +14,6 @@ fieldset{
     width: 750px;
     display: flex;
     flex-direction: column;
-    border: 1px solid;
-    border-color: gray;
     margin-bottom: 30px;
 }
 
@@ -32,8 +30,6 @@ fieldset{
     display: 'flex';
     flex-direction: 'column';
     text-align: 'right';
-    border-color: black;
-    width:  750px
 }
 
 .form-row{

@@ -131,14 +131,17 @@ export default function SignIn() {
             size="xlarge"
             color= "primary"
             onClick = {handleSubmit}
-            futureStyle = {{width: '100%'}}
-          />
+            
+            
+            />
+            
           
-          <Button shape = 'no_border'
-                  size = 'small'
-                  text = 'Forgot your password?'
-                  futureStyle ={{width: '100%'}}
-                  onClick = {() => navigate('/forgotpassword')}/>
+          <Link style={{textDecoration:"none"}} to = '/forgotpassword' 
+              onMouseOver = {handleMouseOver}
+              onMouseOut = {handleMouseOut}>
+            <p className ='forget-pwd'> Forgot your password? </p>
+            
+          </Link>
 
           {isHovering && <Tooltip type = "leftarrow"
                           message = 'Bigger tooltip if longe text lorem ipsum dolor sit amet, con sect etur ad'/>}

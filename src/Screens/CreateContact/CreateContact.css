@@ -18,7 +18,9 @@
 }
 
 .icon-title{
-    vertical-align:middle
+    vertical-align:middle;
+    padding: 16px 10px 0px 0;
+    color: #242244;
 }
 
 .nav-tabs{
@@ -111,7 +113,7 @@
   color: #242244;
   font-size: 13px;
   font-family: Poppins;
-  font-style: italic;
+  font-style:normal;
   letter-spacing: 0.24px;
 }
 

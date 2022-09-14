@@ -5,7 +5,9 @@
     text-align: left;
     margin: 5px 0 10px 0
 }
-
+.checkbox:checked{
+   background: var(--primary-hover);
+}
 .checkbox {
     box-sizing: border-box;
     margin-left: 0;
@@ -29,6 +31,7 @@
     letter-spacing: 0.38px;
     line-height: 23px;
     color: var(--form-title);
+    opacity: 0.6;
 }
 
 .square-checked{

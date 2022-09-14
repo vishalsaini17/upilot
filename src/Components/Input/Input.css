@@ -11,24 +11,10 @@
     outline: none;
     letter-spacing: 0.28px;
     line-height: 23px;  
-    cursor: text
-}
-
-.input-field:not(:placeholder-shown){
-    border: 1px solid var(--input-border-default-filled);
-    box-shadow: var(--input-shadow-default-filled)
-}
-
-.input-field:focus {
-    background-color: var(--input-bg-focus);
-    caret-color: #0071BF;
-    border: 1px solid var(--input-border-focus);
-    box-shadow: var(--input-shadow-focus)
-}
-
-.input-field:focus:not(:placeholder-shown){
-    border: 1px solid var(--input-border-focus-filled);
-    box-shadow: var(--input-shadow-focus-filled)
+    cursor: text;
+    width: 100%;
+    max-width: 400px !important;
+    height: 50px;
 }
 
 .input-field:hover{
