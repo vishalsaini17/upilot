@@ -45,10 +45,11 @@ fieldset{
     border: 1px solid lightgray;
     height: 60px;
     padding: 0 10px;
-    margin-left: 163px;
+    margin-left: 267px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 698px;
 }
 
 .form-footer .footer-left{

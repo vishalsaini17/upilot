@@ -66,4 +66,8 @@
     cursor: pointer;
     color: var(--form-title-dark);
 }
+.signin-screen{
+  background-image: url("../../Logo/body_shadow.jpg");
+  background-repeat: no-repeat;
+}
 

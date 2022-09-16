@@ -1,41 +1,34 @@
 import React, {useState} from 'react';
+import Checkbox from '@mui/material/Checkbox';
+import { cyan } from '@mui/material/colors';
 import "./Checkbox.css";
 
 
 
-export default function Checkbox(props){
-    const {id, label, value, onChange} = props;
+export default function ColorCheckboxes(props){
+    const {id, value, onChange} = props;
+    let label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
     const square_xsmall = () =>{
-        return(
-            <div className = 'checkbox-wrapper'
-                style= {{
-                    paddingLeft:"2px",
-                    height: '50px',
-                    width: '400px',
-                }}>
-
-                <input className = 'checkbox'
-                    id = {id}
-                    type = "checkbox"
-                    checked = {value}
-                    onChange = {onChange}
-                    style ={{
-                        accentColor: 'rgba(42,41,55,0.1)',
-                        boxShadow: 'inset 0 1px 3px 0 rgba(0,0,0,0.08)',
-                        border: '1px solid rgba(255,255,255,0.2)',
-                        borderRadius: '2px',
-                        }}
-                        >
-                </input>
-
-                <label className = 'checkbox-label' htmlFor = {id}>{label}</label>
-  
-              
-                 
+        return (
+            <div>
+            
+              <Checkbox
+                {...label}
+                defaultChecked
+                sx={{
+                  color: cyan[800],
+                  '&.Mui-checked': {
+                    color: cyan[600],
+                  },
+                }}
+              />
+                 <span>Remember Me </span>
             </div>
-        )
+           
+          );
     }
+  
 
     const oval_xsmall = () => {}
 
@@ -192,5 +185,4 @@ export default function Checkbox(props){
     else {
         return <div>{square_xsmall()}</div>;
     }
-};
-
+}

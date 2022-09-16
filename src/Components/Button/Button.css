@@ -178,7 +178,7 @@
   padding: 8px; */
   display: inline-block;
   box-sizing: border-box;
-  color: var(--no-border-btn); 
+  color: #767299; 
   font-family: Poppins;
   font-weight: 600;
   letter-spacing: 0.8px;
@@ -190,7 +190,7 @@
   overflow: hidden;
   border: none;
   opacity: 0.7;
-  padding-top: 20px;
+  padding-top: px;
 }
 
 .no-border-btn:hover{

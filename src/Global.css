@@ -174,11 +174,11 @@ font-family: 'Roboto', sans-serif;
       rgba(186, 183, 224, .1) 50%, rgba(186, 183, 224, 0) 100%), url('https: //upilot.com/ui-share/bgd-151515-noise.jpg');
 }
 
-.dark-theme.neutral {
+/* .dark-theme.neutral {
   background-image: url("./Logo/body_shadow.jpg");
       background-repeat: no-repeat;
-  background-position: fixed;
-}
+  
+} */
 
 .dark-theme.night {
   background-image: radial-gradient(circle at top center, rgba(213, 203, 203, .3), rgba(213, 203, 203, 0)), linear-gradient(90deg, rgba(186, 183, 224, 0) 0%,

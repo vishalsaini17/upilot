@@ -17,9 +17,9 @@
     position: relative;
     padding: 35px;
     display: flex;
-    height: 80px;
+    height: 60px;
     align-items: center;
-    width: 500px;
+    width: 700px !important;
     justify-content: center;
 }
 
